@@ -42,6 +42,8 @@ app/*
 !app/js/finance-release/money/conf.json
 !app/js/finance-release/money/nls
 !app/js/finance-release/money/nls/*
+!app/js/fonts
+!app/js/fonts/*
 
 !app/js/finance-release/dojox
 !app/js/finance-release/dojox/gfx
