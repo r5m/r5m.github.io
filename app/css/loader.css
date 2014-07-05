@@ -1,0 +1,22 @@
+.loader{
+	position:absolute;
+	top: 50%;
+	left:0;right:0;
+	line-height:20px;
+	margin-top:-40px;
+	font-size:24px;
+	color:#324F85;
+	font-family:Helvetica;
+	line-height:28px;
+}
+
+.loader.loader-text{
+	text-align:center;
+}
+.loader-text p{text-align:center;margin:0.25em 0}
+.loader-text p.state{
+	font-size:60%;
+	color:#666;position:relative;
+	border-bottom: 1px solid #888888;
+    border-top: 1px solid #888888;
+}

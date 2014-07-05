@@ -1,0 +1,47 @@
+<div class="mblBackground">
+    <div data-dojo-type="dojox/mobile/Heading"
+        data-dojo-props="fixed: 'top'">
+        <button data-dojo-type="dojox/mobile/ToolBarButton"
+            data-dojo-attach-point="backButton"
+            data-dojo-props="arrow: 'left', target: 'navigation', transitionDir: -1, transitionOptions: { params: { id: window.AppData.currentDate }}"
+            style="position: absolute; left: 0"
+            class="backButton">${nls.menu}</button>
+    </button>
+    ${nls.title}        
+    </div>
+    <div data-dojo-type="dojox/mobile/ScrollablePane">
+		<div data-dojo-type="dojox/mobile/RoundRectCategory" data-dojo-props='shadow:true'>
+			R5M Finance v0.6.3
+		</div>
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>
+			${nls.r5mfIs}
+		</div>
+		<div data-dojo-type="dojox/mobile/RoundRectCategory" data-dojo-props='shadow:true'>
+			${nls.updates}
+		</div>
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true' data-dojo-attach-point="updateStatus">
+		</div>
+		
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true' style="display:none">	
+			${nls.symba}
+		</div>
+		<div data-dojo-type="dojox/mobile/RoundRectCategory" data-dojo-props='shadow:true'>
+			${nls.thanks}
+		</div>
+			<ul data-dojo-type="dojox/mobile/RoundRectList" data-dojo-props='shadow:true'>
+				<li data-dojo-type="dojox/mobile/ListItem"
+					data-dojo-props=''>Dojo Toolkit
+					<span style="float:right;color:#324F85">dojotoolkit.org</span>
+				</li>
+				<li data-dojo-type="dojox/mobile/ListItem"
+					data-dojo-props=''>IndexedDB polyfill <span style="float:right;color:#324F85">nparashuram.com</span></li>
+				<li data-dojo-type="dojox/mobile/ListItem"
+					data-dojo-props=''>
+					Font awesome
+					<span style="float:right;color:#324F85">fontawesome.io</span>
+				</li>
+			</ul>
+		
+		
+    </div>
+</div>

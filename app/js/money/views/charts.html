@@ -1,0 +1,66 @@
+<div class="mblBackground">
+    <div data-dojo-type="dojox/mobile/Heading"
+        data-dojo-props="fixed: 'top'">
+        <button data-dojo-type="dojox/mobile/ToolBarButton"
+            data-dojo-attach-point="backButton"
+            data-dojo-props="arrow: 'left', target: 'navigation', transitionDir: -1, transitionOptions: { params: { id: window.AppData.currentDate }}"
+            style="float: left"
+            class="backButton">${nls.menu}</button>
+    </button>
+    ${nls.title}
+    </div>
+    <div data-dojo-type="money/WheelScrollableView">
+		<div id="sum-main">
+			<div data-dojo-type="dojox/mobile/RoundRectCategory">
+				<span id="acc-sum" style="float:right;margin-right:20px"></span>${nls.myAccounts}
+			</div>
+			<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props="shadow:true" id="no-accounts-chart">
+				${nls.tap}<br/><b>${nls.menu}</b> -> <b>${nls.settings}</b> -> <b>${nls.accounts}</b> -> <b>${nls.add}</b> ${nls.addFirstAccount}
+			</div>
+			<ul data-dojo-type="dojox/mobile/RoundRectList" id="sum-acc"
+				data-dojo-attach-point="sumAcc">
+			</ul>
+		</div>
+		<div id="sum-main">
+			<div data-dojo-type="dojox/mobile/RoundRectCategory">
+				${nls.myAchievements}
+			</div>
+			<ul data-dojo-type="dojox/mobile/RoundRectList">
+				<li data-dojo-type="dojox/mobile/ListItem"  id="sum-exp"
+					data-dojo-attach-point="sumE"
+					data-dojo-props='rightText:"0.00", label:"${nls.expences}"'></li>
+				<li data-dojo-type="dojox/mobile/ListItem" id="sum-inc"
+					data-dojo-attach-point="sumI"
+					data-dojo-props='rightText:"0.00", label:"${nls.incomes}"'></li>
+				<li data-dojo-type="dojox/mobile/ListItem"  id="sum-tr"
+					data-dojo-attach-point="sumT"
+					data-dojo-props='rightText:"0.00", label:"${nls.transfers}"'></li>
+			</ul>
+		</div>
+		<div id="chart-main">
+			<div data-dojo-type="dojox/mobile/RoundRectCategory">
+				${nls.myTransactions}
+			</div>			
+			<ul class="no-background" data-dojo-type="dojox/mobile/TabBar" data-dojo-props="barType: 'segmentedControl'" id="pie-chart-type">
+				<li data-dojo-type="dojox/mobile/TabBarButton"
+					data-dojo-attach-point="expChart" data-dojo-props="selected:true"
+					>${nls.expences}</li>
+				<li data-dojo-type="dojox/mobile/TabBarButton"
+					data-dojo-attach-point="incChart"
+					>${nls.incomes}</li>
+				<li data-dojo-type="dojox/mobile/TabBarButton"
+					data-dojo-attach-point="transfChart"
+					>${nls.transfers}</li>
+			</ul>
+			
+			<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props="shadow:true" id="no-transactions-chart">
+				${nls.tap}<br/><b>${nls.menu}</b> -> <b>${nls.transactions}</b> -> <b>${nls.add}</b> ${nls.addFirst}.
+			</div>
+			<!-- create the chart -->
+			<div style="padding: 10px" id="pie-chart">
+				<div id="chartNode" ></div>
+				<div id="legend"></div>
+			</div>
+		</div>		
+    </div>
+</div>
