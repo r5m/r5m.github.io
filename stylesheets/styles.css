@@ -837,7 +837,7 @@ section #title .credits.right {
   }
 }
 
-@media print, screen and (max-width: 480px) {
+@media print, screen and (max-width: 580px) {
   #header nav li.fork {
     display: none;
   }
