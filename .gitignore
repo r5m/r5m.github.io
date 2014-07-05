@@ -1,5 +1,6 @@
 # Ignore everything
 app/
+app/*
 
 # But not these files...
 #v0.6.3
