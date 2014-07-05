@@ -787,7 +787,7 @@ dt {
 
 section {
   max-width: 650px;
-  padding: 30px 0px 50px 0px;
+  padding: 30px 0px 0 0px;
   margin: 20px 0;
   margin-top: 70px;
 }
@@ -825,6 +825,22 @@ section #title .credits.right {
   float: right;
 }
 
+.phone-image{
+	position: absolute;
+	top: 10px;
+	right: 0;
+	padding-left: 20px;
+	width: 200px;
+}
+
+.phone-image-wrapper{
+	text-align:center;
+}
+
+.before-phone-image{
+	width: 240px; height: 400px; float:right;
+}
+
 @media print, screen and (max-width: 720px) {
   #title .credits {
     display: block;
@@ -846,4 +862,14 @@ section #title .credits.right {
   #header nav li.fork {
     display: none;
   }
+  
+  .before-phone-image{
+	width: 0;
+  }
+  
+  .phone-image{
+	position: static;
+	margin: auto;
+  }
+  
 }
