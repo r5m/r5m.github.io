@@ -584,6 +584,11 @@ a {
   font-weight: 400;
   text-decoration: none;
 }
+
+a.download-link{
+	border-bottom: solid 1px #ffcc00
+}
+
 a:hover {
   color: #ffeb9b;
 }
