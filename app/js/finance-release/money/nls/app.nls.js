@@ -4,6 +4,8 @@ define("money/nls/app.nls", {
 	about		: 'about',
 	accounts 	: 'accounts',
 	amountTitle	: 'amount',
+	animation	: 'Animation effects',
+	animHelp	: 'You can set up page\'s transition effects on this page',
 	//settings page
 	backup		: 'backup',
 	backupCreate	: 'create backup',

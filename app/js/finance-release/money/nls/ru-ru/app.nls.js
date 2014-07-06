@@ -3,6 +3,10 @@ define("money/nls/ru-ru/app.nls", {
 	about		: 'о приложении',
 	accounts 	: 'счета',
 	amountTitle		: 'сумма',
+	animation	: 'Эффекты анимации',
+	animHelp	: 'Вы можете выбрать эффекты анимации для приложения на этой странице',
+	transition 	: 'Смена страниц',
+	
 	//settings page
 	backup		: 'создать',
 	backupCreate	: 'сохранить',

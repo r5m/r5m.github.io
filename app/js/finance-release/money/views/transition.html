@@ -1,7 +1,7 @@
 <div class="mblBackground">
 	<div 
 		data-dojo-attach-point="heading"
-		data-dojo-type="dojox/mobile/Heading" data-dojo-props="label:'${nls.transition}'">
+		data-dojo-type="dojox/mobile/Heading" data-dojo-props="label:'${nls.animation}'">
 		<button data-dojo-type="dojox/mobile/ToolBarButton"
             data-dojo-attach-point="backButton"
             data-dojo-props="arrow: 'left', target: 'settings', transitionDir: -1"
@@ -12,8 +12,11 @@
 		data-dojo-type="money/WheelScrollableView"
 		data-dojo-props="threshold:window.AppData.treshold"
 		data-dojo-attach-point="viewContainer">
-		
-		<div data-dojo-type="dojox/mobile/RoundRectCategory" data-dojo-props="label:'${nls.transition}'"></div>
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>
+			${nls.animHelp}
+		</div>
+		<div data-dojo-type="dojox/mobile/RoundRectCategory" 
+			data-dojo-props="label:'${nls.transition}'"></div>
 		<ul data-dojo-type="dojox/mobile/RoundRectList" data-dojo-props="select: 'single'">
 			<div 
 				data-dojo-attach-point="none" 
