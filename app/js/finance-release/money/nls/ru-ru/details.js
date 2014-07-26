@@ -16,6 +16,7 @@ define("money/nls/ru-ru/details", {
 	yes		: 'Да',
 	no		: 'Нет',
 	sure	: 'Вы уверены?',
+	type	: 'Тип',
 	pickDate: 'Дата'		
 	
 });

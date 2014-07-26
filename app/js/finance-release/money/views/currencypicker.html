@@ -4,7 +4,14 @@
 				data-dojo-attach-point = "done"
 			></div>
 		</h1>
+		<div data-dojo-type="dojox/mobile/Heading" data-dojo-props="fixed:'top'" style="height:auto">
+				<div style="padding: 5px 20px;">
+					<input type="text" data-dojo-type="dojox/mobile/TextBox" id="currencyInput" 
+						data-dojo-props="placeHolder:'${nls.selectCurrency}', readOnly: true"/>
+				</div>
+			</div>
 		<div data-dojo-type="money/WheelScrollableView" data-dojo-props="threshold:window.AppData.treshold">
+			
 			<div id="currencyPicker" 
 				data-dojo-type="dojox/mobile/RoundRectStoreList"
                 data-dojo-mixins="dojox/mobile/LongListMixin"

@@ -7,9 +7,11 @@
 	</h2>
 		
     <div style="margin:20px auto 15px auto; width:200px">
-		<input type="number" id = "amount-input"
+		<input type="text" id = "amount-input"
 			data-dojo-attach-point="inputField"
-			style="text-align:right;font-weight:bold;font-size:150%; line-height:1em; height:1.5em; width:100%" data-dojo-props="readOnly:true, value:'0.00'" data-dojo-type="dojox/mobile/TextBox"/>
+			style="text-align:right;font-weight:bold;font-size:150%; line-height:1em; height:1.5em; width:100%" 
+			data-dojo-props="readOnly:true, value:''" 
+			data-dojo-type="dojox/mobile/TextBox"/>
 	</div>
 	<div data-dojo-type="dojox/mobile/GridLayout" data-dojo-props='cols:3' style="">
 		<div data-dojo-type="dojox/mobile/Pane">
@@ -69,7 +71,7 @@
 		<div data-dojo-type="dojox/mobile/Pane">
 			<div class="wrapper">
 				<button class="mblRedButton wide" data-dojo-type="dojox/mobile/ToolBarButton"
-					data-dojo-props="_onTouchStart: function(){window.AppData.numberPicker.key('c',this)}"><img style="vertical-align:middle;margin-top:-3px; "/></button>
+					data-dojo-props="_onTouchStart: function(){window.AppData.numberPicker.key('c',this)}"><i class="fa fa-eraser"></i></button>
 			</div>
 		</div>
 		<div data-dojo-type="dojox/mobile/Pane">

@@ -4,6 +4,7 @@ define("money/nls/summary", {
 	    add		: 'Add',
 	    menu	: 'Menu',
 		welcome	: 'Welcome to the R5M Finance - Free cross-platform personal finance manager',
+		welcome2: '',
 		tapAdd	: 'Tap "Add" button to add your first transaction',
 		
 		

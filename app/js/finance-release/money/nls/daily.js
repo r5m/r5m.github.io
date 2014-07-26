@@ -9,7 +9,7 @@ define("money/nls/daily", {
 		expences: 'Expences',
 		incomes : 'Incomes',
 		transfers:'Transfers',
-		
+		total	: 'Total',
 		summary : 'By days',
 		noExpences : 'No expences found on this day',
 		noIncomes : 'No incomes found on this day',

@@ -16,6 +16,15 @@
 			data-dojo-attach-point="add"><i class="fa fa-plus"></i> ${nls.add}</button>
 		
     </div>
+    
+    <div id="list-sum">
+		<span id="list-sum-ts">${nls.total}: </span>
+		<span style="float:right;margin-right:10px">
+			<span id="list-sum-title"></span>
+			<span id="list-sum-total"></span>
+		</span>
+	</div>
+	
     <ul data-dojo-type="dojox/mobile/TabBar" data-dojo-props="fixed:'bottom'">
 		<li data-dojo-type="dojox/mobile/TabBarButton" id='list-is-e'
 			data-dojo-props="target: 'list', icon: 'icons/icon_transactions.png', iconPos1:'0,19,19,17',
@@ -27,6 +36,7 @@
 			data-dojo-props="target: 'list', icon: 'icons/icon_transactions.png', iconPos1:'0,38,21,17',
                     transitionOptions: { params: { type: 't', id : this.params.id } }">${nls.transfers}</li>
 	</ul>
+	
     <div data-dojo-type="money/WheelScrollableView"
 		data-dojo-props="threshold:window.AppData.treshold">
 		<div 

@@ -8,14 +8,6 @@
 		class="title"
         data-dojo-props="fixed: 'top'">
         
-        <!-- DEPRECATED -->
-        <span class="left-button">
-			<span class="weather" style="">
-				<span id ="weather-temp"></span>
-				<span id="weather-type"></span>
-			</span>			
-		</span>
-		
 		<button 
 			data-dojo-type="dojox/mobile/ToolBarButton"
             data-dojo-attach-point="menuButton"
@@ -53,7 +45,7 @@
 			data-dojo-attach-point="emptyMsg"
 			data-dojo-type="dojox/mobile/RoundRect" 
 			data-dojo-props='shadow:true'>
-				${nls.tapAdd}
+				${nls.welcome2}<br/><br/>${nls.tapAdd}
 		</div>
 		<div data-dojo-type="dojox/mobile/EdgeToEdgeStoreList"
             data-dojo-attach-point="daily" id="summary-list"

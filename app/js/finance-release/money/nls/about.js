@@ -8,10 +8,11 @@ define("money/nls/about", {
 	    thanks	: 'Thanks to:',
 	    
 	    
-	    latest	: 'Latest version already installed',
+	    latest	: 'Latest version already installed.',
 	    updating: 'Downloading updates...',
 	    ready	: 'Updates are ready to be installed.',
-	    apply	: 'Apply updates'
+	    apply	: 'Apply updates',
+	    updated	: 'Currencies exchange rates for '
 	    
 	},
 	'ru-ru': true

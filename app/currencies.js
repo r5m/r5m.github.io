@@ -1,4 +1,4 @@
-window.AppData.currencies = {
+window.AppData.updated = '2014-07-26';window.AppData.currencies = {
 	"AED": "United Arab Emirates Dirham",
 	"AFN": "Afghan Afghani",
 	"ALL": "Albanian Lek",
@@ -49,6 +49,7 @@ window.AppData.currencies = {
 	"FKP": "Falkland Islands Pound",
 	"GBP": "British Pound Sterling",
 	"GEL": "Georgian Lari",
+	"GGP": "Guernsey Pound",
 	"GHS": "Ghanaian Cedi",
 	"GIP": "Gibraltar Pound",
 	"GMD": "Gambian Dalasi",
@@ -62,6 +63,7 @@ window.AppData.currencies = {
 	"HUF": "Hungarian Forint",
 	"IDR": "Indonesian Rupiah",
 	"ILS": "Israeli New Sheqel",
+	"IMP": "Manx pound",
 	"INR": "Indian Rupee",
 	"IQD": "Iraqi Dinar",
 	"IRR": "Iranian Rial",

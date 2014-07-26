@@ -10,6 +10,7 @@ define("money/nls/ru-ru/daily", {
 	transfers:'Переводы',
 		
 	summary : 'По дням',
+	total	: 'Всего',
 	noExpences : 'Не найдено расходов в этот день',
 	noIncomes : 'Не найдено доходов в этот день',
 	noTransfers : 'Не найдено переводов в этот день'
