@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#v0.6.5.3
+#v0.6.5.4
 #release.version.patch.patch-revision
 CACHE:
 #
@@ -23,7 +23,7 @@ rates.js
 js/finance-release/money/money-app.js
 js/finance-release/money/conf.json
 js/AppConfig.js
-js/etc/dropbox-datastores-1.0.0.js
+js/etc/dropbox-datastores-1.1.0.js
 js/finance-release/dojox/mobile/themes/iphone/iphone.css
 js/finance-release/dojox/mobile/themes/ios7/ios7.css
 icons/font-awesome-4.1.0/css/font-awesome.min.css
