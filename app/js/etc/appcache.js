@@ -17,7 +17,7 @@ function handleCacheEvent(e) {
 		if(e.type == "updateready"){
 		    setTimeout(function(){
 				window.CACHE_STATUS = CACHE_UPDATE_READY;
-			},250);
+			}, 1000);
 		}
 		if(e.type == "noupdate"){
 		    window.CACHE_STATUS = CACHE_LATEST;
