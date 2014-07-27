@@ -2,14 +2,14 @@
     
     <div data-dojo-type="dojox/mobile/Heading"
         data-dojo-props="fixed: 'top'" id="list-title" class="title">
-        <button data-dojo-type="dojox/mobile/ToolBarButton"
+        <button data-dojo-type="money/TouchableToolBarButton"
             data-dojo-attach-point="backButton"
             data-dojo-props="arrow: 'left', target: 'summary', transitionDir: -1, transitionOptions: { params: { id: window.AppData.currentDate }}"
             class="left-button backButton"
             >${nls.summary}</button>       
 		</button>
 		${nls.title}
-		<button data-dojo-type="dojox/mobile/ToolBarButton"
+		<button data-dojo-type="money/TouchableToolBarButton"
 			class="right-button"
 			data-dojo-props="target: 'details',
 				transitionOptions: { params: { edit: true } }"

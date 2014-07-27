@@ -2,13 +2,13 @@
 <div data-dojo-type="money/WheelScrollableView" data-dojo-props="threshold:window.AppData.treshold">
     <div data-dojo-type="dojox/mobile/Heading" class="title"
     data-dojo-props="fixed: 'top'">
-    <button data-dojo-type="dojox/mobile/ToolBarButton"
+    <button data-dojo-type="money/TouchableToolBarButton"
             data-dojo-attach-point="backButton"
             data-dojo-props="arrow: 'left', target: window.AppData.isInitiallySmall ? 'list' : 'navigation+list', transitionDir: -1, transitionOptions: { params: { id: window.AppData.currentDate }}, onClick: function(){console.log(this)}"
             class="left-button"
             class="backButton">${nls.daily}</button>
     ${nls.details}
-    <button data-dojo-type="dojox/mobile/ToolBarButton"
+    <button data-dojo-type="money/TouchableToolBarButton"
             data-dojo-attach-point="editButton"
             class="right-button"
             data-dojo-props="transitionOptions: { params: { id: window.AppData.currentDate }}"></button>
@@ -184,15 +184,16 @@
 		</div>
 	</div>
 	
-	--><div id="deleteOverlay" data-dojo-type="dojox/mobile/Overlay" data-dojo-attach-point="deleteOverlay">
+	--><div id="deleteOverlay" data-dojo-type="dojox/mobile/SimpleDialog" data-dojo-attach-point="deleteOverlay">
 		<h1 data-dojo-type="dojox/mobile/Heading" data-dojo-props="" class="bottom" style="margin-bottom: 2px">
-			<span class="left-button question">${nls.sure} </span>
-			<div data-dojo-type="dojox/mobile/ToolBarButton" label="${nls.yes}" class="mblRedButton left-button" style="" 
+			${nls.sure}
+		</h1>
+			<div data-dojo-type="money/TouchableToolBarButton" label="${nls.yes}" class="mblRedButton" style="width: 75px" 
 				data-dojo-attach-event="onClick: _deleteContact"
 			></div>
-			<div data-dojo-type="dojox/mobile/ToolBarButton" label="${nls.no}" class="left-button" style="" 
+			<div data-dojo-type="money/TouchableToolBarButton" label="${nls.no}" class="mblBlueButton" style="width: 75px"
 				data-dojo-attach-event="onClick: _hideDelete"
 			></div>
-		</h1>		
+				
 	</div>
 </div>

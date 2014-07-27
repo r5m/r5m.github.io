@@ -13,6 +13,8 @@
         "dojox/mobile/ToolBarButton",
         "dojox/mobile/Switch" ,
         "money/store",
+        "money/TouchableButton",
+        "money/TouchableToolBarButton",
         "money/WheelScrollableView",
         "dojox/mobile/ExpandingTextArea",
         "dojox/mobile/TextBox",
