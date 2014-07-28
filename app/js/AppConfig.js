@@ -146,9 +146,11 @@ function confirmExit(){
 	setTimeout(function(){
 		s.opacity = 1; 
 		(function fadeOut(){ 
-			( ( s.opacity = Number(s.opacity) - .1 ) <= 0 ) ? 
-				s.display = "none" : 
+			s.opacity = Number(s.opacity) - .1;
+			if ( Number( s.opacity ) < 0.1 )
+				s.display = "none";
+			else
 				setTimeout( fadeOut, 40 ) 
 		})();
-	}, 3000)
+	}, 2500)
 }

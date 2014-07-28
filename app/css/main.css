@@ -414,6 +414,6 @@ ul.no-background{
 #confirm-exit {
 	position: absolute;
 	bottom: 0;
-	left:0; right: 0; bottom: 10px;
+	left:0; right: 0; bottom: 70px;
 	display: none; z-index: 999;	
 }
