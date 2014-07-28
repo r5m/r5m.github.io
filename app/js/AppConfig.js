@@ -123,3 +123,29 @@ function getMoney(amount, currency){
 		symbol : ( (dojo.locale.indexOf('-ru') > -1 && currency == "RUB") ? "руб": ( currency == "RUB" ? "RUB " : undefined ) )
 	})// + '<i class="fa-money fa-small fa fa-'+currency+'"></i>'
 }
+
+function goToSettings(){
+	location.assign('#settings');
+}
+
+function confirmExit(){
+	location.hash += "&confirmexit";
+	
+	var s = document.getElementById('confirm-exit').style
+	s.opacity = 0;
+	s.display = "block";
+	
+	( function fadeIn(){ 
+		//console.log(document.getElementById('confirm-exit').style.opacity);
+		s.opacity =  Number(s.opacity) + .1;
+		if( s.opacity <= 1 ) {
+			setTimeout(fadeIn,40);
+		}
+	})();
+	
+	setTimeout(function(){
+		s.opacity = 1; 
+		(function fadeOut(){( s.opacity = Number(s.opacity) - .1 ) < 0 ? s.display="none" : setTimeout( fadeOut, 40 ) })();
+	}, 3000)
+}
+
