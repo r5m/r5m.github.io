@@ -147,8 +147,11 @@ function confirmExit(){
 		s.opacity = 1; 
 		(function fadeOut(){ 
 			s.opacity = Number(s.opacity) - .1;
-			if ( Number( s.opacity ) < 0.1 )
+			console.log(Number (s.opacity));
+			if ( Number( s.opacity ) < 0.1 ) {
 				s.display = "none";
+				s.opacity = 0;
+			}
 			else
 				setTimeout( fadeOut, 40 ) 
 		})();
