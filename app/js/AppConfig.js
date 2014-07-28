@@ -143,17 +143,18 @@ function confirmExit(){
 		}
 	})();
 	
+	var opacity = 1
 	setTimeout(function(){
-		s.opacity = 1; 
+		s.opacity = opacity; 
 		(function fadeOut(){ 
-			s.opacity = Number(s.opacity) - .1;
+			s.opacity = ( opacity -= .1) ;
 			console.log(Number (s.opacity));
-			if ( Number( s.opacity ) < 0.1 ) {
+			if ( opacity < 0.1 ) {
 				s.display = "none";
 				s.opacity = 0;
 			}
 			else
-				setTimeout( fadeOut, 40 ) 
+				setTimeout( fadeOut, 40 ) ;
 		})();
 	}, 2500)
 }
