@@ -145,7 +145,10 @@ function confirmExit(){
 	
 	setTimeout(function(){
 		s.opacity = 1; 
-		(function fadeOut(){( s.opacity = Number(s.opacity) - .1 ) < 0 ? s.display="none" : setTimeout( fadeOut, 40 ) })();
+		(function fadeOut(){ 
+			( ( s.opacity = Number(s.opacity) - .1 ) <= 0 ) ? 
+				s.display = "none" : 
+				setTimeout( fadeOut, 40 ) 
+		})();
 	}, 3000)
 }
-
