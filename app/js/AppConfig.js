@@ -132,13 +132,13 @@ function confirmExit(){
 	location.hash += "&confirmexit";
 	
 	var s = document.getElementById('confirm-exit').style
-	s.opacity = 0;
+	var opacityIn = 0
+	s.opacity = opacityIn;
 	s.display = "block";
 	
 	( function fadeIn(){ 
-		//console.log(document.getElementById('confirm-exit').style.opacity);
-		s.opacity =  Number(s.opacity) + .1;
-		if( s.opacity <= 1 ) {
+		s.opacity =  ( opacityIn += .1);
+		if( opacityIn <= 1 ) {
 			setTimeout(fadeIn,40);
 		}
 	})();
@@ -148,7 +148,6 @@ function confirmExit(){
 		s.opacity = opacity; 
 		(function fadeOut(){ 
 			s.opacity = ( opacity -= .1) ;
-			console.log(Number (s.opacity));
 			if ( opacity < 0.1 ) {
 				s.display = "none";
 				s.opacity = 0;
