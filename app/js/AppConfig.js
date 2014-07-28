@@ -125,7 +125,7 @@ function getMoney(amount, currency){
 }
 
 function goToSettings(){
-	location.assign('#settings');
+	location.assign('#navigation');
 }
 
 function confirmExit(){
