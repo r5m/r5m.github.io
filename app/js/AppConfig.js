@@ -124,8 +124,20 @@ function getMoney(amount, currency){
 	})// + '<i class="fa-money fa-small fa fa-'+currency+'"></i>'
 }
 
+function goToSummary(){
+	window.dFinance.transitionToView(window.dFinance.selectedChildren.center.domNode,{
+		target: window.AppData.isInitiallySmall ? 'summary' : "summary",
+		transitionDir: -1,
+		params : {}
+	})	
+}
+
 function goToSettings(){
-	location.assign('#navigation');
+	window.dFinance.transitionToView(window.dFinance.selectedChildren.center.domNode,{
+		target: window.AppData.isInitiallySmall ? 'navigation' : "navigation",
+		transitionDir: -1,
+		params : {}
+	})	
 }
 
 function confirmExit(){
