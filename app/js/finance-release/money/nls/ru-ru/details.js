@@ -15,7 +15,7 @@ define("money/nls/ru-ru/details", {
 	ok		: 'OK',
 	yes		: 'Да',
 	no		: 'Нет',
-	sure	: 'Вы уверены?',
+	sure	: 'Удалить транзакцию?',
 	type	: 'Тип',
 	pickDate: 'Дата'		
 	

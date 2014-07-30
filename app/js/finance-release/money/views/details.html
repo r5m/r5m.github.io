@@ -185,15 +185,15 @@
 	</div>
 	
 	--><div id="deleteOverlay" data-dojo-type="dojox/mobile/SimpleDialog" data-dojo-attach-point="deleteOverlay">
-		<h1 data-dojo-type="dojox/mobile/Heading" data-dojo-props="" class="bottom" style="margin-bottom: 2px">
+		<h1 data-dojo-type="dojox/mobile/Heading" data-dojo-props="" style="margin-bottom: 8px;">
 			${nls.sure}
 		</h1>
-			<div data-dojo-type="money/TouchableToolBarButton" label="${nls.yes}" class="mblRedButton" style="width: 75px" 
+			<button data-dojo-type="money/TouchableButton" label="${nls.yes}" class="mblRedButton" style="" 
 				data-dojo-attach-event="onClick: _deleteContact"
-			></div>
-			<div data-dojo-type="money/TouchableToolBarButton" label="${nls.no}" class="mblBlueButton" style="width: 75px"
+			></button>
+			<button data-dojo-type="money/TouchableButton" label="${nls.no}" class="mblBlueButton" style=""
 				data-dojo-attach-event="onClick: _hideDelete"
-			></div>
+			></button>
 				
 	</div>
 </div>

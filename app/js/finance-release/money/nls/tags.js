@@ -6,7 +6,10 @@ define("money/nls/tags", {
 	    noTags	: 'You don\'t have any tags yet.',
 	    addFirst: 'to add your first tag',
 	    myTags	: 'My tags',
-	    tap		: 'Tap'
+	    tap		: 'Tap',
+	    deleteTag		: 'Delete tag',
+	    yes	: 'Yes',
+	    no	: 'No'
 	    
 	    
 	},

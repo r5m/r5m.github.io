@@ -16,7 +16,7 @@ define("money/nls/details", {
 		ok		: 'OK',
 		yes		: 'Yes',
 		no		: 'No',
-		sure	: 'Are you sure?',
+		sure	: 'Delete transaction?',
 		pickDate: 'Date'		
 	},
 	'ru-ru': true

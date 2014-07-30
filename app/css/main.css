@@ -429,3 +429,8 @@ ul.no-background{
 	left:0; right: 0; bottom: 70px;
 	display: none; z-index: 999;	
 }
+
+
+.mblSimpleDialog .mblButton.mblBlueButton,.mblSimpleDialog .mblButton.mblRedButton {
+	width: 100px; text-align:center; margin: 0 5px 5px 5px; font-weight: bold;
+}

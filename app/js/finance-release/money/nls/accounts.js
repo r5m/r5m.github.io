@@ -11,7 +11,10 @@ define("money/nls/accounts", {
 	    newAccount: 'New account will be created',
 	    chooseCurrency: 'Please select it\'s currency',
 	    process : 'Continue',
-	    createAccount: 'Creating account'
+	    createAccount: 'Creating account',
+	    yes: 'Yes',
+	    no	: 'No',
+	    deleteAccount: 'Delete account'
 	},
 	'ru-ru': true
 });
