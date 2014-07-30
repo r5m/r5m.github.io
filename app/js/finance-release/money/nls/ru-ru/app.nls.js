@@ -4,6 +4,8 @@ define("money/nls/ru-ru/app.nls", {
 	animHelp	: 'Здесь можно сделать вещи более приятными.',
 	transition	: 'Эффекты переходов',
 	
+	done		: 'ГОТОВО',
+	selectDate	: 'Выберите дату',
 	
 	expence		: 'Расход',
 	income		: 'Доход',

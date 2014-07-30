@@ -6,6 +6,9 @@ define("money/nls/app.nls", {
 	transition	: 'Transition effects',
 	back		: 'Back',
 	
+	done		: 'DONE',
+	selectDate	: 'Select date',
+	
 	expence		: 'Expence',
 	income		: 'Income',
 	transfer	: 'Transfer',	

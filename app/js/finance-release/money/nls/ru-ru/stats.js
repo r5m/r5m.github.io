@@ -7,7 +7,7 @@ define("money/nls/ru-ru/stats", {
 	transfers: 'Переводы',
 	    
 	noAccounts: '',
-	noTransactions: 'No transactions found',
+	noTransactions: 'Не найдено транзакций за выбранный период времени.',
 	menu: 'Меню',
 	accounts: 'Счета',
 	transactions: 'Транзакции',

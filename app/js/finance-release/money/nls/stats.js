@@ -7,7 +7,7 @@ define("money/nls/stats", {
 	    transfers: 'Transfers',
 	    
 	    noAccounts: 'You don\'t have any accounts yet',
-	    noTransactions: 'No transactions found',
+	    noTransactions: 'No transactions found for selected timespan.',
 	    menu: 'Menu',
 	    accounts: 'Accounts',
 	    transactions: 'Transactions',

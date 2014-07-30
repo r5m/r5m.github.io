@@ -3,8 +3,8 @@ define("money/nls/backup", {
 		title	: "Statistics",
 	    dropbox	: 'You can backup & sync data within your dropbox account in one click',
 	    menu	: 'Menu',
-	    onlineBackup : 'Online backup',
-	    factoryReset : 'Start from clean sheet',
+	    onlineBackup : 'Dropbox',
+	    factoryReset : 'My device',
 	    internetRequired : 'Your device need to be conncted to Internet to use backup & sync',
 	    
 	    backupCreate: 'Sync now',

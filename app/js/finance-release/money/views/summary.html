@@ -36,6 +36,7 @@
 		data-dojo-attach-point="scrollView"
 		data-dojo-props="threshold:window.AppData.treshold">
 		
+		<div id="welcome-note">
 		<div 
 			data-dojo-type="dojox/mobile/RoundRectCategory" 
 			data-dojo-attach-point="emptyMsgTitle">
@@ -44,8 +45,53 @@
 		<div 
 			data-dojo-attach-point="emptyMsg"
 			data-dojo-type="dojox/mobile/RoundRect" 
-			data-dojo-props='shadow:true'>
-				${nls.welcome2}<br/><br/>${nls.tapAdd}
+			>
+				${nls.welcome2}
+		</div>
+		<div 
+			data-dojo-type="dojox/mobile/RoundRectCategory" 
+			data-dojo-attach-point="emptyMsgTitle">
+				${nls.aboutR5mTitle}
+		</div>
+		<div 
+			data-dojo-attach-point="emptyMsg"
+			data-dojo-type="dojox/mobile/RoundRect" 
+			>
+				${nls.aboutR5m}
+		</div>
+		<div 
+			data-dojo-type="dojox/mobile/RoundRectCategory" 
+			data-dojo-attach-point="emptyMsgTitle">
+				${nls.aboutSyncTitle}
+		</div>
+		<div 
+			data-dojo-attach-point="emptyMsg"
+			data-dojo-type="dojox/mobile/RoundRect" 
+			>
+				${nls.aboutSync}
+		</div>
+		<div 
+			data-dojo-type="dojox/mobile/RoundRectCategory" 
+			data-dojo-attach-point="emptyMsgTitle">
+				${nls.aboutHelpTitle}
+		</div>
+		<div 
+			data-dojo-attach-point="emptyMsg"
+			data-dojo-type="dojox/mobile/RoundRect" 
+			>
+				${nls.aboutHelp}
+		</div>
+		<div 
+			data-dojo-type="dojox/mobile/RoundRectCategory" 
+			data-dojo-attach-point="emptyMsgTitle">
+				${nls.aboutSettingsTitle}
+		</div>
+		<div 
+			data-dojo-attach-point="emptyMsg"
+			data-dojo-type="dojox/mobile/RoundRect" 
+			>
+				${nls.aboutSettings}
+		</div>
 		</div>
 		<div data-dojo-type="dojox/mobile/EdgeToEdgeStoreList"
             data-dojo-attach-point="daily" id="summary-list"

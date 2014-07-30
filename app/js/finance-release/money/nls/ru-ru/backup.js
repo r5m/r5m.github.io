@@ -2,8 +2,8 @@ define("money/nls/ru-ru/backup", {
 	title	: "Синхронизация данных",
 	dropbox	: 'Вы можете создать синхронизировать данные между Вашими устройствами, использую учетную запись Dropbox',
 	menu	: 'Меню',
-	onlineBackup : 'Online синхронизация',
-	factoryReset : 'Начать с чистого листа',
+	onlineBackup : 'Dropbox',
+	factoryReset : 'Мое устройство',
 	internetRequired : 'Соединение с Интернет необходимо для синхронизаци данных',
 	    
 	backupCreate: 'Синхронизировать данные',

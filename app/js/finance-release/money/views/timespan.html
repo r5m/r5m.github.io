@@ -17,7 +17,7 @@
 		
 			<div>
 				<div data-dojo-type="dojox/mobile/RoundRectCategory" data-dojo-props='shadow:true'>
-					Select timespan
+					${nls.selectTimespan}
 				</div>
 				<ul data-dojo-type="dojox/mobile/RoundRectList" data-dojo-props="select:'single'">
 					<li data-dojo-type="dojox/mobile/ListItem"
@@ -40,13 +40,12 @@
 				<div data-dojo-attach-point="timespanOverlay" data-dojo-type="dojox/mobile/SimpleDialog" class="overlay date-overlay">
 					<div class="wrapper1">
 						<h2 style="margin: 0px; line-height: 45px;">
-							<div data-dojo-type="dojox/mobile/ToolBarButton" label="DONE" class="mblColorBlue" style="width:45px;float:right;" 								
+							<div data-dojo-type="dojox/mobile/ToolBarButton" label="${nls.done}" class="mblColorBlue" style="width:45px;float:right;" 								
 								data-dojo-attach-point="okButton"				
 							></div>
-							<div data-dojo-type="dojox/mobile/ToolBarButton" label="This month" class="mblColorBlue" style="width:45px;float:right;" 
-								data-dojo-attach-point="resetDateButton"				
-							></div> Select month
-							<div id="timespanPicker"></div>
+							${nls.selectDate}
+							
+							<div id="timespanPicker" style="margin-top: 10px;"></div>
 						</h2>
 						
 					</div>

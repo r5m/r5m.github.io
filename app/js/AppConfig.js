@@ -118,11 +118,25 @@ function getDate(ds, locale){
  * TODO : window.AppData.localeCurrency ??
  */ 
 function getMoney(amount, currency){
-	var currency = currency || window.AppData.currency
-	return window.AppData.localeCurrency.format(amount, {'currency': currency, 
-		symbol : ( (dojo.locale.indexOf('-ru') > -1 && currency == "RUB") ? "руб": ( currency == "RUB" ? "RUB " : undefined ) )
-	})// + '<i class="fa-money fa-small fa fa-'+currency+'"></i>'
+	var currency = currency || window.AppData.currency, symbol
+	//var symbol = ( (dojo.locale.indexOf('-ru') > -1 && currency == "RUB") ? "руб": ( currency == "RUB" ? "RUB " : undefined ) );
+	var curList = ['btc','jpy','rub', 'usd', 'gbp', 'krw', 'try', 'inr','eur']
+	
+	for(var i=0; i< curList.length; i++)
+		if (currency && currency.toLowerCase() == curList [i]) {
+			symbol = '<i class="fa-money fa-small fa fa-' + currency.toLowerCase() + '"></i>';
+			break;
+		}
+	
+	if (symbol)
+		return window.AppData.localeCurrency.format(amount, {'currency': currency, 
+			symbol : symbol
+		})
+	else
+		return window.AppData.localeCurrency.format(amount, {'currency': currency});
+	
 }
+
 
 function goToSummary(){
 	window.dFinance.transitionToView(window.dFinance.selectedChildren.center.domNode,{
@@ -141,6 +155,7 @@ function goToSettings(){
 }
 
 function confirmExit(){
+	document.getElementById('confirm-exit').innerHTML = dojo.locale.indexOf('-ru') > -1 ? '<p><span>Нажмите <b>"Назад"</b> еще раз для выхода</span></p>' : '<p><span>Tap <b>back</b> button once more to exit</span></p>'
 	location.hash += "&confirmexit";
 	
 	var s = document.getElementById('confirm-exit').style

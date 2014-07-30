@@ -36,7 +36,7 @@
 }
 
 .mblHeadingCenterTitle .mblHeadingDivTitle {
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 
 #summary-sum, #list-sum {
@@ -155,7 +155,15 @@ li.mblListItem
 	text-align: right;
 	width: auto;
 }
-.fa-money{padding-left:5px;}
+.fa-money {
+	padding-left:1px;
+	position: relative;
+	padding-right:2px;
+}
+#acc-sum{
+	float: right; margin-right: 30px; font-size: 1.1rem; color: black;
+}
+
 .transaction-account{
 	padding-left:20px;
 	padding-right:10px; 
@@ -164,6 +172,10 @@ li.mblListItem
 	position: relative;
 	text-overflow: ellipsis;
 	white-space: nowrap;display:block;
+}
+
+.mblSimpleDialog{
+	width: 280px;
 }
 
 .transaction-amount{
