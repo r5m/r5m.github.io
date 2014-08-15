@@ -15,7 +15,20 @@ define("money/nls/backup", {
 		
 		linkDropbox	: 'Link to my dropbox account',
 		unlinkDropbox: 'Unlink my dropbox account',
+	    backupRestoreTitle : 'Backup & Restore',
+	    taskCompleted : 'Task completed',
+	    applicationWillBeRestarted : 'Application will be restarted',
+	    errorOpeningDatastore: 'Error opening default datastore. Please, try to reconnect your Dropbox account',
+	    errorCreatingDatastore : 'Error creating datastore. Maybe your platform is not supported by Dropbox Datastore API',
+	    errorStrange : 'Sync error. Please, try to reconnect your Dropbox account.',
+	    error : 'ERROR',
 	    
+	    processing: "Processing...",
+		syncing	: 'Sync to Dropbox',
+		cancel	: 'Cancel',
+		
+		currenciesDontMatch: 'Home currencies don\'t match. Please, clear dropbox data or clear local data and set the same home currency as in Dropbox'
+		
 	},
 	'ru-ru': true
 });
