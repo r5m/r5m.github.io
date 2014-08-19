@@ -51,7 +51,7 @@
                         data-dojo-attach-point="account"
                         data-dojo-props="'class':'mblGreyButton mblButton',onClick: function(){
 							window.dFinance.transitionToView(this.domNode, {
-								target: window.AppData.isInitiallySmall ? 'accountpicker' : 'accountpicker+details' , transitionDir: 1,
+								target: window.AppData.isInitiallySmall ? 'accountpicker' : 'accountpicker' , transitionDir: 1,
 								params: {'id': window.AppData.details.params.id, doNotReload: true}
 							});
 							//dijit.registry.byId('transactionAccountOverlay').show('account', ['below-centered','above-centered','after','before'])
@@ -83,7 +83,7 @@
                         data-dojo-attach-point="accountTo"
                         data-dojo-props="'class':'mblGreyButton mblButton',onClick: function(){
 							window.dFinance.transitionToView(this.domNode, {
-								target: window.AppData.isInitiallySmall ? 'accountpicker' : 'accountpicker+details' , transitionDir: 1,
+								target: window.AppData.isInitiallySmall ? 'accountpicker' : 'accountpicker' , transitionDir: 1,
 								params: {'id': window.AppData.details.params.id, doNotReload: true, mode: 'to'}
 							});
 						}"></button>
@@ -97,7 +97,7 @@
                         
                         data-dojo-props="'class':'mblGreyButton mblButton',onClick:function(){
 							window.dFinance.transitionToView(this.domNode, {
-								target: window.AppData.isInitiallySmall ? 'tagspicker' : 'tagspicker+details' , transitionDir: 1,
+								target: window.AppData.isInitiallySmall ? 'tagspicker' : 'tagspicker' , transitionDir: 1,
 								params: {'id': window.AppData.details.params.id, doNotReload: true}
 							});
 						}"
@@ -105,7 +105,7 @@
             </fieldset>
         </div>
         <div>
-            <label for="tags">${nls.description}</label>
+            <label for="descr">${nls.description}</label>
             <fieldset class="text">
                 <textarea id="descr" name="descr"
                         data-dojo-type="dojox/mobile/ExpandingTextArea"

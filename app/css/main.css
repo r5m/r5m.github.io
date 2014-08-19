@@ -92,8 +92,8 @@ body{background: #C5CCD3;overflow:hidden;}
 	padding: 0.5em 10px 0.5em 5px!important 
 }
 
-.mblFormLayout.mblFormLayoutAuto .text{
-	padding: 0.5em 23px 0.5em 5px!important 
+#descr{
+	width: 100%!important;
 }
 
 .mblExpandingTextArea{margin:0}
@@ -432,5 +432,24 @@ ul.no-background{
 
 
 .mblSimpleDialog .mblButton.mblBlueButton,.mblSimpleDialog .mblButton.mblRedButton {
-	width: 100px; text-align:center; margin: 0 5px 5px 5px; font-weight: bold;
+	width	: 100px; 
+	text-align:center; 
+	margin	: 0 5px 5px 5px; font-weight: bold;
 }
+
+
+input[type="text"]{
+	-moz-box-sizing: border-box
+}
+.view-help{
+	text-align	: left;
+	font-size	: 0.9rem;
+	font-weight	: normal;
+	margin-bottom: 5px;
+	line-height: 1rem;
+	color: #666;
+	font-style: oblique;
+	white-space: normal;
+}
+
+

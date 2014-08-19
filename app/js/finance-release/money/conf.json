@@ -89,13 +89,13 @@
 			"nls"       	: "money/nls/stats"
 		},
 		"tagspicker": {
-			"constraint" 	: "left",
+			"constraint" 	: "center",
 			"controller"	: "money/views/tagspicker",
 			"template"		: "money/views/tagspicker.html",
 			"nls"       	: "money/nls/tagspicker"
 		},
 		"accountpicker": {
-			"constraint" 	: "left",
+			"constraint" 	: "center",
 			"controller" 	: "money/views/accountpicker",
 			"template"	 	: "money/views/accountpicker.html",
 			"nls"       	: "money/nls/accountpicker"

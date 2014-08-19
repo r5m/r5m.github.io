@@ -1,10 +1,12 @@
 define("money/nls/ru-ru/details", {
-	title	: "Детали транзакции",
+	title	: "Редактирование транзакции",
 	    
 	amount	: 'Сумма',
 	account	: 'Счет',
 	accounts: 'Счета',
 	accountTo: 'На счет',
+	defaultAccount: 'Наличные',
+	defaultAccount2: 'Счет в банке',
 		
 	tags	: 'Метки (категории)',
 	categories: 'Категории',

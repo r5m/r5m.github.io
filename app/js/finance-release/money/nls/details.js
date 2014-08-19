@@ -1,11 +1,13 @@
 define("money/nls/details", {
 	root: {
-		title	: "Transactions",
+		title	: "Edit transaction",
 	    
 	    amount	: 'Amount',
 		account	: 'Account',
 		accounts: 'Accounts',
 		accountTo: 'To account',
+		defaultAccount: 'Cash',
+		defaultAccount2 : 'My bank account',
 		
 		tags	: 'Tags',
 		categories: 'Categories',

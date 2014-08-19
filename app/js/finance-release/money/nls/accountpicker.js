@@ -1,8 +1,8 @@
 define("money/nls/accountpicker", {
 	root: {
-		title	: "Select tags",
-	    done	: 'DONE'
-
+		title	: "Choose account",
+	    done	: 'DONE',
+	    viewHelp : 'Choose account from a list below or enter new account\'s title, please'
 	},
 	'ru-ru': true
 });
