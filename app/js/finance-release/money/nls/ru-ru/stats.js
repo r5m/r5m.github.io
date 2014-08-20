@@ -15,8 +15,11 @@ define("money/nls/ru-ru/stats", {
 	addFirst : 'чтобы добавить транзакцию',
 	addFirstAccount : 'чтобы добавить первый счет',
 	tap		: 'Нажмите',
-	myAchievements: 'Итого',
+	myAchievements: 'Итого за период',
 	myAccounts: 'Мои счета',
-	myTransactions: 'Мои транзакции'
+	myTransactions: 'Мои транзакции',
+	
+	
+	transs: 'тр.'
 	
 });

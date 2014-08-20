@@ -19,7 +19,9 @@ define("money/nls/details", {
 		yes		: 'Yes',
 		no		: 'No',
 		sure	: 'Delete transaction?',
-		pickDate: 'Date'		
+		pickDate: 'Date',
+		done	: 'Done',
+		today	: 'Today'
 	},
 	'ru-ru': true
 });

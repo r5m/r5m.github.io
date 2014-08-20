@@ -14,7 +14,9 @@ define("money/nls/accounts", {
 	    createAccount: 'Creating account',
 	    yes: 'Yes',
 	    no	: 'No',
-	    deleteAccount: 'Delete account'
+	    deleteAccount: 'Delete account',
+	    startAmount: 'Start balance / Default currency'
+	    
 	},
 	'ru-ru': true
 });

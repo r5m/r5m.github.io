@@ -10,7 +10,7 @@
     ${nls.details}
     <button data-dojo-type="money/TouchableToolBarButton"
             data-dojo-attach-point="editButton"
-            class="right-button"
+            class="right-button mblRedButton"
             data-dojo-props="transitionOptions: { params: { id: window.AppData.currentDate }}"></button>
 </div>
 <div data-dojo-type="dojox/mobile/FormLayout"
@@ -65,8 +65,7 @@
                 <button id="currency" name="currency"
                         data-dojo-type="dojox/mobile/ToolBarButton"
                         data-dojo-attach-point="currency"
-                        data-dojo-props="'class':'mblBlueButton mblButton two-two'"></button>
-                
+                        data-dojo-props="'class':'mblBlueButton mblButton two-two'"></button>                
                 <button id="amount" name="amount"
                         data-dojo-type="dojox/mobile/ToolBarButton"
                         data-dojo-attach-point="amount"
@@ -120,7 +119,7 @@
         <div data-dojo-type="dojox/mobile/ToolBarButton" data-dojo-props="disabled: true"
                     data-dojo-attach-point="deleteButton"
                     data-dojo-attach-event="onClick: deleteContact"
-                    class="left-button">
+                    class="left-button  mblRedButton">
                 <i class="fa fa-trash-o"></i> ${nls.remove}
             </div>
 	</div> 
@@ -128,11 +127,11 @@
 	<div id="transactionDateOverlay" data-dojo-type="dojox/mobile/SimpleDialog" class="overlay date-overlay">
 		<div class="wrapper1">
 			<h2 style="margin: 0px; line-height: 45px;">
-				<div data-dojo-type="dojox/mobile/ToolBarButton" label="DONE" class="mblColorBlue" style="width:45px;float:right;" 
+				<div data-dojo-type="dojox/mobile/ToolBarButton" label="${nls.done}" class="mblColorBlue" style="width:45px;float:right;" 
 					onClick="window.AppData.objDet.date()"
 					data-dojo-attach-point="okButton"				
 				></div>
-				<div data-dojo-type="dojox/mobile/ToolBarButton" label="Today" class="mblColorBlue" style="width:45px;float:right;" 
+				<div data-dojo-type="dojox/mobile/ToolBarButton" label="${nls.today}" class="mblColorBlue" style="width:45px;float:right;" 
 					onClick="
 						window.AppData.details.datePicker.reset()
 					"

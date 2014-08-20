@@ -19,6 +19,8 @@ define("money/nls/ru-ru/details", {
 	no		: 'Нет',
 	sure	: 'Удалить транзакцию?',
 	type	: 'Тип',
-	pickDate: 'Дата'		
+	pickDate: 'Дата',
+	done	: 'Готово',
+	today	: 'Сегодня'
 	
 });

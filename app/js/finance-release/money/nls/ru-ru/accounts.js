@@ -10,5 +10,6 @@ define("money/nls/ru-ru/accounts", {
 	newAccount: 'Будет создан новый счет',
 	chooseCurrency: 'Пожалуйста, выберите его основную валюту',
 	process : 'Продолжить',
-	createAccount: 'Создание счета'
+	createAccount: 'Создание счета',
+	startAmount: 'Нач. баланс / Валюта по умолч.'
 });

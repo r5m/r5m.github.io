@@ -125,13 +125,16 @@ body{background: #C5CCD3;overflow:hidden;}
 .mblFormLayout .mblButton.one-two{
 		font-weight: bold;
 		width: auto;
-		margin-right: 70px;
+		/*margin-right: 70px;*/
 	}
 
 .mblFormLayout .mblButton.two-two{
 		font-weight: bold;
 		width: 50px;
-		float:right
+		float:right;
+		margin-top: -1px;
+		height: 31px;
+		line-height: 31px;
 	}
 
 
@@ -156,7 +159,7 @@ li.mblListItem
 	width: auto;
 }
 .fa-money {
-	padding-left:1px;
+	padding-left:0;
 	position: relative;
 	padding-right:2px;
 }
@@ -451,5 +454,15 @@ input[type="text"]{
 	font-style: oblique;
 	white-space: normal;
 }
+
+
+.right-title{
+	margin-right:20px;
+	float: right;
+	text-align: right;
+	white-space: normal;
+	margin-left: 100px;
+}
+
 
 

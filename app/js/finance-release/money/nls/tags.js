@@ -9,7 +9,9 @@ define("money/nls/tags", {
 	    tap		: 'Tap',
 	    deleteTag		: 'Delete tag',
 	    yes	: 'Yes',
-	    no	: 'No'
+	    no	: 'No',
+	    quantity: 'Frequency'
+	    
 	    
 	    
 	},

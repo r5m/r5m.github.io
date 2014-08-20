@@ -15,9 +15,11 @@ define("money/nls/stats", {
 	    addFirst : 'to add one',
 	    addFirstAccount : 'to add your first account',
 	    tap		: 'Tap',
-	    myAchievements: 'My achievements',
+	    myAchievements: 'My achievements for period',
 	    myAccounts: 'My accounts',
-	    myTransactions: 'My transactions'
+	    myTransactions: 'My transactions',
+	    
+	    transs : 'tr.'
 	    
 	},
 	'ru-ru': true

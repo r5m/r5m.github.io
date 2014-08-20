@@ -8,6 +8,7 @@ define("money/nls/ru-ru/tags", {
 	    tap		: 'Нажмите',
 	    deleteTag		: 'Удалить метку',
 	    yes	: 'Да',
-	    no	: 'Нет'
+	    no	: 'Нет',
+	    quantity: 'Частота'
 	    
 });
