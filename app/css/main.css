@@ -571,7 +571,7 @@ ul.no-background {
 .mblSimpleDialog .mblButton.mblRedButton {
     font-weight: bold;
 
-    width: 100px;
+    min-width: 100px;
     margin: 0 5px 5px 5px;
 
     text-align: center;
