@@ -1,298 +1,405 @@
 * {
-	-webkit-tap-highlight-color: transparent!important; /* For some Androids */
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)!important;
-	outline: none!important;
+    outline: none!important;
+
+    -webkit-tap-highlight-color: transparent!important; /* For some Androids */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)!important;
 }
 
-.mblTabBarTabBar .mblTabBarButtonLabel{
-	line-height: 16px;
+.mblTabBarTabBar .mblTabBarButtonLabel {
+    line-height: 16px;
 }
 
-.domButton.mblDomButtonBlueCircleMinus{
-	margin-top: 10px;
+.domButton.mblDomButtonBlueCircleMinus {
+    margin-top: 10px;
+    margin-bottom: 7px;
 }
 
 .fa.fa-fixed {
-	width: 20px;
-	color: #007AFF;
-	text-align:center;
-	margin-right: 5px;
+    width: 20px;
+    margin-right: 5px;
+
+    text-align: center;
+
+    color: #007aff;
 }
 
-.mblListItemRightText{
-	color : #666;
+.mblListItemRightText {
+    color: #666;
 }
 
-.mblButton{
-	height:auto;
+.mblButton {
+    height: auto;
 }
 
-.mblEdgeToEdgeList.empty{
-	border: none;
+.mblEdgeToEdgeList.empty {
+    border: none;
 }
 
-.mblTabBarButtonLabel{
-	font-weight: bold;
+.mblTabBarButtonLabel {
+    font-weight: bold;
 }
 
 .mblHeadingCenterTitle .mblHeadingDivTitle {
-	/*text-transform: uppercase;*/
+    /*text-transform: uppercase;*/
 }
 
-#summary-sum, #list-sum {
-	height:22px; 
-	background:#ededed;
-	color: #666;
-	position:absolute; 
-	bottom:51px; 
-	border-top:1px solid #ADAAAD; 
-	z-index:1;
-	left:0;right:0;
+#summary-sum,
+#list-sum {
+    position: absolute;
+    z-index: 1;right: 0;
+    bottom: 51px;
+    left: 0;
+
+    height: 22px;
+
+    color: #666;
+    border-top: 1px solid #adaaad;
+    background: #ededed;
 }
-#summary-sum-ts, #list-sum-ts{
-	float:left;margin-left:10px
-}
-
-
-body .mblTabBarSegmentedControl .mblTabBarButton {width:95px}
-
-.title .mblHeadingSpanTitle{display:none}
-.title .mblHeadingDivTitle{display:block}
-.title .mblHeadingDivTitle{
-	overflow:hidden; text-overflow:ellipsis; width:auto; position:static; margin:0 5px;
+#summary-sum-ts,
+#list-sum-ts {
+    float: left;margin-left: 10px;
 }
 
-.mblFormLayout .mblToolBarButton{
-	display: block; text-align:left; margin:0;
+
+body .mblTabBarSegmentedControl .mblTabBarButton {
+    width: 95px;
 }
 
-.mblFormLayout .mblToolBarButton.mblButton{
-	
-	padding: 0 0 0 10px;
-	width: auto;
+.title .mblHeadingSpanTitle {
+    display: none;
+}
+.title .mblHeadingDivTitle {
+    display: block;
+}
+.title .mblHeadingDivTitle {
+    position: static;
+
+    overflow: hidden; width: auto; margin: 0 5px;text-overflow: ellipsis;
 }
 
-body{background: #C5CCD3;overflow:hidden;}
+.mblFormLayout .mblToolBarButton {
+    display: block; margin: 0;text-align: left;
+}
+
+.mblFormLayout .mblToolBarButton.mblButton {
+    width: auto;
+    padding: 0 0 0 10px;
+}
+
+body {
+    overflow: hidden;
+
+    background: #c5ccd3;
+}
 
 .hidden {
     display: none !important;
 }
- 
+
 .mblFormLayout {
     background-color: rgba(0, 0, 0, 0);
 }
- 
+
 .mblFormLayout > * > *:first-child {
     font-weight: normal;
+
     color: gray;
 }
-.mblFormLayout .mblExpandingTextArea{margin:0}
-.mblFormLayout.mblFormLayoutAuto{padding-top:0.5em; padding-left:3px;}
-.mblFormLayout.mblFormLayoutAuto > * > *{
-	padding: 0.5em 10px 0.5em 5px!important 
+.mblFormLayout .mblExpandingTextArea {
+    margin: 0;
+}
+.mblFormLayout.mblFormLayoutAuto {
+    padding-top: .5em; padding-left: 3px;
+}
+.mblFormLayout.mblFormLayoutAuto > * > * {
+    padding: .5em 10px .5em 5px!important;
 }
 
-#descr{
-	width: 100%!important;
+#descr {
+    width: 100%!important;
 }
 
-.mblExpandingTextArea{margin:0}
+.mblExpandingTextArea {
+    margin: 0;
+}
 
 .mblFormLayoutReadOnly .readOnlyHidden {
     display: none !important;
 }
- 
-.mblFormLayoutReadOnly 
+
+.mblFormLayoutReadOnly
 	.mblTextArea {
-		background-color: rgba(0, 0, 0, 0);
-		border-width: 0px;
-		width:100%
-	}
+    width: 100%;
 
-.android_theme .mblFormLayoutReadOnly 
+    border-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.android_theme .mblFormLayoutReadOnly
 	.mblTextArea {
-		background-color: #d3d3d3;
-	}
- 
-.mblFormLayout 
-	.mblTextArea,  .mblFormLayout .mblButton{
-		font-weight: bold;
-		width: 100%;
-		padding-left: 10px;
-	}
+    background-color: #d3d3d3;
+}
 
-	
-.mblFormLayout .mblButton.one-two{
-		font-weight: bold;
-		width: auto;
-		/*margin-right: 70px;*/
-	}
+.mblFormLayout
+	.mblTextArea,
+.mblFormLayout .mblButton {
+    font-weight: bold;
 
-.mblFormLayout .mblButton.two-two{
-		font-weight: bold;
-		width: 50px;
-		float:right;
-		margin-top: -1px;
-		height: 31px;
-		line-height: 31px;
-	}
+    width: 100%;
+    padding-left: 10px;
+}
 
 
-li.mblListItem{height:auto; white-space: normal;}
-li.mblListItem 
-	.mblListItemLabel .summary{
-		float:right;
-		text-align:right;
-		margin-right:20px;
-		line-height:1.2em;
-		margin-top:13px;
-		margin-bottom:13px;
-	}
+.mblFormLayout .mblButton.one-two {
+    font-weight: bold;
+
+    width: auto;
+    /*margin-right: 70px;*/
+}
+
+.mblFormLayout .mblButton.two-two {
+    font-weight: bold;
+    line-height: 31px;
+
+    float: right;
+
+    width: 50px;
+    height: 31px;
+    margin-top: -1px;
+}
 
 
-.fa-small{font-size: 80%;}
-.summary.sub-sum > div {height:1.3em}
-.summary.sub-sum .transaction-amount, .transaction-account{ color:#666}
-.summary{
-	min-width: 60%;
-	text-align: right;
-	width: auto;
+li.mblListItem {
+    height: auto; white-space: normal;
+}
+li.mblListItem
+	.mblListItemLabel .summary {
+    line-height: 1.2em;
+
+    float: right;
+
+    margin-top: 13px;
+    margin-right: 20px;
+    margin-bottom: 13px;
+
+    text-align: right;
+}
+
+
+.fa-small {
+    font-size: 80%;
+}
+.summary.sub-sum > div {
+    height: 1.3em;
+}
+.summary.sub-sum .transaction-amount,
+.transaction-account {
+    color: #666;
+}
+.summary {
+    width: auto;
+    min-width: 60%;
+
+    text-align: right;
 }
 .fa-money {
-	padding-left:0;
-	position: relative;
-	padding-right:2px;
+    position: relative;
+
+    padding-right: 2px;
+    padding-left: 0;
 }
-#acc-sum{
-	float: right; margin-right: 30px; font-size: 1.1rem; color: black;
+#acc-sum {
+    font-size: 1.1rem;
+
+    float: right; margin-right: 30px; color: black;
 }
 
-.transaction-account{
-	padding-left:20px;
-	padding-right:10px; 
-	font-style:oblique;
-	overflow: hidden;
-	position: relative;
-	text-overflow: ellipsis;
-	white-space: nowrap;display:block;
+.transaction-account {
+    font-style: oblique;
+
+    position: relative;display: block;
+    overflow: hidden;
+
+    padding-right: 10px;
+    padding-left: 20px;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
-.mblSimpleDialog{
-	width: 280px;
+.mblSimpleDialog {
+    width: 280px;
 }
 
-.transaction-amount{
-	color: #324F85;
+.transaction-amount {
+    line-height: normal;    line-height: 1.2em;
+
+    position: relative;display: block;
     float: right;
-    line-height: normal;
+
     margin-right: 4px;
-    position: relative;display:block;line-height:1.2em
+
+    color: #324f85;
 }
 
-.mblListItemRightIcon{
-	margin-top: -15px!important;
-	position: absolute!important;
-	right: 5px!important;
-	top: 50%!important;
+.mblListItemRightIcon {
+    position: absolute!important;
+    top: 50%!important;
+    right: 5px!important;
+
+    margin-top: -15px!important;
 }
-.date-header{
-	white-space: nowrap;
-	margin-bottom: -15px;
-	float : left
+.date-header {
+    float: left;
+
+    margin-bottom: -15px;
+
+    white-space: nowrap;
 }
 
-.li-total{
-	border-top: dashed 1px #ccc; margin-top:0.3em;padding-top:0.2em;
-	float: right; margin-right: 4px;
-	color: #324F85
-}
-.mblButton{text-align:left}
+.li-total {
+    float: right; margin-top: .3em;margin-right: 4px;padding-top: .2em;
 
-.li-descr hr{
-	border: none;
-	border-top: dashed 1px #ccc;
-	margin-left: 0;
-	margin-right: 35px
+    color: #324f85;
+    border-top: dashed 1px #ccc;
+}
+.mblButton {
+    text-align: left;
 }
 
-.li-descr{
-	float:left;
-	clear:right;
-	margin-top: -0.5em;
-	/*border-top: dashed 1px #ccc;*/
-	font-size:80%;
-	font-style:oblique;
-	line-height:1.5em;
-	margin-bottom:0.5em;
-	padding-left: 15px;
-	width:100%;
+.li-descr hr {
+    margin-right: 35px;
+    margin-left: 0;
+
+    border: none;
+    border-top: dashed 1px #ccc;
 }
 
-.weather{
-	position:absolute; left:10px; color:white; font-size:80%; color: white
+.li-descr {
+    /*border-top: dashed 1px #ccc;*/
+    font-size: 80%;
+    font-style: oblique;
+    line-height: 1.5em;
+
+    float: left;
+    clear: right;
+
+    width: 100%;
+    margin-top: -.5em;
+    margin-bottom: .5em;
+    padding-left: 15px;
 }
-#weather-type{
-	position:relative; font-size: 100%; color:white; top:-2px
+
+.weather {
+    font-size: 80%;
+
+    position: absolute; left: 10px; color: white; color: white;
+}
+#weather-type {
+    font-size: 100%;
+
+    position: relative; top: -2px;color: white;
 }
 
 
 /*
  *	Overlay styles 
-*/ 
+*/
 
-.overlay .wrapper{
-	padding:3px;
+.overlay .wrapper {
+    padding: 3px;
 }
-.overlay .mblHeading{
-	text-transform: uppercase;
-	font-weight: bold;
-}
+.overlay .mblHeading {
+    font-weight: bold;
 
-.overlay .mblToolBarButton.wide{
-	width:100%;
-	height:50px;
-	border: solid 1px #ccc;
-	border-radius: 6px;
-	line-height:50px;
-	font-weight:bold;
-	font-size: 120%; display:block;padding:0;margin:0
+    text-transform: uppercase;
 }
 
-.wrapper1 .mblSpinWheelSlot{width:90px}
-.wrapper1 .mblSpinWheelDatePicker{width:282px}
-#transactionDateOverlay{width: 290px;}
+.overlay .mblToolBarButton.wide {
+    font-size: 120%;
+    font-weight: bold;
+    line-height: 50px;display: block;
 
-.overlay > div{margin:auto}
+    width: 100%;
+    height: 50px;margin: 0;padding: 0;
 
-ul.mblTabBar.mblTabBarTabBar{
-	padding: 3px 0 0 0!important; bottom:0;
-}
-ul.mblTabBar li .mblTabBarButtonIconArea{
-	width:21px;
-	margin-bottom:4px;
+    border: solid 1px #ccc;
+    border-radius: 6px;
 }
 
-.mblFormLayout .mblToolBarButton.mblGreyButton{
-	border: 1px solid #007AFF; color: #666;
+.wrapper1 .mblSpinWheelSlot {
+    width: 90px;
+}
+.wrapper1 .mblSpinWheelDatePicker {
+    width: 282px;
+}
+#transactionDateOverlay {
+    width: 290px;
 }
 
-#newAccount,#newTags{width:100%;line-height:40px;height:40px; font-size:25px; padding:0 10px; margin-left:-10px;}
-#accountPicker,#tagsPicker{margin:10px 0 0 0}
-
-.iphone_theme .mblFormLayout.mblFormLayoutAuto .mblTabBarButton.mblTabBarButtonSelected{color:black;text-shadow:none}
-#transactionTagsOverlay .wrapper1{height:100%;padding:0;border:0;}
-#transactionTagsOverlay {height: 100%;
-    padding: 0;}
-
-.mblHeading .mblToolBarButton.right-button, .right-button{float:right}
-.mblHeading .mblToolBarButton.left-button, .left-button{float:left}
-
-.mblHeadingDivTitle{position:static}
-
-.mblFormLayout .mblButton{
-	height: 29px; line-height:29px;
+.overlay > div {
+    margin: auto;
 }
-.question{padding:0 10px}
+
+ul.mblTabBar.mblTabBarTabBar {
+    bottom: 0;
+
+    padding: 3px 0 0 0!important;
+}
+ul.mblTabBar li .mblTabBarButtonIconArea {
+    width: 21px;
+    margin-bottom: 4px;
+}
+
+.mblFormLayout .mblToolBarButton.mblGreyButton {
+    color: #666;
+    border: 1px solid #007aff;
+}
+
+#newAccount,
+#newTags {
+    font-size: 25px; line-height: 40px;
+
+    width: 100%;height: 40px; margin-left: -10px;padding: 0 10px;
+}
+#accountPicker,
+#tagsPicker {
+    margin: 10px 0 0 0;
+}
+
+.iphone_theme .mblFormLayout.mblFormLayoutAuto .mblTabBarButton.mblTabBarButtonSelected {
+    color: black;text-shadow: none;
+}
+#transactionTagsOverlay .wrapper1 {
+    height: 100%;padding: 0;border: 0;
+}
+#transactionTagsOverlay {
+    height: 100%;
+    padding: 0;
+}
+
+.mblHeading .mblToolBarButton.right-button,
+.right-button {
+    float: right;
+}
+.mblHeading .mblToolBarButton.left-button,
+.left-button {
+    float: left;
+}
+
+.mblHeadingDivTitle {
+    position: static;
+}
+
+.mblFormLayout .mblButton {
+    line-height: 29px;
+
+    height: 29px;
+}
+.question {
+    padding: 0 10px;
+}
 
 /*
 div .navPane {
@@ -304,18 +411,23 @@ div .navPane {
 	float: left;
 }*/
 .left {
-	float: left; 
-	min-width: 250px !important;
-	width: 20% !important;
-	border-right:1px solid black;
-	background-color: #C5CCD3;
-	z-index: 100;	
-	height: 100%; 
+    z-index: 100;
+
+    float: left;
+
+    width: 20% !important;
+    min-width: 250px !important;
+    height: 100%;
+
+    border-right: 1px solid black;
+    background-color: #c5ccd3;
 }
-.fullwidth{
-	width:100%
+.fullwidth {
+    width: 100%;
 }
-.mblHeading.bottom{border-bottom:none}
+.mblHeading.bottom {
+    border-bottom: none;
+}
 /*
 .phone div .navPane {
 	width:0;
@@ -332,26 +444,37 @@ div .navPane {
 }
 */
 
-.dojoxLegendNode{width:100%}
-.dojoxLegendNode .dojoxLegendText{padding-left:10px}
+.dojoxLegendNode {
+    width: 100%;
+}
+.dojoxLegendNode .dojoxLegendText {
+    padding-left: 10px;
+}
 
 /*.icon-list li .mblSpriteIconParent img {height:15px}*/
 
-.mblSimpleDialogText ul{list-style-type: none}
-.mblSimpleDialogText a{color:white; font-weight:bold}
-
-body .mblProgContainer{
-	top: 0
+.mblSimpleDialogText ul {
+    list-style-type: none;
 }
-.mblProgressIndicator.mblProgressIndicatorCenter{
-	position: relative; top:0;
+.mblSimpleDialogText a {
+    font-weight: bold;
+
+    color: white;
 }
 
-.dlgClose{
-margin: 0 auto 10px auto}
+body .mblProgContainer {
+    top: 0;
+}
+.mblProgressIndicator.mblProgressIndicatorCenter {
+    position: relative; top: 0;
+}
 
-ul.no-background{
-	border: none; background:none;
+.dlgClose {
+    margin: 0 auto 10px auto;
+}
+
+ul.no-background {
+    border: none; background: none;
 }
 
 
@@ -359,110 +482,126 @@ ul.no-background{
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }*/
- 
+
 /* Loading animation container */
 .loading {
     position: absolute;
     top: 50%;
     left: 50%;
+
     width: 28px;
     height: 28px;
     margin: -14px 0 0 -14px;
 }
- 
+
 /* Spinning circle (inner circle) */
 .loading .maskedCircle {
     width: 20px;
     height: 20px;
-    border-radius: 12px;
+
     border: 3px solid white;
+    border-radius: 12px;
 }
- 
+
 /* Spinning circle mask */
 .loading .mask {
-    width: 28px;
-    border-radius: 12px;
-    
-    height: 28px;
     overflow: hidden;
+
+    width: 28px;
+    height: 28px;
+
+    border-radius: 12px;
 }
- 
+
 /* Spinner */
 .loading .spinner {
     position: absolute;
-    left: 1px;
     top: 1px;
+    left: 1px;
+
     width: 26px;
     height: 26px;
+
     animation: spin 1s infinite linear;
 }
 
-.mblSpriteIcon{height:17px}
-
-.button-at-right .mblListItemRightText{
-	margin-top: 7px;
+.mblSpriteIcon {
+    height: 17px;
 }
 
-.domButton{
-	float:left;
-	margin-top:5px;
-	margin-right:5px;
+.button-at-right .mblListItemRightText {
+    margin-top: 7px;
+}
+
+.domButton {
+    float: left;
+
+    margin-top: 5px;
+    margin-right: 5px;
 }
 
 #currencyInput {
-	width: 100%;
-	height: 40px;
-	padding: 0 10px;
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
 }
 
-#confirm-exit p span{
-	background: #eee;
-	border-radius : 6px;
-	-webkit-border-radius : 6px;
-	-moz-border-radius : 6px;
-	border: solid 1px #666;
-	padding: 5px 10px;
+#confirm-exit p span {
+    padding: 5px 10px;
+
+    border: solid 1px #666;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+    background: #eee;
 }
 #confirm-exit p {
-	text-align: center;
+    text-align: center;
 }
 #confirm-exit {
-	position: absolute;
-	bottom: 0;
-	left:0; right: 0; bottom: 70px;
-	display: none; z-index: 999;	
+    position: absolute;z-index: 999;right: 0;
+    bottom: 0;    bottom: 70px;
+    left: 0;
+
+    display: none;
 }
 
 
-.mblSimpleDialog .mblButton.mblBlueButton,.mblSimpleDialog .mblButton.mblRedButton {
-	width	: 100px; 
-	text-align:center; 
-	margin	: 0 5px 5px 5px; font-weight: bold;
+.mblSimpleDialog .mblButton.mblBlueButton,
+.mblSimpleDialog .mblButton.mblRedButton {
+    font-weight: bold;
+
+    width: 100px;
+    margin: 0 5px 5px 5px;
+
+    text-align: center;
 }
 
 
-input[type="text"]{
-	-moz-box-sizing: border-box
+input[type='text'] {
+    -moz-box-sizing: border-box;
 }
-.view-help{
-	text-align	: left;
-	font-size	: 0.9rem;
-	font-weight	: normal;
-	margin-bottom: 5px;
-	line-height: 1rem;
-	color: #666;
-	font-style: oblique;
-	white-space: normal;
-}
+.view-help {
+    font-size: .9rem;
+    font-weight: normal;
+    font-style: oblique;
+    line-height: 1rem;
 
+    margin-bottom: 5px;
 
-.right-title{
-	margin-right:20px;
-	float: right;
-	text-align: right;
-	white-space: normal;
-	margin-left: 100px;
+    text-align: left;
+    white-space: normal;
+
+    color: #666;
 }
 
 
+.right-title {
+    float: right;
 
+    margin-right: 20px;
+    margin-left: 100px;
+
+    text-align: right;
+    white-space: normal;
+}

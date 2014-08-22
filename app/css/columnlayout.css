@@ -1,96 +1,101 @@
 .hide {
-	display: none !important;
+    display: none !important;
 }
 
-.chart-label{
 
-}
-.chart-label-text{
-	
-}
 
-.chart-label-amount{
-	float:right;
+
+.chart-label-amount {
+    float: right;
 }
 
 .center {
-	float: left;
-	height: 100%; 
-	width: 59.7%;
+    float: left;
+
+    width: 59.7%;
+    height: 100%;
 }
 
 .hideOnTablet {
-	display: none !important;
+    display: none !important;
 }
 
 .hideOnLarge {
-	display: none !important;
+    display: none !important;
 }
 
 .left {
-	float: left; 
-	width: 20% !important;
-	border-right:1px solid black;
-	background-color: #C5CCD3;
-	z-index: 1;	
-	height: 100%;
-	visibility: visible!important;
+    z-index: 1;
+
+    visibility: visible!important;
+    float: left;
+
+    width: 20% !important;
+    height: 100%;
+
+    border-right: 1px solid black;
+    background-color: #c5ccd3;
 }
 
 .right {
-	float: right; 
-	width: 20%;
-	border-left:1px solid black;
-	background-color: #C5CCD3;
-	z-index: 100;	
-	height: 100%; 
+    z-index: 100;
+
+    float: right;
+
+    width: 20%;
+    height: 100%;
+
+    border-left: 1px solid black;
+    background-color: #c5ccd3;
 }
 
 /* Medium */
 @media screen and (max-width: 860px) {
+    .left {
+        float: left;
 
-	.left {
-		float	 :left; 
-		width	 :20%;
-		min-width:250px;
-	}
+        width: 20%;
+        min-width: 250px;
+    }
 
-	.center {
-		float: left;
-		width: 79.6%; 
-	}
-	.showOnMedium {
-		display: block !important;
-	}
+    .center {
+        float: left;
 
-	.hideOnMedium {
-		display: none !important;
-	}
+        width: 79.6%;
+    }
+    .showOnMedium {
+        display: block !important;
+    }
+
+    .hideOnMedium {
+        display: none !important;
+    }
 }
 
 
 /* Small */
 @media screen and (max-width: 560px) {
+    .left {
+        float: left;
 
-	.left {
-		float: left; 
-		width:0;
-	}
+        width: 0;
+    }
 
-	.center {
-		float: left;
-		width: 99.6%; 
-	}
+    .center {
+        float: left;
 
-	.showOnSmall {
-		display: block !important;
-	}
-	.hideOnSmall {
-		display: none !important;
-	}
-	.hideOnPhone {
-		display: none !important;
-	}
+        width: 99.6%;
+    }
+
+    .showOnSmall {
+        display: block !important;
+    }
+    .hideOnSmall {
+        display: none !important;
+    }
+    .hideOnPhone {
+        display: none !important;
+    }
 }
 
 /*
@@ -136,7 +141,7 @@
 }
 */
 /*@media only screen and (device-width: 480px) and (orientation: landscape) and (resolution: 163dpi) { */
-	/* CSS3 Rules for XX iPhone in Portrait Orientation */
+/* CSS3 Rules for XX iPhone in Portrait Orientation */
 /*@media only screen and (device-width: 568px) and (orientation: landscape) {
 	.center {
 		float: left;
@@ -158,69 +163,80 @@
 
 
 
-html,body {
-	width: 100%;
-	height: 100%;
+html,
+body {
+    width: 100%;
+    height: 100%;
 }
 
 button.baseBtn {
-	-webkit-background-clip: padding-box;
-	-webkit-box-align: center;
-	background-clip: padding-box;
-	border-style: solid;
-	border-width: 1px;
-	color: black;
-	font-family: 'Helvetica Neue', HelveticaNeue, Helvetica-Neue, Helvetica, 'BBAlpha Sans';
-	font-size: 18px;
-	font-weight: bold;
-	vertical-align: middle;
-	margin: 10px;
-	height: 34px;
-	border-bottom-left-radius: 7px;
-	border-bottom-right-radius: 7px;
-	border-top-left-radius: 7px;
-	border-top-right-radius: 7px;
-	width: 240px;
+    font-family: 'Helvetica Neue', HelveticaNeue, Helvetica-Neue, Helvetica, 'BBAlpha Sans';
+    font-size: 18px;
+    font-weight: bold;
+
+    width: 240px;
+    height: 34px;
+    margin: 10px;
+
+    vertical-align: middle;
+
+    color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+
+    -webkit-box-align: center;
 }
 
-button.whiteBtn{
-	background-image: -webkit-gradient(linear, 0% 0, 0% 100%, from(white), color-stop(0.06, #f2f2f2), to(#b7b7b7));
-	border-color: #979797;
-	border-bottom-color: #727272;
+button.whiteBtn {
+    border-color: #979797;
+    border-bottom-color: #727272;
+    background-image: -webkit-gradient(linear, 0% 0, 0% 100%, from(white), color-stop(.06, #f2f2f2), to(#b7b7b7));
 }
 
-button.whiteBtnSelected{
-	background-image: -webkit-gradient(linear, 0% 0, 0% 100%, from(#ffffff), color-stop(0.06, #bbbbbb), to(#fcfcfc));
-	border-color: #979797;
-	border-bottom-color: #727272;
+button.whiteBtnSelected {
+    border-color: #979797;
+    border-bottom-color: #727272;
+    background-image: -webkit-gradient(linear, 0% 0, 0% 100%, from(#fff), color-stop(.06, #bbb), to(#fcfcfc));
 }
 
 #header button {
-	position:absolute;
-	margin:0;
+    position: absolute;
+
+    margin: 0;
 }
 
 #navButton {
-	width:60px;
+    width: 60px;
 }
 
 #loadDiv {
-	position:absolute;
-	left:0;
-	top:0;
-	width:100%;
-	height:100%;
-	z-index:999;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
 }
 #loadDiv {
-	display:table;
-	font-size: 20px;
-	text-align:center;
-	background-color:white;
+    font-size: 20px;
+
+    display: table;
+
+    text-align: center;
+
+    background-color: white;
 }
 #loadDiv span {
-	display:table-cell;
-	vertical-align:middle;
+    display: table-cell;
+
+    vertical-align: middle;
 }
 /*
 body .mblProgContainer {
@@ -256,18 +272,20 @@ body .mblProgContainer > div::after {
 	content: "Updating...";
 }
 */
-#jsContent, #htmlContent {
-	padding-left:2px;
+#jsContent,
+#htmlContent {
+    padding-left: 2px;
 }
 
 @media screen and (max-width: 600px) {
-	#jsContent, #htmlContent {
-		font-size: 14px;
-	}
+    #jsContent,
+    #htmlContent {
+        font-size: 14px;
+    }
 }
 
 .hidden {
-	display:none;
+    display: none;
 }
 
 /*
