@@ -4,14 +4,13 @@ window.AppData = {
 	tplPath 	: "app/", //location of page templates
 	defaultView : location.hash ? (location.hash =="#" ? "app-transactions" :location.hash.substr(1,location.hash.length-1)) : "app-transactions", //which template should be loaded in window.onload
 	
-	appTheme	: (!!localStorage) ? (localStorage.getItem("appTheme") ? localStorage.getItem("appTheme") : 'light') : 'light',
 	currency 	: localStorage.getItem("currency") ? localStorage.getItem("currency") : false,
 	currentDate	: new Date(),
 	currentType	: 'e',
 	currentId	: -1,
 	timespan 	: (!!localStorage) ? (localStorage.getItem("timespan") ? localStorage.getItem("timespan") : 'last31') : 'last31',
-	theme		: (!!localStorage) ? (localStorage.getItem("theme") ? localStorage.getItem("theme") : 'Custom') : 'Custom',
-	lang 		: (!!localStorage) ? (localStorage.getItem("lang") ? localStorage.getItem("lang") : 'no_lang') : 'no_lang',
+	theme		: (!!localStorage) ? (localStorage.getItem("theme") ? localStorage.getItem("theme") : 'ios7') : 'ios7',
+	lang 		: (!!localStorage) ? (localStorage.getItem("app_locale") ? localStorage.getItem("app_locale") : 'no_lang') : 'no_lang',
 	showWeather	: false,
 	_theme		: "a",
 	_themePanel	: "b",
@@ -31,6 +30,7 @@ dojoConfig = {
 		"dojo-firebug": false
 	},
 	baseUrl: "js/finance-release/",
+	mblUserAgent: window.AppData.theme,
 	
 	tlmSiblingOfDojo: false,
 	packages: [

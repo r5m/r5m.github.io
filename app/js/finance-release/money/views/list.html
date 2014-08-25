@@ -1,14 +1,16 @@
-<div data-dojo-type="dojox/app/widgets/Container" data-app-constraint="center">
-    
+<div data-dojo-type="dojox/app/widgets/Container">
     <div data-dojo-type="dojox/mobile/Heading"
         data-dojo-props="fixed: 'top'" id="list-title" class="title">
+
         <button data-dojo-type="money/TouchableToolBarButton"
             data-dojo-attach-point="backButton"
             data-dojo-props="arrow: 'left', target: 'summary', transitionDir: -1, transitionOptions: { params: { id: window.AppData.currentDate }}"
             class="left-button backButton"
             >${nls.summary}</button>       
 		</button>
+
 		${nls.title}
+
 		<button data-dojo-type="money/TouchableToolBarButton"
 			class="right-button mblRedButton"
 			data-dojo-props="target: 'details',
@@ -39,6 +41,7 @@
 	
     <div data-dojo-type="money/WheelScrollableView"
 		data-dojo-props="threshold:window.AppData.treshold">
+		
 		<div 
 			data-dojo-type="dojox/mobile/RoundRectCategory" 
 			data-dojo-attach-point="emptyMsgTitle">
@@ -50,13 +53,14 @@
 			data-dojo-props='shadow:true'>
 				${nls.tapAdd}
 		</div>
-    <div data-dojo-type="dojox/mobile/EdgeToEdgeStoreList"
+
+		<div data-dojo-type="dojox/mobile/EdgeToEdgeStoreList"
             data-dojo-attach-point="transactions" id="daily-list"
             data-dojo-props="store: this.loadedStores.transactions,
 							query: this.query,syncWithViews: true,
                             createListItem: this.createListItem,
 							labelProperty: 'cats',append:false,
-                            itemRenderer: this.listItem
-                            ">
+                            itemRenderer: this.listItem">
+		</div>
     </div>
 </div>

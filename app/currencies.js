@@ -1,4 +1,4 @@
-window.AppData.updated = '2014-08-24';window.AppData.currencies = {
+window.AppData.updated = '2014-08-25';window.AppData.currencies = {
 	"AED": "United Arab Emirates Dirham",
 	"AFN": "Afghan Afghani",
 	"ALL": "Albanian Lek",

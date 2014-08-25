@@ -21,7 +21,13 @@ define("money/nls/details", {
 		sure	: 'Delete transaction?',
 		pickDate: 'Date',
 		done	: 'Done',
-		today	: 'Today'
+		today	: 'Today',
+
+		newAccount1 : "New account",
+		newAccount2 : "will be created. Please, choose it's currency",
+
+		newAccountTitle : "Create account",
+		process	: 'Continue'
 	},
 	'ru-ru': true
 });

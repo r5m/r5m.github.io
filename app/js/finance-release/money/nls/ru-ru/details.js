@@ -21,6 +21,12 @@ define("money/nls/ru-ru/details", {
 	type	: 'Тип',
 	pickDate: 'Дата',
 	done	: 'Готово',
-	today	: 'Сегодня'
+	today	: 'Сегодня',
+
+	newAccount1 : "Будет создан новый счет",
+	newAccount2 : ". Выберите его валюту, пожалуйста",
+
+	newAccountTitle : "Создание счета",
+	process	: 'Продолжить'
 	
 });

@@ -15,19 +15,18 @@
 				window.location.assign(window.location.toString().replace('http','https'))
 			//console.log(window.location.protocol)
 		</script>
-		<link rel="stylesheet" href="css/loader.css" />
+		
+		
         <link rel="shortcut icon"	 href="icons/ic_launcher.png" />
 		<link rel="apple-touch-icon" href="icons/ic_launcher.png" />
 		<link rel="nokia-touch.icon" href="icons/ic_launcher.png" />
 		
-		<!-- layout & theme-->
+		<!-- dojo themes-->
 		<link rel="stylesheet" type="text/css" href="js/finance-release/dojox/mobile/themes/ios7/ios7.css"/>
-        <link rel="stylesheet" type="text/css" href="icons/font-awesome-4.1.0/css/font-awesome.min.css"/>
-		
-		<link rel="stylesheet" href="css/main.css" /> 
-		<link rel="stylesheet" href="css/columnlayout.css" />
         <link href="js/finance-release/dojox/mobile/themes/common/domButtons.css" rel="stylesheet">
         
+		<link rel="stylesheet" href="js/finance-release/money/css/optimized.css" /> 
+		
         <!--<script src="js/finance-release/dojox/mobile/deviceTheme.js"> </script>-->
         
         <!-- IndexedDb over WebSQL -->
@@ -49,16 +48,14 @@
 					
 			client.authenticate({interactive: false}, function (error) {
 				if (error) {
-					console.log(error)
-					//	alert('Authentication error: ' + error);
+					console.log(error)					
 				}
 			});
-			console.log(client.isAuthenticated())
 					
 			if (client.isAuthenticated()) {
 				// Client is authenticated. Display UI.
-				console.log('Done')
-			}</script>
+			}
+		</script>
 	</head>
 	<body id="page-body">
 		<div id="confirm-exit">
@@ -68,17 +65,23 @@
 		<h1 id="main-progress-bar" class="loader">
 			<div class="loader-text">
 				<p>R5M Finance</p>
-				<p class="state">Initializing application...</p>
+				<p class="state"><span id="app-state">Initializing application</span></p>
 			</div>
 		</h1>
+		<script>
+
+			if(window.AppData.lang)
+				document.getElementById('app-state').innerHTML =
+					( window.AppData.lang.indexOf('ru') > -1 || navigator.language.indexOf('ru')) ? "Загрузка приложения" : "Initializing application"
+
+		</script>
+			
 		<div id="customPicker" class="overlay">
 			<div id="numberPicker"></div>
 		</div>
 		
 		
-		<!--<div id="splash" style="display:block; z-index:10; opacity:1; position:fixed; top:0;left:0;width:100%;height:100%;background:white"><div class="splash"><i class="app-loader fa fa-refresh fa-spin" style="font-size: 2em;"></i><p style="font-weight:bold">loading</p></div></div>-->
 		<script src="js/finance-release/dojo/dojo.js"></script>
-		<!--<script type="text/javascript" charset="utf-8" src="js/finance-release/money/nls/money-app_ROOT.js"></script>-->
 		<script type="text/javascript" charset="utf-8">
 			//function to start app
 			function init(){

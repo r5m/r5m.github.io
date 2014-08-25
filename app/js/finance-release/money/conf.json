@@ -147,6 +147,12 @@
 			"controller" : "money/views/language",
 			"template"	 : "money/views/language.html",
 			"nls"		 : "money/nls/language"
+		},
+		"theme": {
+			"constraint" : "center",
+			"controller" : "money/views/theme",
+			"template"	 : "money/views/theme.html",
+			"nls"		 : "money/nls/theme"
 		}
     },
     "has": {

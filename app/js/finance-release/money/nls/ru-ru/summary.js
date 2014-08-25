@@ -19,7 +19,10 @@ define("money/nls/ru-ru/summary", {
 		expences: 'Расходы',
 		incomes : 'Доходы',
 		transfers:'Переводы',
-		
+
+		currencySelectNote: 'Выберите основную валюту, пожалуйста. Эта валюта будет использоваться для отчетов и статистики',
+		currencySelectTitle : 'Основная валюта',
+		currencySelectButton: 'Продолжить',		
 		
 		lastMonth: 'Месяц до сегодня',
 		thisMonth: 'Текущий месяц',

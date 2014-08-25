@@ -1,12 +1,10 @@
 <div 
-	data-dojo-type="dojox/app/widgets/Container" 
-	data-app-constraint="center">
-    
+	data-dojo-type="dojox/app/widgets/Container">    
     <div 
 		data-dojo-type="dojox/mobile/Heading" 
 		class="title"
-        data-dojo-props="fixed: 'top'">
-        
+        data-dojo-props="fixed: 'top'">        
+		
 		<button 
 			data-dojo-type="money/TouchableToolBarButton"
             data-dojo-attach-point="menuButton"
@@ -23,74 +21,64 @@
 				transitionOptions: { params: { edit: true } }"
             data-dojo-attach-point="add"><i class="fa fa-plus"></i> ${nls.add}</button>
     </div>
+    
     <div id="summary-sum">
-		<span id="summary-sum-ts">Last 30 days</span>
+		<span id="summary-sum-ts"></span>
 		<span style="float:right;margin-right:10px">
 			<span id="summary-sum-title">${nls.total}: </span>
 			<span id="summary-sum-total"></span>
 		</span>
 	</div>
+	
 	<div 
 		data-dojo-type="money/WheelScrollableView"
 		data-dojo-attach-point="scrollView"
 		data-dojo-props="threshold:window.AppData.treshold">
 		
 		<div id="welcome-note">
-		<div 
-			data-dojo-type="dojox/mobile/RoundRectCategory" 
-			data-dojo-attach-point="emptyMsgTitle">
-				${nls.welcome}
-		</div>
-		<div 
-			data-dojo-attach-point="emptyMsg"
-			data-dojo-type="dojox/mobile/RoundRect" 
-			>
-				${nls.welcome2}
-		</div>
-		<div 
-			data-dojo-type="dojox/mobile/RoundRectCategory" 
-			data-dojo-attach-point="emptyMsgTitle">
-				${nls.aboutR5mTitle}
-		</div>
-		<div 
-			data-dojo-attach-point="emptyMsg"
-			data-dojo-type="dojox/mobile/RoundRect" 
-			>
-				${nls.aboutR5m}
-		</div>
-		<div 
-			data-dojo-type="dojox/mobile/RoundRectCategory" 
-			data-dojo-attach-point="emptyMsgTitle">
-				${nls.aboutSyncTitle}
-		</div>
-		<div 
-			data-dojo-attach-point="emptyMsg"
-			data-dojo-type="dojox/mobile/RoundRect" 
-			>
-				${nls.aboutSync}
-		</div>
-		<div 
-			data-dojo-type="dojox/mobile/RoundRectCategory" 
-			data-dojo-attach-point="emptyMsgTitle">
-				${nls.aboutHelpTitle}
-		</div>
-		<div 
-			data-dojo-attach-point="emptyMsg"
-			data-dojo-type="dojox/mobile/RoundRect" 
-			>
-				${nls.aboutHelp}
-		</div>
-		<div 
-			data-dojo-type="dojox/mobile/RoundRectCategory" 
-			data-dojo-attach-point="emptyMsgTitle">
-				${nls.aboutSettingsTitle}
-		</div>
-		<div 
-			data-dojo-attach-point="emptyMsg"
-			data-dojo-type="dojox/mobile/RoundRect" 
-			>
-				${nls.aboutSettings}
-		</div>
+			<div 
+				data-dojo-type="dojox/mobile/RoundRectCategory">
+					${nls.welcome}
+			</div>
+			<div 
+				data-dojo-type="dojox/mobile/RoundRect" >
+					${nls.welcome2}
+			</div>
+			<div 
+				data-dojo-type="dojox/mobile/RoundRectCategory" >
+					${nls.aboutR5mTitle}
+			</div>
+			<div 
+				data-dojo-type="dojox/mobile/RoundRect" 
+				>
+					${nls.aboutR5m}
+			</div>
+			<div 
+				data-dojo-type="dojox/mobile/RoundRectCategory">
+					${nls.aboutSyncTitle}
+			</div>
+			<div
+				data-dojo-type="dojox/mobile/RoundRect" 
+				>
+					${nls.aboutSync}
+			</div>
+			<div 
+				data-dojo-type="dojox/mobile/RoundRectCategory">
+					${nls.aboutHelpTitle}
+			</div>
+			<div 
+				data-dojo-type="dojox/mobile/RoundRect">
+					${nls.aboutHelp}
+			</div>
+			<div 
+				data-dojo-type="dojox/mobile/RoundRectCategory">
+					${nls.aboutSettingsTitle}
+			</div>
+			<div 
+				data-dojo-type="dojox/mobile/RoundRect" 
+				>
+					${nls.aboutSettings}
+			</div>
 		</div>
 		<div data-dojo-type="dojox/mobile/EdgeToEdgeStoreList"
             data-dojo-attach-point="daily" id="summary-list"

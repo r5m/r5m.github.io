@@ -8,7 +8,8 @@ define("money/nls/settings", {
 	    tags	: 'My tags (categories)',
 	    accounts: 'My accounts',
 	    prefs	: 'Personalization',
-	    language: 'Language'    
+	    language: 'Language', 
+	    theme	: 'Theme' 
 	    
 	},
 	'ru-ru': true
