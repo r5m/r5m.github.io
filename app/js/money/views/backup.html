@@ -1,0 +1,61 @@
+<div class="mblBackground">
+    <div data-dojo-type="dojox/mobile/Heading"
+        data-dojo-props="fixed: 'top'">
+        <button data-dojo-type="dojox/mobile/ToolBarButton"
+            data-dojo-attach-point="backButton"
+            data-dojo-props="arrow: 'left', target: 'navigation', transitionDir: -1, transitionOptions: { params: { id: window.AppData.currentDate }}"
+            style="float: left"
+            class="backButton">${nls.menu}</button>
+    </button>
+    ${nls.title} 
+    </div>
+    <div data-dojo-type="money/WheelScrollableView">
+		<div id="online">
+			<div id="sync-login" data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>
+				${nls.dropbox}
+				<br/><button 
+					data-dojo-type="dojox/mobile/ToolBarButton"
+					data-dojo-attach-point="loginBtn" class="mblButton mblBlueButton" style="padding: 0 10px; margin:0; margin-top:5px;"
+					></button>
+			</div>
+		
+			<div id="backup-download">
+				<div data-dojo-type="dojox/mobile/RoundRectCategory" data-dojo-props='shadow:true'>
+					${nls.onlineBackup}
+				</div>
+				<ul data-dojo-type="dojox/mobile/RoundRectList">
+					<li data-dojo-type="dojox/mobile/ListItem"  id="backup-create"
+						data-dojo-attach-point="syncBtn"
+						data-dojo-props='clickable:true, label:"${nls.backupCreate}"'>
+					</li>
+					<!--<li data-dojo-type="dojox/mobile/ListItem"  id="backup-restore"
+						data-dojo-attach-point="restoreBtn"
+						data-dojo-props='clickable:true, label:"${nls.restore}"'>
+					</li>-->
+					<li data-dojo-type="dojox/mobile/ListItem"  id="backup-clear"
+						data-dojo-attach-point="clearBtn"
+						data-dojo-props='clickable:true, label:"${nls.clearRemote}"'>
+					</li>
+				</ul>
+			</div>
+			<div data-dojo-type="dojox/mobile/RoundRectCategory" data-dojo-props='shadow:true'>
+					${nls.factoryReset}
+			</div>
+			<ul data-dojo-type="dojox/mobile/RoundRectList">
+				<!--<li data-dojo-type="dojox/mobile/ListItem"  id="backup-clear-trans"
+					data-dojo-attach-point="clearTransBtn"
+					data-dojo-props='clickable:true, label:"${nls.clearTrans}"'>
+				</li>-->
+				<li data-dojo-type="dojox/mobile/ListItem"  id="backup-clear-all"
+					data-dojo-attach-point="clearAllBtn"
+					data-dojo-props='clickable:true, label:"${nls.clear}"'>
+				</li>
+			</ul>
+		</div>
+		<div id="offline">
+			<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>
+				${nls.internetRequired}
+			</div>
+		</div>
+    </div>
+</div>
