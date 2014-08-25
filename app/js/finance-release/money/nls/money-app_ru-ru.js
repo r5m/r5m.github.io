@@ -17,6 +17,8 @@ define('money/nls/money-app_ru-ru',{
 ,
 'money/nls/currency':{"title":"Выберите валюту","_localized":{},"done":"Готово","selectCurrency":"Выберите валюту из списка, пожалуйста."}
 ,
+'money/nls/theme':{"title":"Тема оформления","theme":"Выберите тему оформления","_localized":{},"back":"Настройки","systemDefault":"System default"}
+,
 'money/nls/np':{"title":"Сумма","done":"Готово","_localized":{}}
 ,
 'money/nls/navigation':{"timespan":"Отрезок времени","title":"R5M Finance","settings":"Настройки","about":"О R5M Finance","stats":"Статистика","_localized":{},"backup":"Синхронизация данных","transactions":"Транзакции"}

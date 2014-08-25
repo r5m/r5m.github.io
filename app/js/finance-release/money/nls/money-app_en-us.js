@@ -17,6 +17,8 @@ define('money/nls/money-app_en-us',{
 ,
 'money/nls/currency':{"title":"Select currency","_localized":{},"done":"DONE","selectCurrency":"Select currency from a list below, please."}
 ,
+'money/nls/theme':{"title":"Select theme","theme":"Application theme","_localized":{},"back":"Settings","systemDefault":"System default"}
+,
 'money/nls/np':{"title":"Amount","done":"Done","_localized":{}}
 ,
 'money/nls/navigation':{"timespan":"Timespan","title":"R5M Finance","settings":"Settings","about":"About R5M Finance","stats":"Statistics","_localized":{},"backup":"Backup & Restore","transactions":"Transactions"}
