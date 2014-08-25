@@ -1,0 +1,73 @@
+<div class="mblBackground">
+    <div data-dojo-type="dojox/mobile/Heading"
+        data-dojo-props="fixed: 'top'">
+        <button data-dojo-type="money/TouchableToolBarButton"
+            data-dojo-attach-point="backButton"
+            data-dojo-props="arrow: 'left', target: 'navigation', transitionDir: -1, transitionOptions: { params: { id: window.AppData.currentDate }}"
+            style="position: absolute; left: 0"
+            class="backButton">${nls.menu}</button>
+    </button>
+    ${nls.title}        
+    </div>
+    	<div 
+		data-dojo-type="money/WheelScrollableView"
+		data-dojo-props="threshold:window.AppData.treshold">
+		
+		<div data-dojo-type="dojox/mobile/RoundRectCategory">
+			R5M Finance v0.6.15 (pre-beta)
+		</div>
+		<div data-dojo-type="dojox/mobile/RoundRect">
+			${nls.r5mfIs}
+		</div>
+		
+		
+		<div data-dojo-type="dojox/mobile/RoundRectCategory">
+			${nls.webSiteTitle}
+		</div>
+		<div data-dojo-type="dojox/mobile/RoundRect">
+			${nls.webSite} <a href="https://r5m.github.io" target="_blank">${nls.webSiteUrl}</a> 
+		</div>
+		
+		<div data-dojo-type="dojox/mobile/RoundRectCategory">
+			${nls.updates}
+		</div>
+		<div data-dojo-type="dojox/mobile/RoundRect" 
+			data-dojo-props='shadow:true' 
+			data-dojo-attach-point="updateStatus">
+			<span id="about-updates"></span>
+			<br/>${nls.updated}<span id="about-updated"></span>
+		</div>
+		
+		<div data-dojo-type="dojox/mobile/RoundRect" style="display:none">	
+			${nls.symba}
+		</div>
+		<div data-dojo-type="dojox/mobile/RoundRectCategory">
+			${nls.thanks}
+		</div>
+			<ul data-dojo-type="dojox/mobile/RoundRectList">
+				<li data-dojo-type="dojox/mobile/ListItem"
+					data-dojo-props=''>Dojo toolkit
+					<span style="float:right;color:#324F85">dojotoolkit.org</span>
+				</li>
+				<li data-dojo-type="dojox/mobile/ListItem"
+					data-dojo-props=''>IndexedDB polyfill <span style="float:right;color:#324F85">nparashuram.com</span></li>
+				<li data-dojo-type="dojox/mobile/ListItem"
+					data-dojo-props=''>
+					Font Awesome
+					<span style="float:right;color:#324F85">fontawesome.io</span>
+				</li>
+				<li data-dojo-type="dojox/mobile/ListItem"
+					data-dojo-props=''>
+					Open Exchange Rates
+					<span style="float:right;color:#324F85">openexchangerates.org</span>
+				</li>
+				<li data-dojo-type="dojox/mobile/ListItem"
+					data-dojo-props=''>
+					Money.js
+					<span style="float:right;color:#324F85">josscrowcroft.github.com/money.js</span>
+				</li>
+			</ul>
+		
+		
+    </div>
+</div>
