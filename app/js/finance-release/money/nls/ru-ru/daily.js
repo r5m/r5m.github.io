@@ -6,7 +6,7 @@ define("money/nls/ru-ru/daily", {
 	tapAdd	: 'Нажмите "Добавить", чтобы создать транзакцию',
 		
 	expences: 'Расходы',
-	incomes : 'Доходу',
+	incomes : 'Доходы',
 	transfers:'Переводы',
 		
 	summary : 'По дням',

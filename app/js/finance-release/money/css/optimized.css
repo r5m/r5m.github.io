@@ -17,10 +17,12 @@
     color: #007aff;
 }
 .holodark_theme .mblListItemSelected .fa.fa-fixed {
+	color: white;
+}
+.holodark_theme .fa.fa-fixed {
 	color: #09c;
 }
-.
-iphone_theme .mblListItemSelected .fa.fa-fixed {
+.iphone_theme .mblListItemSelected .fa.fa-fixed {
 	color: white;
 }
 .iphone_theme .fa.fa-fixed {
@@ -135,7 +137,7 @@ body {
 .mblFormLayout .mblButton.one-two {
     font-weight: bold;
     width: auto;
-    margin-right: 70px;
+    margin-right: 10px;
 }
 .ios7_theme .mblFormLayout .mblButton.two-two {
     font-weight: bold;
@@ -168,6 +170,10 @@ li.mblListItem
 .summary.sub-sum .transaction-amount,
 .transaction-account {
     color: #666;
+}
+.holodark_theme .summary.sub-sum .transaction-amount,
+.holodark_theme .transaction-account {
+    color: #eee;
 }
 .summary {
     width: auto;
@@ -204,9 +210,15 @@ li.mblListItem
 .mblSimpleDialog {
     width: 280px;
 }
+.holodark_theme .mblListItemSelected .transaction-amount {
+	color: #fff;
+}
+.holodark_theme .transaction-amount {
+	color: #09c;
+}
 .transaction-amount {
     line-height: normal;    line-height: 1.2em;
-    position: relative;display: block;
+    position: relative; display: block;
     float: right;
     margin-right: 4px;
     color: #324f85;
@@ -222,6 +234,9 @@ li.mblListItem
     margin-bottom: -15px;
     white-space: nowrap;
 }
+.holodark_theme .li-total {
+	color: #09c;
+}
 .li-total {
     float: right; margin-top: .3em;margin-right: 4px;padding-top: .2em;
     color: #324f85;
@@ -230,11 +245,20 @@ li.mblListItem
 .mblButton {
     text-align: left;
 }
+.holodark_theme .li-descr hr {
+	border-top: dashed 1px #999;
+}
 .li-descr hr {
     margin-right: 35px;
     margin-left: 0;
     border: none;
     border-top: dashed 1px #ccc;
+}
+.holodark_theme .mblListItemSelected .li-descr {
+	color: #eee;
+}
+.holodark_theme .li-descr {
+	color: #999;
 }
 .li-descr {
     
@@ -318,6 +342,7 @@ ul.mblTabBar li .mblTabBarButtonIconArea {
 .mblHeading .mblToolBarButton.right-button,
 .right-button {
     float: right;
+    min-width: 50px;
 }
 .mblHeading .mblToolBarButton.left-button,
 .left-button {
@@ -444,6 +469,9 @@ ul.no-background {
 input[type='text'] {
     -moz-box-sizing: border-box;
 }
+.holodark_theme .view-help {
+	color: #f80;
+}
 .view-help {
     font-size: .9rem;
     font-weight: normal;
@@ -463,6 +491,15 @@ input[type='text'] {
 }
 .mblListItemSelected .transaction-account{
 	color: white
+}
+.simple-link {
+	color: #666;
+}
+.holodark_theme .mblSecondHeading {
+	border-bottom: none;
+}
+.holodark_theme .simple-link {
+	color: #ddd;
 }
 .hide {
     display: none !important;
