@@ -519,6 +519,7 @@ table#legend td{
 }
 .chart-label-amount {
     float: right;
+    margin-right: 30px;
 }
 .center {
     float: left;

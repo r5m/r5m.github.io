@@ -47,7 +47,13 @@ dojoConfig = {
 *  Trim string
 */
 String.prototype.fulltrim=function(){return this.replace(/(?:(?:^|\n)\s+|\s+(?:$|\n))/g,'').replace(/\s+/g,' ');};
-		
+
+if (!Array.isArray) {
+  Array.isArray = function(arg) {
+    return Object.prototype.toString.call(arg) === '[object Array]';
+  };
+}
+	
 function trim( str, charlist ) {
 	charlist = !charlist ? ' \s\xA0' : charlist.replace(/([\[\]\(\)\.\?\/\*\{\}\+\$\^\:])/g, '\$1');
 	var re = new RegExp('^[' + charlist + ']+|[' + charlist + ']+$', 'g');
@@ -139,10 +145,14 @@ function getMoney(amount, currency){
 
 
 function goToSummary(){
+	goTo('summary');
+}
+
+function goTo(where, whereExactly) {
 	window.dFinance.transitionToView(window.dFinance.selectedChildren.center.domNode,{
-		target: window.AppData.isInitiallySmall ? 'summary' : "summary",
-		transitionDir: -1,
-		params : {}
+		target: where,
+		transitionDir: 1,
+		params : whereExactly
 	})	
 }
 
