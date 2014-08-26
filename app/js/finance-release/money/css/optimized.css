@@ -501,6 +501,9 @@ input[type='text'] {
 .holodark_theme .simple-link {
 	color: #ddd;
 }
+.holodark_theme table#legend td{
+	border-color: #333538;
+}
 table#legend td{
 	height: 40px;
 	border-bottom: 1px solid #ccc;

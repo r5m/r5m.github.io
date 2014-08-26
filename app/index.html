@@ -36,9 +36,7 @@
         <script src="js/etc/appcache.js"></script>
 	    <script src="js/etc/money.js"></script>
 	    <script src="js/AppConfig.js"></script>
-        <script src="currencies.js"></script>
-	    <script src="rates.js"></script>
-       
+        
         <script src="js/etc/dropbox-datastores-1.1.0.js" type="text/javascript"></script>
         <script>
 			var client = new Dropbox.Client({key: 'ghd8zs8czdf1uou'});
@@ -46,20 +44,22 @@
 			// Try to finish OAuth authorization.
 					
 			client.authenticate({interactive: false}, function (error) {
-				if(!!window.localStorage) {
-					if( !localStorage.getItem('dropboxEnabled') ){
-						location.hash = 'backup';
-						localStorage.setItem('dropboxEnabled')
-					}
-				}
-				if (error) {					
+				
+				if (error) {
 					console.log(error)					
 				}
 			});
 					
 			if (client.isAuthenticated()) {
 				// Client is authenticated. Display UI.
+				if(!!window.localStorage) {
+					if( !localStorage.getItem('dropboxEnabled') ){
+						location.hash = 'backup';
+						localStorage.setItem('dropboxEnabled', true)
+					}
+				}
 			}
+			
 		</script>
 	</head>
 	<body id="page-body">

@@ -197,7 +197,7 @@ function confirmExit(){
 
 loadExchangeRates = function( json ) {
 			require(["dojo/request"], function(request){
-				request("currencies.js").then(function(data){
+				request("currencies.json").then(function(data){
 					window.AppData.updated = json.parse( data ).updated
 					window.AppData.currencies = json.parse( data ).currencies
 					if(!!localStorage) {
@@ -229,7 +229,7 @@ loadExchangeRates = function( json ) {
 				setupExchangeRates();
 			
 			require(["dojo/request"], function(request){
-				request("rates.js").then(function(data){				
+				request("rates.json").then(function(data){				
 					window.AppData.rates = json.parse( data ).rates;
 					if(!!localStorage) {
 						localStorage.setItem( 'rates', json.stringify(window.AppData.rates) )
