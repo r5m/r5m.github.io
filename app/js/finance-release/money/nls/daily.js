@@ -14,7 +14,8 @@ define("money/nls/daily", {
 		noExpences : 'No expences found on this day',
 		noIncomes : 'No incomes found on this day',
 		noTransfers : 'No transfers found on this day',
-		noTags	: 'No tags'
+		noTags	: 'No tags',
+		stats	: 'Statistics'
 		
 	},
 	'ru-ru': true

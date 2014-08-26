@@ -14,6 +14,7 @@ define("money/nls/ru-ru/daily", {
 	noExpences : 'Не найдено расходов в этот день',
 	noIncomes : 'Не найдено доходов в этот день',
 	noTransfers : 'Не найдено переводов в этот день',
-	noTags	: 'Без меток'
+	noTags	: 'Без меток',
+	stats	: 'Статистика'
 	
 });

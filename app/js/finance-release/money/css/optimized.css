@@ -501,6 +501,19 @@ input[type='text'] {
 .holodark_theme .simple-link {
 	color: #ddd;
 }
+table#legend td{
+	height: 40px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.chart-legend-label{
+	cursor: pointer;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom:0;
+	position: absolute;
+}
 .hide {
     display: none !important;
 }
