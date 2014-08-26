@@ -47,7 +47,13 @@ dojoConfig = {
 *  Trim string
 */
 String.prototype.fulltrim=function(){return this.replace(/(?:(?:^|\n)\s+|\s+(?:$|\n))/g,'').replace(/\s+/g,' ');};
-		
+
+if (!Array.isArray) {
+  Array.isArray = function(arg) {
+    return Object.prototype.toString.call(arg) === '[object Array]';
+  };
+}
+	
 function trim( str, charlist ) {
 	charlist = !charlist ? ' \s\xA0' : charlist.replace(/([\[\]\(\)\.\?\/\*\{\}\+\$\^\:])/g, '\$1');
 	var re = new RegExp('^[' + charlist + ']+|[' + charlist + ']+$', 'g');
@@ -139,10 +145,14 @@ function getMoney(amount, currency){
 
 
 function goToSummary(){
+	goTo('summary');
+}
+
+function goTo(where, whereExactly) {
 	window.dFinance.transitionToView(window.dFinance.selectedChildren.center.domNode,{
-		target: window.AppData.isInitiallySmall ? 'summary' : "summary",
-		transitionDir: -1,
-		params : {}
+		target: where,
+		transitionDir: 1,
+		params : whereExactly
 	})	
 }
 
@@ -187,7 +197,7 @@ function confirmExit(){
 
 loadExchangeRates = function( json ) {
 			require(["dojo/request"], function(request){
-				request("currencies.js").then(function(data){
+				request("currencies.json").then(function(data){
 					window.AppData.updated = json.parse( data ).updated
 					window.AppData.currencies = json.parse( data ).currencies
 					if(!!localStorage) {
@@ -219,7 +229,7 @@ loadExchangeRates = function( json ) {
 				setupExchangeRates();
 			
 			require(["dojo/request"], function(request){
-				request("rates.js").then(function(data){				
+				request("rates.json").then(function(data){				
 					window.AppData.rates = json.parse( data ).rates;
 					if(!!localStorage) {
 						localStorage.setItem( 'rates', json.stringify(window.AppData.rates) )
