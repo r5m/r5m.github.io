@@ -16,7 +16,11 @@
     text-align: center;
     color: #007aff;
 }
-.iphone_theme .mblListItemSelected .fa.fa-fixed {
+.holodark_theme .mblListItemSelected .fa.fa-fixed {
+	color: #09c;
+}
+.
+iphone_theme .mblListItemSelected .fa.fa-fixed {
 	color: white;
 }
 .iphone_theme .fa.fa-fixed {
@@ -51,6 +55,10 @@
 #summary-sum-ts,
 #list-sum-ts {
     float: left;margin-left: 10px;
+}
+.holodark_theme #summary-sum, .holodark_theme #list-sum{
+	background: black;
+	color: white;
 }
 .iphone_theme #summary-sum, .iphone_theme #list-sum{
 	background: #2d2d2d;
@@ -127,16 +135,17 @@ body {
 .mblFormLayout .mblButton.one-two {
     font-weight: bold;
     width: auto;
-    
+    margin-right: 70px;
 }
 .ios7_theme .mblFormLayout .mblButton.two-two {
     font-weight: bold;
     line-height: 31px;
+    height: 31px;
+    margin-top: -1px;
 }
 .mblFormLayout .mblButton.two-two {
     float: right;
-    width: 50px;
-    margin-top: -1px;
+    width: 50px;    
 }
 li.mblListItem {
     height: auto; white-space: normal;
@@ -170,7 +179,10 @@ li.mblListItem
     padding-right: 2px;
     padding-left: 0;
 }
-.ios7_theme #acc-sum {
+.holodark_theme #acc-sum{
+	margin-right: 30px; color: white;
+}
+.ios7_theme #acc-sum{
 	margin-right: 30px; color: black;
 }
 .iphone_theme #acc-sum {
@@ -468,6 +480,10 @@ input[type='text'] {
 }
 .hideOnLarge {
     display: none !important;
+}
+.holodark_theme .left {
+	background-color: black;
+	border-right: 1px solid #33b5e5;
 }
 .left {
     z-index: 1;

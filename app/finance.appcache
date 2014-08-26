@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#v0.6.15.3
+#v0.6.16
 #release.version.patch.patch-revision
 
 CACHE:
@@ -26,8 +26,6 @@ js/finance-release/dojox/mobile/themes/common/domButtons/compat/mblDomButtonBlue
 # application source
 #
 index.html
-currencies.js
-rates.js
 
 js/etc/appcache.js
 js/etc/money.js

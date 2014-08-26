@@ -1,6 +1,6 @@
 <div data-dojo-type="dojox/app/widgets/Container" >
 	<h1 data-dojo-type="dojox/mobile/Heading" data-dojo-props="fixed:'top',label:'${nls.title}'">
-			<div data-dojo-type="money/TouchableToolBarButton" label="DONE" class="mblColorBlue" style="width:45px;float:right;" 
+			<div data-dojo-type="money/TouchableToolBarButton" label="${nls.done}" class="mblRedButton right-button"
 				data-dojo-attach-point = "done"
 			></div>
 		</h1>
@@ -8,7 +8,7 @@
 				<div style="padding: 5px 20px;">
 					<div class="view-help">${nls.selectCurrency}</div>
 					<input type="text" data-dojo-type="dojox/mobile/TextBox" id="currencyInput" 
-						data-dojo-props="placeHolder:'EUR', readOnly: true"/>
+						data-dojo-props="placeHolder:'Euro (EUR)', readOnly: true"/>
 				</div>
 			</div>
 		<div data-dojo-type="money/WheelScrollableView" data-dojo-props="threshold:window.AppData.treshold">

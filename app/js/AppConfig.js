@@ -184,3 +184,63 @@ function confirmExit(){
 		})();
 	}, 2500)
 }
+
+loadExchangeRates = function( json ) {
+			require(["dojo/request"], function(request){
+				request("currencies.js").then(function(data){
+					window.AppData.updated = json.parse( data ).updated
+					window.AppData.currencies = json.parse( data ).currencies
+					if(!!localStorage) {
+						localStorage.setItem( 'currencies', json.stringify(window.AppData.currencies) )
+						localStorage.setItem( 'updated', json.stringify(window.AppData.updated) )
+					}
+					// do something with handled data
+				}, function(err){
+					
+				// handle an error condition
+				}, function(evt){
+				// handle a progress event
+				});
+			});
+
+			var setupExchangeRates = function() {
+				if ( typeof fx !== "undefined" && fx.rates ) {
+					fx.rates = window.AppData.rates ? window.AppData.rates.rates : json.parse( localStorage.getItem( 'rates' ) ).rates;
+					fx.base = window.AppData.rates ? window.AppData.rates.base : json.parse( localStorage.getItem( 'rates' ) ).base;
+				} else {
+					// If not, apply to fxSetup global:
+					fxSetup = {
+						rates : window.AppData.rates.rates,
+						base : window.AppData.rates.base
+					}
+				}
+			}
+			if(window.AppData.rates || localStorage.getItem( 'rates' ))
+				setupExchangeRates();
+			
+			require(["dojo/request"], function(request){
+				request("rates.js").then(function(data){				
+					window.AppData.rates = json.parse( data ).rates;
+					if(!!localStorage) {
+						localStorage.setItem( 'rates', json.stringify(window.AppData.rates) )
+					}
+					setupExchangeRates();
+					// do something with handled data
+				}, function(err){
+					
+				// handle an error condition
+				}, function(evt){
+				// handle a progress event
+				});
+			});
+		}
+
+function errorInitialization() {
+	if(window.AppData.dialogWindow)
+		window.AppData.dialogWindow.show(false,
+			'Your browser is not supported. Application won\'t work, because HTML5 local storage is not available',
+			'Unsupported device', 'Close');			
+	if(window.AppData.lang)
+		document.getElementById('app-state').innerHTML =
+			( window.AppData.lang.indexOf('ru') > -1 || navigator.language.indexOf('ru')) ? "Ошибка инициализации" : "Initialization error"
+}

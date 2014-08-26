@@ -46,7 +46,13 @@
 			// Try to finish OAuth authorization.
 					
 			client.authenticate({interactive: false}, function (error) {
-				if (error) {
+				if(!!window.localStorage) {
+					if( !localStorage.getItem('dropboxEnabled') ){
+						location.hash = 'backup';
+						localStorage.setItem('dropboxEnabled')
+					}
+				}
+				if (error) {					
 					console.log(error)					
 				}
 			});

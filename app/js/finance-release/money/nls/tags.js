@@ -7,7 +7,7 @@ define("money/nls/tags", {
 	    addFirst: 'to add your first tag',
 	    myTags	: 'My tags',
 	    tap		: 'Tap',
-	    deleteTag		: 'Delete tag',
+	    deleteTag	: 'Delete tag',
 	    yes	: 'Yes',
 	    no	: 'No',
 	    quantity: 'Frequency'

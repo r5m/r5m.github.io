@@ -1,4 +1,4 @@
-window.AppData.updated = '2014-08-25';window.AppData.currencies = {
+{ "updated" : "2014-08-26", "currencies" : {
 	"AED": "United Arab Emirates Dirham",
 	"AFN": "Afghan Afghani",
 	"ALL": "Albanian Lek",
@@ -167,4 +167,4 @@ window.AppData.updated = '2014-08-25';window.AppData.currencies = {
 	"ZMK": "Zambian Kwacha (pre-2013)",
 	"ZMW": "Zambian Kwacha",
 	"ZWL": "Zimbabwean Dollar"
-}
+} }
