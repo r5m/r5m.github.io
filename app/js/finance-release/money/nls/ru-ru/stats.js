@@ -20,6 +20,7 @@ define("money/nls/ru-ru/stats", {
 	myTransactions: 'Мои транзакции',
 	
 	
-	transs: 'тр.'
+	transs: 'тр.',
+	noTags : 'Без меток'
 	
 });

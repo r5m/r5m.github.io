@@ -19,7 +19,8 @@ define("money/nls/stats", {
 	    myAccounts: 'My accounts',
 	    myTransactions: 'My transactions',
 	    
-	    transs : 'tr.'
+	    transs : 'tr.',
+	    noTags : 'No tags'
 	    
 	},
 	'ru-ru': true

@@ -27,7 +27,10 @@ define("money/nls/details", {
 		newAccount2 : "will be created. Please, choose it's currency",
 
 		newAccountTitle : "Create account",
-		process	: 'Continue'
+		process	: 'Continue',
+		saveErrorD: 'An error occured while saving transaction. Application will be restarted to try to fix it. Last edited transaction won\'t be saved',
+		saveErrorT: 'Database error',
+		close : 'Continue'
 	},
 	'ru-ru': true
 });

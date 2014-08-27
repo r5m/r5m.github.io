@@ -58,6 +58,7 @@
             data-dojo-attach-point="transactions" id="daily-list"
             data-dojo-props="store: this.loadedStores.transactions,
 							query: this.query,syncWithViews: true,
+							queryOptions: {sort: [{attribute:'date', descending: true}] },
                             createListItem: this.createListItem,
 							labelProperty: 'cats',append:false,
                             itemRenderer: this.listItem">
