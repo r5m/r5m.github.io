@@ -11,15 +11,17 @@
     </div>
     <div data-dojo-type="money/WheelScrollableView">
 		<div>
-			<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>
+			<div data-dojo-type="dojox/mobile/EdgeToEdgeCategory">
+					${nls.title}
+				</div><div data-dojo-type="dojox/mobile/Pane">
 				${nls.help}
 			</div>
 		
 			<div>
-				<div data-dojo-type="dojox/mobile/RoundRectCategory" data-dojo-props='shadow:true'>
+				<div data-dojo-type="dojox/mobile/EdgeToEdgeCategory">
 					${nls.selectTimespan}
 				</div>
-				<ul data-dojo-type="dojox/mobile/RoundRectList" data-dojo-props="select:'single'">
+				<ul data-dojo-type="dojox/mobile/EdgeToEdgeList" data-dojo-props="select:'single'">
 					<li data-dojo-type="dojox/mobile/ListItem"
 						data-dojo-attach-point="last31"
 						data-dojo-props='clickable:true, label:"${nls.last31}"'>

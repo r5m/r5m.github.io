@@ -1,6 +1,6 @@
 define("money/nls/backup", {
 	root: {
-		title	: "Statistics",
+		title	: "Backup & Restore",
 	    dropbox	: 'You can backup & sync data within your dropbox account in one click',
 	    menu	: 'Menu',
 	    onlineBackup : 'Dropbox',

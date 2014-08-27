@@ -12,39 +12,39 @@
     	<div 
 		data-dojo-type="money/WheelScrollableView"
 		data-dojo-props="threshold:window.AppData.treshold">
-		
-		<div data-dojo-type="dojox/mobile/RoundRectCategory">
-			R5M Finance v0.7.2 (beta)
+		<div class="mblEdgeToEdgeList">
+		<div data-dojo-type="dojox/mobile/EdgeToEdgeCategory">
+			R5M Finance v0.7.3 (beta)
 		</div>
-		<div data-dojo-type="dojox/mobile/RoundRect">
+		<div data-dojo-type="dojox/mobile/Pane">
 			${nls.r5mfIs}
 		</div>
 		
 		
-		<div data-dojo-type="dojox/mobile/RoundRectCategory">
+		<div data-dojo-type="dojox/mobile/EdgeToEdgeCategory">
 			${nls.webSiteTitle}
 		</div>
-		<div data-dojo-type="dojox/mobile/RoundRect">
+		<div data-dojo-type="dojox/mobile/Pane">
 			${nls.webSite} <a href="https://r5m.github.io" class="simple-link" target="_blank">${nls.webSiteUrl}</a> 
 		</div>
 		
-		<div data-dojo-type="dojox/mobile/RoundRectCategory">
+		<div data-dojo-type="dojox/mobile/EdgeToEdgeCategory">
 			${nls.updates}
 		</div>
-		<div data-dojo-type="dojox/mobile/RoundRect" 
+		<div data-dojo-type="dojox/mobile/Pane" 
 			data-dojo-props='shadow:true' 
 			data-dojo-attach-point="updateStatus">
 			<span id="about-updates"></span>
 			<br/>${nls.updated}<span id="about-updated"></span>
 		</div>
 		
-		<div data-dojo-type="dojox/mobile/RoundRect" style="display:none">	
+		<div data-dojo-type="dojox/mobile/Pane" style="display:none">	
 			${nls.symba}
 		</div>
-		<div data-dojo-type="dojox/mobile/RoundRectCategory">
+		<div data-dojo-type="dojox/mobile/EdgeToEdgeCategory">
 			${nls.thanks}
 		</div>
-			<ul data-dojo-type="dojox/mobile/RoundRectList">
+			<ul data-dojo-type="dojox/mobile/EdgeToEdgeList">
 				<li data-dojo-type="dojox/mobile/ListItem"
 					data-dojo-props='rightText: "dojotoolkit.org"'>Dojo toolkit					
 				</li>
@@ -64,6 +64,6 @@
 				</li>
 			</ul>
 		
-		
+		</div>
     </div>
 </div>

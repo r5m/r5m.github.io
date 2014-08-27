@@ -186,7 +186,7 @@ li.mblListItem
     padding-left: 0;
 }
 .holodark_theme #acc-sum{
-	margin-right: 30px; color: white;
+	 color: white;
 }
 .ios7_theme #acc-sum{
 	margin-right: 30px; color: black;
@@ -318,7 +318,8 @@ ul.mblTabBar li .mblTabBarButtonIconArea {
 }
 .ios7_theme .mblFormLayout .mblToolBarButton.mblGreyButton {
     color: #666;
-    border: 1px solid #007aff;
+    
+     background: white; 
 }
 #newAccount,
 #newTags {
@@ -358,6 +359,9 @@ ul.mblTabBar li .mblTabBarButtonIconArea {
 .question {
     padding: 0 10px;
 }
+.ios7_theme .left {
+	background-color: #e5e5e5;
+}
 .left {
     z-index: 100;
     float: left;
@@ -365,13 +369,16 @@ ul.mblTabBar li .mblTabBarButtonIconArea {
     min-width: 250px !important;
     height: 100%;
     border-right: 1px solid black;
-    background-color: #c5ccd3;
+    
 }
 .fullwidth {
     width: 100%;
 }
 .mblHeading.bottom {
     border-bottom: none;
+}
+.ios7_theme .dojoxLegendNode {
+	background: white
 }
 .dojoxLegendNode {
     width: 100%;
@@ -501,6 +508,9 @@ input[type='text'] {
 .holodark_theme .simple-link {
 	color: #ddd;
 }
+.ios7_theme table#legend td{
+	background: white;
+}
 .holodark_theme table#legend td{
 	border-color: #333538;
 }
@@ -516,6 +526,15 @@ table#legend td{
 	top: 0;
 	bottom:0;
 	position: absolute;
+}
+.ios7_theme .mblScrollablePane .mblPane {
+	background: white;
+}
+.mblScrollablePane .mblPane {
+	padding: 10px 25px;	
+}
+.ios7_theme .mblScrollableViewContainer .mblEdgeToEdgeList, .ios7_theme .mblBackground{
+	background: #e5e5e5;
 }
 .hide {
     display: none !important;

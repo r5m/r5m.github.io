@@ -12,12 +12,14 @@
 		data-dojo-type="money/WheelScrollableView"
 		data-dojo-props="threshold:window.AppData.treshold"
 		data-dojo-attach-point="viewContainer">
-		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>
+		<div data-dojo-type="dojox/mobile/EdgeToEdgeCategory" 
+			data-dojo-props="label:'${nls.animation}'"></div>
+		<div data-dojo-type="dojox/mobile/Pane" data-dojo-props='shadow:true'>
 			${nls.animHelp}
 		</div>
-		<div data-dojo-type="dojox/mobile/RoundRectCategory" 
+		<div data-dojo-type="dojox/mobile/EdgeToEdgeCategory" 
 			data-dojo-props="label:'${nls.transition}'"></div>
-		<ul data-dojo-type="dojox/mobile/RoundRectList" data-dojo-props="select: 'single'">
+		<ul data-dojo-type="dojox/mobile/EdgeToEdgeList" data-dojo-props="select: 'single'">
 			<div 
 				data-dojo-attach-point="none" 
 				data-dojo-type="dojox/mobile/ListItem" 

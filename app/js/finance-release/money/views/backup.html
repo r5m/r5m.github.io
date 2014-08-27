@@ -11,19 +11,23 @@
     </div>
     <div data-dojo-type="money/WheelScrollableView">
 		<div id="online">
-			<div id="sync-login" data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>
+			<div id="backup-download">
+				<div data-dojo-type="dojox/mobile/EdgeToEdgeCategory">
+					${nls.title}
+				</div>
+			<div id="sync-login" data-dojo-type="dojox/mobile/Pane" data-dojo-props='shadow:true'>
 				${nls.dropbox}
 				<br/><button 
 					data-dojo-type="dojox/mobile/ToolBarButton"
-					data-dojo-attach-point="loginBtn" class="mblButton mblBlueButton" style="padding: 0 10px; margin:0; margin-top:5px;"
+					data-dojo-attach-point="loginBtn" class="mblButton" style="padding: 0 10px; margin:0; margin-top:5px;"
 					></button>
 			</div>
 		
 			<div id="backup-download">
-				<div data-dojo-type="dojox/mobile/RoundRectCategory" data-dojo-props='shadow:true'>
+				<div data-dojo-type="dojox/mobile/EdgeToEdgeCategory">
 					${nls.onlineBackup}
 				</div>
-				<ul data-dojo-type="dojox/mobile/RoundRectList">
+				<ul data-dojo-type="dojox/mobile/EdgeToEdgeList">
 					<li data-dojo-type="dojox/mobile/ListItem"  id="backup-create"
 						data-dojo-attach-point="syncBtn"
 						data-dojo-props='clickable:true, label:"${nls.backupCreate}"'>
@@ -38,10 +42,10 @@
 					</li>
 				</ul>
 			</div>
-			<div data-dojo-type="dojox/mobile/RoundRectCategory" data-dojo-props='shadow:true'>
+			<div data-dojo-type="dojox/mobile/EdgeToEdgeCategory">
 					${nls.factoryReset}
 			</div>
-			<ul data-dojo-type="dojox/mobile/RoundRectList">
+			<ul data-dojo-type="dojox/mobile/EdgeToEdgeList">
 				<!--<li data-dojo-type="dojox/mobile/ListItem"  id="backup-clear-trans"
 					data-dojo-attach-point="clearTransBtn"
 					data-dojo-props='clickable:true, label:"${nls.clearTrans}"'>
@@ -53,7 +57,7 @@
 			</ul>
 		</div>
 		<div id="offline">
-			<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>
+			<div data-dojo-type="dojox/mobile/Pane">
 				${nls.internetRequired}
 			</div>
 		</div>
