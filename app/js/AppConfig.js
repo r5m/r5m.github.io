@@ -195,8 +195,23 @@ function confirmExit(){
 	}, 2500)
 }
 
+function ga(){
+	//GOogLe Analytics
+	if( location.toString().indexOf('r5m.github.io') > -1 && location.protocol.indexOf("https") >-1 ) {
+		 
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-39804194-5', 'auto');
+		ga('send', 'pageview');
+		 
+	}
+}
+
 loadExchangeRates = function( json ) {
-			require(["dojo/request"], function(request){
+			require(["dojo/request/xhr"], function(request){
 				request("currencies.json").then(function(data){
 					window.AppData.updated = json.parse( data ).updated
 					window.AppData.currencies = json.parse( data ).currencies
@@ -204,6 +219,7 @@ loadExchangeRates = function( json ) {
 						localStorage.setItem( 'currencies', json.stringify(window.AppData.currencies) )
 						localStorage.setItem( 'updated', json.stringify(window.AppData.updated) )
 					}
+					ga();
 					// do something with handled data
 				}, function(err){
 					
@@ -228,7 +244,7 @@ loadExchangeRates = function( json ) {
 			if(!!window.AppData.rates || !!localStorage.getItem( 'rates' ))
 				setupExchangeRates();
 			
-			require(["dojo/request"], function(request){
+			require(["dojo/request/xhr"], function(request){
 				request("rates.json").then(function(data){				
 					window.AppData.rates = json.parse( data ).rates;
 					if(!!localStorage) {
