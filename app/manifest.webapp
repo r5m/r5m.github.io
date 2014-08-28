@@ -3,7 +3,7 @@
 	"description": "Free HTML5 personal offline finance manager with online sync between devices.",
 
 	"appcache_path": "/app/finance.appcache",
-	"launch_path": "/app/index.html",
+	"launch_path": "/app/index.html?ff",
 	"icons": {
 		"32"	: "/app/icons/ic_launcher_32.png",
 		"128"	: "/app/icons/ic_launcher_128.png",
