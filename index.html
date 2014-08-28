@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -34,12 +34,43 @@
 <link rel="stylesheet" href="stylesheets/ie.css">
 <![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<style>
+	.no-border{
+		border:none;
+	}
+	#header li.small {
+		display: none;
+	}
+	ul.descr{
+		display:none;
+	}
+	
+	@media (max-width: 560px) {
+		td.descr {
+			display: none;
+		}
+		
+		ul.descr{
+			display:block;
+		}
+		#header nav li.downloads.small {
+			display: block;
+		}
+		#header nav li.downloads {
+			display: none;
+		}
+	}
+	table a {
+		border-bottom: solid 1px #ffcc00
+	}
+</style>
 </head>
 <body>
 <div id="header">
 <nav>
 <!--<li class="fork"><a href="https://github.com/r5m">View On GitHub</a></li>-->
-<li class="downloads"><a href="#" onClick="installToB2G(); return false;"><i class="fa fa-html5"></i> Firefox/B2G</a></li>
+<li class="downloads small"><a href="#downloads"><i class="fa fa-download"></i> Download</a></li>
+<li class="downloads"><a href="#" onClick="installToB2G(); return false;"><i class="fa fa-html5"></i> <i class="fa fa-windows"></i> <i class="fa fa-linux"></i> Firefox/B2G</a></li>
 <li class="downloads"><a download="r5m-launcher_1.1.3.apk" href="https://r5m.github.io/download/r5m-launcher_1.1.3.apk"><i class="fa fa-android"></i> Android .apk</a></li>
 <li class="downloads"><a href="https://r5m.github.io/app"><i class="fa fa-globe"></i> Online version</a></li>
 </nav>
@@ -88,23 +119,44 @@ The only requirement is HTML5 web-browser with touch gestures, local storage, in
 </a>Downloads
 </h3>
 <p>
-There are 3 version with the same functionality available for different devices:
-</p>
+There are 3 version with the same functionality available for different devices</p>
+
+	<ul class="descr">
+		<li>
+			Apk is the best one for Android devices, supports hardware buttons
+		</li>
+		<li>
+			Firefox version suitable for ANY device with Mozilla Firefox web browser. The link is for Firefox browser only!
+		</li>
+		<li>
+			Online version for any other devices/browsers. No installation required
+		</li>
+	</ul>
+
 <table>
 	<tr>
 		<td><i class="fa fa-android fa-2x"></i></td>
+		<td>Android 4.0.3+</td>
 		<td><a download="r5m-launcher_1.1.3.apk" href="https://r5m.github.io/download/r5m-launcher_1.1.3.apk">Android .apk</a></td>
-		<td>Best one for Android devices, supports hardware buttons</td>
+		<td class="descr">Best one for Android devices, supports hardware buttons</td>
 	</tr>
 	<tr>
-		<td><i class="fa fa-html5 fa-2x"></i><i class="fa fa-windows fa-2x"></i><i class="fa fa-linux fa-2x"></i></td>
-		<td><a href="#" onClick="installToB2G(); return false;">Firefox/B2G Application</a></td>
-		<td>Suitable for ANY device (Firefox OS, GNU/Linux, Windows, Android...) with Mozilla Firefox web browser. The link is for Firefox browser only!</td>
+		<td class="no-border"><i class="fa fa-html5 fa-2x"></i></td><td class="no-border">Firefox OS</td>
+		<td rowspan="3"><a href="#" onClick="installToB2G(); return false;">Firefox/B2G Application</a></td>
+		<td class="descr" rowspan="3">ANY device with Mozilla Firefox web browser. The link is for Firefox browser only!</td>
 	</tr>
+	<tr>
+		<td class="no-border"><i class="fa fa-windows fa-2x"></i></td><td class="no-border">Windows XP+</td>
+	</tr>
+	<tr>
+		<td><i class="fa fa-linux fa-2x"></i></td><td>GNU/Linux</td>
+	</tr>
+				
 	<tr>
 		<td><i class="fa fa-globe fa-2x"></i></td>
+		<td>Others</td>
 		<td><a href="https://r5m.github.io/app">Online version</a></td>
-		<td>For any other devices/browsers. No installation required.</td>
+		<td class="descr">For any other devices/browsers. No installation required.</td>
 	</tr>
 </table>
 	
