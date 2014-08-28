@@ -5,8 +5,8 @@
 	"appcache_path": "/finance.appcache",
 	"launch_path": "/index.html",
 	"icons": {
-		"32"	: "/icons/ic_launcher_32.png"
-		"128"	: "/icons/ic_launcher_128.png"
+		"32"	: "/icons/ic_launcher_32.png",
+		"128"	: "/icons/ic_launcher_128.png",
 		"192"	: "/icons/ic_launcher.png"
 	},
 	"developer": {
