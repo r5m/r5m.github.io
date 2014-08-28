@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#v0.7.3.6
+#v0.7.3.9
 #release.version.patch.patch-revision
 
 CACHE:
@@ -11,6 +11,7 @@ icons/icon_transactions_white.png
 icons/icon_transactions.png
 icons/icon_common_white.png
 icons/icon_common.png
+icons/ic_launcher.png
 
 js/finance-release/money/css/font-awesome-4.1.0/fonts/fontawesome-webfont.eot
 js/finance-release/money/css/font-awesome-4.1.0/fonts/fontawesome-webfont.svg

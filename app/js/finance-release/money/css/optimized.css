@@ -189,7 +189,7 @@ li.mblListItem
 	 color: white;
 }
 .ios7_theme #acc-sum{
-	margin-right: 30px; color: black;
+	margin-right: 2px;
 }
 .iphone_theme #acc-sum {
 	margin-right: 20px;
@@ -449,12 +449,16 @@ ul.no-background {
     height: 40px;
     padding: 0 10px;
 }
+.holodark_theme #confirm-exit p span {
+	background: #333;
+	color: white;
+}
 #confirm-exit p span {
     padding: 5px 10px;
     border: solid 1px #666;
-    -webkit-border-radius: 6px;
-       -moz-border-radius: 6px;
-            border-radius: 6px;
+    -webkit-border-radius: 1px;
+       -moz-border-radius: 1px;
+            border-radius: 1px;
     background: #eee;
 }
 #confirm-exit p {
