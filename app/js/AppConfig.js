@@ -195,7 +195,7 @@ function confirmExit(){
 	}, 2500)
 }
 
-function ga(){
+function loadGa(){
 	//GOogLe Analytics
 	if( location.toString().indexOf('r5m.github.io') > -1 && location.protocol.indexOf("https") >-1 ) {
 		 
@@ -219,7 +219,8 @@ loadExchangeRates = function( json ) {
 						localStorage.setItem( 'currencies', json.stringify(window.AppData.currencies) )
 						localStorage.setItem( 'updated', json.stringify(window.AppData.updated) )
 					}
-					ga();
+					if(!window.ga)
+						loadGa();
 					// do something with handled data
 				}, function(err){
 					
