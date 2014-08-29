@@ -16,7 +16,11 @@ define("money/nls/about", {
 	    
 	    webSiteTitle : 'Project site',
 	    webSite	: 'Visit our project page to find applications for other devices and get latest news',
-	    webSiteUrl : 'https://r5m.github.io'
+	    webSiteUrl : 'https://r5m.github.io',
+	    
+	    helpUs : 'Support R5M Finance project',
+	    helpAbout : 'Together we can make this World a better place ;-)',
+	    donate: 'en'
 	},
 	'ru-ru': true
 });

@@ -14,5 +14,9 @@ define("money/nls/ru-ru/about", {
 		
 		webSiteTitle : 'Сайт проекта',
 	    webSite	: 'Последние новости и приложения для других платформ доступны на официальном сайте проекта:',
-	    webSiteUrl : 'https://r5m.github.io'
+	    webSiteUrl : 'https://r5m.github.io',
+	    
+	    helpUs : 'Поддержите R5M Finance',
+	    helpAbout : 'Вместе с Вами мы сделаем Мир немного лучше ;-)',
+	    donate: 'ru'
 });
