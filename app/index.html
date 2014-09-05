@@ -19,7 +19,7 @@
 		
         <link rel="shortcut icon"	 href="icons/ic_launcher_32.png" />
 		<link rel="apple-touch-icon" href="icons/ic_launcher_128.png" />
-		<link rel="nokia-touch.icon" href="icons/ic_launcher_128.png" />
+		<!--<link rel="nokia-touch.icon" href="icons/ic_launcher_128.png" />-->
 		
 		<!-- dojo themes-->
 		<link href="js/finance-release/dojox/mobile/themes/common/domButtons.css" rel="stylesheet">
@@ -67,12 +67,12 @@
 			<p><span>Tap <b>back</b> button once more to exit</span></p>
 		</div>
 		<!-- this is splash screen -->		
-		<h1 id="main-progress-bar" class="loader">
+		<div id="main-progress-bar" class="loader">
 			<div class="loader-text">
 				<p>R5M Finance</p>
 				<p class="state"><span id="app-state">Initializing application</span></p>
 			</div>
-		</h1>
+		</div>
 		<script>
 
 			if(window.AppData.lang)
@@ -87,7 +87,7 @@
 		
 		
 		<script src="js/finance-release/dojo/dojo.js"></script>
-		<script type="text/javascript" charset="utf-8">
+		<script type="text/javascript">
 			//function to start app
 			function init(){
 				require(["money/money-app"],function(){
