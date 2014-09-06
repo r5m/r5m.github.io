@@ -21,6 +21,7 @@ define("money/nls/ru-ru/stats", {
 	expInc : 'Расходы/Доходы',
 	
 	transs: 'тр.',
-	noTags : 'Без меток'
+	noTags : 'Без меток',
+	'for': 'за'
 	
 });

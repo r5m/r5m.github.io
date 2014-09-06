@@ -20,7 +20,9 @@ define("money/nls/stats", {
 	    myTransactions: 'My transactions',
 	    expInc : 'Expences/Incomes',
 	    transs : 'tr.',
-	    noTags : 'No tags'
+	    noTags : 'No tags',
+	    moreCharts: 'Charts',
+	    'for': 'for'
 	    
 	},
 	'ru-ru': true

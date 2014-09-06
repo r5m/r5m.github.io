@@ -540,6 +540,13 @@ table#legend td{
 .ios7_theme .mblScrollableViewContainer .mblEdgeToEdgeList, .ios7_theme .mblBackground{
 	background: #e5e5e5;
 }
+#charts-pie-sum-ts {
+	float:left;
+}
+#charts-pie-sum-total {
+	float: right;
+	margin-right: 20px;
+}
 .hide {
     display: none !important;
 }

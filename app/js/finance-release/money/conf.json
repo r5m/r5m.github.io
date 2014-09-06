@@ -88,6 +88,18 @@
 			"template"		: "money/views/charts.html",
 			"nls"       	: "money/nls/stats"
 		},
+		"chartsPie": {
+			"constraint" 	: "center",
+			"controller"	: "money/views/chartsPie",
+			"template"		: "money/views/charts-pie.html",
+			"nls"       	: "money/nls/stats"
+		},
+		"chartsBar": {
+			"constraint" 	: "center",
+			"controller"	: "money/views/chartsBar",
+			"template"		: "money/views/charts-bar.html",
+			"nls"       	: "money/nls/stats"
+		},
 		"tagspicker": {
 			"constraint" 	: "center",
 			"controller"	: "money/views/tagspicker",
