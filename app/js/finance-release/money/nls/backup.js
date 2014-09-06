@@ -25,7 +25,7 @@ define("money/nls/backup", {
 	    
 	    processing: "Processing...",
 		syncing	: 'Sync to Dropbox',
-		cancel	: 'Cancel',
+		cancel	: 'Hide progress',
 		
 		currenciesDontMatch: 'Home currencies don\'t match. Please, clear dropbox data or clear local data and set the same home currency as in Dropbox'
 		

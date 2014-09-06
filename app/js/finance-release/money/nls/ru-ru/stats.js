@@ -18,7 +18,7 @@ define("money/nls/ru-ru/stats", {
 	myAchievements: 'Итого за период',
 	myAccounts: 'Мои счета',
 	myTransactions: 'Мои транзакции',
-	
+	expInc : 'Расходы/Доходы',
 	
 	transs: 'тр.',
 	noTags : 'Без меток'

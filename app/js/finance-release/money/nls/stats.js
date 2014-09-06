@@ -18,7 +18,7 @@ define("money/nls/stats", {
 	    myAchievements: 'My achievements for period',
 	    myAccounts: 'My accounts',
 	    myTransactions: 'My transactions',
-	    
+	    expInc : 'Expences/Incomes',
 	    transs : 'tr.',
 	    noTags : 'No tags'
 	    
