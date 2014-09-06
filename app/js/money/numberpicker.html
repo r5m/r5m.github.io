@@ -1,0 +1,90 @@
+<div class="wrapper1">
+	<h2 style="margin: 0px; line-height: 45px;">
+		<button data-dojo-type="dojox/mobile/ToolBarButton" label="${nls.done}" class="mblColorBlue right-button"
+			onClick="window.AppData.numberPicker.onDone()"
+			data-dojo-attach-point="okButton"
+			></button> ${nls.title}
+	</h2>
+		
+    <div style="margin:20px auto 15px auto; width:200px">
+		<input type="text" id = "amount-input"
+			data-dojo-attach-point="inputField"
+			style="text-align:right;font-weight:bold;font-size:150%; line-height:1em; height:1.5em; width:100%" 
+			data-dojo-props="readOnly:true, value:''" 
+			data-dojo-type="dojox/mobile/TextBox"/>
+	</div>
+	<div data-dojo-type="dojox/mobile/GridLayout" data-dojo-props='cols:3' style="">
+		<div data-dojo-type="dojox/mobile/Pane">
+			<div class="wrapper">
+				<button class="mblBlueButton wide" data-dojo-type="dojox/mobile/ToolBarButton"
+				data-dojo-props="_onTouchStart: function(){console.log(this,'!');window.AppData.numberPicker.key('1', this)}">1</button>
+			</div>
+		</div>
+		<div data-dojo-type="dojox/mobile/Pane">
+			<div class="wrapper">
+				<button class="mblBlueButton wide" data-dojo-type="dojox/mobile/ToolBarButton"
+				data-dojo-props="_onTouchStart: function(){window.AppData.numberPicker.key('2', this)}">2</button>
+			</div>
+		</div>
+		<div data-dojo-type="dojox/mobile/Pane">
+			<div class="wrapper">
+				<button class="mblBlueButton wide" data-dojo-type="dojox/mobile/ToolBarButton"
+					data-dojo-props="_onTouchStart: function(){window.AppData.numberPicker.key('3',this)}">3</button>
+			</div>
+		</div>
+		<div data-dojo-type="dojox/mobile/Pane">
+			<div class="wrapper">
+				<button class="mblBlueButton wide" data-dojo-type="dojox/mobile/ToolBarButton"
+					data-dojo-props="_onTouchStart: function(){window.AppData.numberPicker.key('4',this)}">4</button>
+			</div>
+		</div>
+		<div data-dojo-type="dojox/mobile/Pane">
+			<div class="wrapper">
+				<button class="mblBlueButton wide" data-dojo-type="dojox/mobile/ToolBarButton"
+					data-dojo-props="_onTouchStart: function(){window.AppData.numberPicker.key('5',this)}">5</button>
+			</div>
+		</div>
+		<div data-dojo-type="dojox/mobile/Pane">
+			<div class="wrapper">
+				<button class="mblBlueButton wide" data-dojo-type="dojox/mobile/ToolBarButton"
+					data-dojo-props="_onTouchStart: function(){window.AppData.numberPicker.key('6',this)}">6</button>
+			</div>
+		</div>
+		<div data-dojo-type="dojox/mobile/Pane">
+			<div class="wrapper">
+				<button class="mblBlueButton wide" data-dojo-type="dojox/mobile/ToolBarButton"
+					data-dojo-props="_onTouchStart: function(){window.AppData.numberPicker.key('7',this)}">7</button>
+			</div>
+		</div>
+		<div data-dojo-type="dojox/mobile/Pane">
+			<div class="wrapper">
+				<button class="mblBlueButton wide" data-dojo-type="dojox/mobile/ToolBarButton"
+					data-dojo-props="_onTouchStart: function(){window.AppData.numberPicker.key('8',this)}">8</button>
+			</div>
+		</div>
+		<div data-dojo-type="dojox/mobile/Pane">
+			<div class="wrapper">
+				<button class="mblBlueButton wide" data-dojo-type="dojox/mobile/ToolBarButton" 
+					data-dojo-props="_onTouchStart: function(){window.AppData.numberPicker.key('9',this)}">9</button>
+			</div>
+		</div>
+		<div data-dojo-type="dojox/mobile/Pane">
+			<div class="wrapper">
+				<button class="mblRedButton wide" data-dojo-type="dojox/mobile/ToolBarButton"
+					data-dojo-props="_onTouchStart: function(){window.AppData.numberPicker.key('c',this)}"><i class="fa fa-eraser"></i></button>
+			</div>
+		</div>
+		<div data-dojo-type="dojox/mobile/Pane">
+			<div class="wrapper">
+				<button class="mblBlueButton wide" data-dojo-type="dojox/mobile/ToolBarButton"
+					data-dojo-props="_onTouchStart: function(){window.AppData.numberPicker.key('0',this)}">0</button>
+			</div>
+		</div>
+		<div data-dojo-type="dojox/mobile/Pane">
+			<div class="wrapper">
+				<button class="mblBlueButton wide" data-dojo-type="dojox/mobile/ToolBarButton"
+					data-dojo-props="_onTouchStart: function(){window.AppData.numberPicker.key('dz',this)}">.00</button>
+			</div>
+		</div>
+	</div>
+</div>
