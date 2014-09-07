@@ -19,9 +19,11 @@ define("money/nls/ru-ru/stats", {
 	myAccounts: 'Мои счета',
 	myTransactions: 'Мои транзакции',
 	expInc : 'Расходы/Доходы',
+	byTags : 'Транзакции по категориям',
 	
 	transs: 'тр.',
 	noTags : 'Без меток',
-	'for': 'за'
+	earlier: 'Предыдущие месяцы',
+	later: 'Следующие месяцы'
 	
 });

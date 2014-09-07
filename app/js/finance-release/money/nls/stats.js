@@ -19,10 +19,12 @@ define("money/nls/stats", {
 	    myAccounts: 'My accounts',
 	    myTransactions: 'My transactions',
 	    expInc : 'Expences/Incomes',
+	    byTags : 'Transactions by tags',
 	    transs : 'tr.',
 	    noTags : 'No tags',
 	    moreCharts: 'Charts',
-	    'for': 'for'
+	    earlier: 'Previous months',
+	    later: 'Next months'
 	    
 	},
 	'ru-ru': true

@@ -547,6 +547,9 @@ table#legend td{
 	float: right;
 	margin-right: 20px;
 }
+#simplechart>div>div{
+	z-index: 9999;
+}
 .hide {
     display: none !important;
 }
