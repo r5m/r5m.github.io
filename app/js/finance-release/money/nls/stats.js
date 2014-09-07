@@ -22,7 +22,7 @@ define("money/nls/stats", {
 	    byTags : 'Transactions by tags',
 	    transs : 'tr.',
 	    noTags : 'No tags',
-	    moreCharts: 'Charts',
+	    moreCharts: 'Graphic reports',
 	    earlier: 'Previous months',
 	    later: 'Next months',
 	    

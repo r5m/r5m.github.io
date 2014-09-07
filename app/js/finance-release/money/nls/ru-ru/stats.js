@@ -20,7 +20,7 @@ define("money/nls/ru-ru/stats", {
 	myTransactions: 'Мои транзакции',
 	expInc : 'Расходы/Доходы',
 	byTags : 'Транзакции по категориям',
-	
+	moreCharts : 'Отчеты',
 	transs: 'тр.',
 	noTags : 'Без меток',
 	earlier: 'Предыдущие месяцы',
