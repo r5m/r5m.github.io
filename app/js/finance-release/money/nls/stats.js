@@ -24,7 +24,10 @@ define("money/nls/stats", {
 	    noTags : 'No tags',
 	    moreCharts: 'Charts',
 	    earlier: 'Previous months',
-	    later: 'Next months'
+	    later: 'Next months',
+	    
+	    "series-i" : 'Incomes',
+	    "series-e" : 'Expences'
 	    
 	},
 	'ru-ru': true

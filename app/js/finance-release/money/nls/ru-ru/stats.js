@@ -24,6 +24,9 @@ define("money/nls/ru-ru/stats", {
 	transs: 'тр.',
 	noTags : 'Без меток',
 	earlier: 'Предыдущие месяцы',
-	later: 'Следующие месяцы'
+	later: 'Следующие месяцы',
+	    
+	    "series-i" : 'Расходы',
+	    "series-e" : 'Доходы'
 	
 });
