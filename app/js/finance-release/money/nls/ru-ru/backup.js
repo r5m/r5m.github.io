@@ -21,11 +21,14 @@ define("money/nls/ru-ru/backup", {
 	errorCreatingDatastore : 'Ошибка создания хранилища данных для Dropbox. Возможно, Ваша платформа не поддерживается Dropbox Datastore API',
 	errorStrange : 'Ошибка синхронизации. Пожалуйста, попробуйте заново подключить Вашу учетную запись Dropbox.',
 	error : 'ОШИБКА',
+	errorInState: 'Ошибка Dropbox datastore API. Сейчас приложение будет перезапущено и все будет в порядке :-)',
+	restart : 'Перезапустить приложение',
 	
 	processing: "Идет синхронизация...",
 	syncing	: 'Сохранение в Dropbox',
 	cancel	: 'Скрыть окно',
-	
+	signing : 'Соединение с dropbox.com',
+	pleaseWait: 'Секундочку...',
 	currenciesDontMatch: 'Основные валюты не совпадают. Пожалуйста, удалите данные в Dropbox ИЛИ удалите все данные на локальном устройстве и установите ту же основную валюту, что и в Dropbox'
 	
 });

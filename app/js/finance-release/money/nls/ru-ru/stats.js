@@ -1,11 +1,11 @@
 define("money/nls/ru-ru/stats", {
 	
-	title	: "Статистика",
+	title	: "Отчеты и статистика",
 	    
 	expences: 'Расходы',
 	incomes: 'Доходы',
 	transfers: 'Переводы',
-	    
+	back: 'Назад', 
 	noAccounts: '',
 	noTransactions: 'Не найдено транзакций за выбранный период времени.',
 	menu: 'Меню',

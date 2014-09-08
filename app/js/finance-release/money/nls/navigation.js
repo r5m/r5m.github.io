@@ -2,7 +2,7 @@ define("money/nls/navigation", {
 	root: {
 		title			: "R5M Finance",
 		transactions 	: "Transactions",
-		stats 			: "Statistics",
+		stats 			: "Statistics & reports",
 		settings 		: "Settings",
 		timespan 		: "Timespan",
 		backup 			: "Backup & Restore",

@@ -550,6 +550,9 @@ table#legend td{
 #simplechart>div>div{
 	z-index: 9999;
 }
+.heading-button-wrapper{
+	padding: 10px 20px 5px;
+}
 .hide {
     display: none !important;
 }

@@ -1,11 +1,11 @@
 define("money/nls/stats", {
 	root: {
-		title	: "Statistics",
+		title	: "Statistics & reports",
 	    
 	    expences: 'Expences',
 	    incomes: 'Incomes',
 	    transfers: 'Transfers',
-	    
+	    back: 'Back', 
 	    noAccounts: 'You don\'t have any accounts yet',
 	    noTransactions: 'No transactions found for selected timespan.',
 	    menu: 'Menu',
