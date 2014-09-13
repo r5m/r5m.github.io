@@ -20,6 +20,31 @@ window.AppData = {
 				
 	widgetDateFormat	: "yyyy-MM-dd",
 	displayDateFormat	: "d MMMM (EEE)",
+	zeroCounts: {
+				byr : 0,
+				bhd: 3,
+				bif :0,
+				clp :0,
+				djf :0,
+				gnf: 0,
+				iqd: 3,
+				isk: 0,
+				jod :3,
+				jpy: 0,
+				kmf :0,
+				krw: 0,
+				kwd: 3,
+				lyd: 3,
+				omr: 3,
+				pyg: 0,
+				rwf: 0,
+				tnd: 3,
+				vuv : 0,
+				xaf: 0,
+				xdr: 5,
+				xof: 0,
+				xpf: 0
+			},
 	"updated" : "2014-08-28", "currencies" : {
 	"AED": "United Arab Emirates Dirham",
 	"AFN": "Afghan Afghani",
@@ -428,10 +453,9 @@ function isValidDate(d) {
 /*
  * 	Get formatted float number
  */ 
-function getNumber(f){
-	return Number(f).toFixed(2)
+function getNumber(f, dec){
+	return Number(f).toFixed(dec!=undefined ? dec : 2)
 }
-
 /*
  * Returns formatted machine-readable date as string.
  * Used for id's
