@@ -17,6 +17,6 @@ define("money/nls/ru-ru/about", {
 	    webSiteUrl : 'https://r5m.github.io',
 	    
 	    helpUs : 'Поддержите R5M Finance',
-	    helpAbout : 'Вместе с Вами мы сделаем Мир немного лучше ;-).',
+	    helpAbout : 'Вместе с Вами мы сделаем Мир немного лучше.',
 	    donate: 'ru'
 });

@@ -19,7 +19,7 @@ define("money/nls/about", {
 	    webSiteUrl : 'https://r5m.github.io',
 	    
 	    helpUs : 'Support R5M Finance project',
-	    helpAbout : 'Together we can make World a better place ;-). Your support to the project is very appreciated.',
+	    helpAbout : 'Together we can make World a better place. Your support to the project is very appreciated.',
 	    donate: 'en'
 	},
 	'ru-ru': true

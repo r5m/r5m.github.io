@@ -73,6 +73,14 @@
 	body.bg{
 		background-color: #1c1c1c;
 	}
+	sup {
+		color: red;
+		margin-left: 5px;
+		font-weight: bold
+	}
+	sup.beta{
+		color: white
+	}
 </style>
 </head>
 <body class="bg">
@@ -89,7 +97,7 @@
 <section>
 <div id="title">
 <h1>R5M Finance</h1>
-<p>Mobile personal finance manager</p>
+<p>Simple personal finance manager for your Smartphone &amp; PC</p>
 <p style="text-align:right; margin:-10px 0 10px 0; font-size: 0.85rem;">
 <a href="index_ru.html">Рус</a>
 <span class="selected">En</a>
@@ -133,11 +141,11 @@ There are 3 version with the same functionality available for different devices<
 
 	<ul class="descr">
 		<li>
-			Apk is the best one for Android devices, supports hardware buttons
-		</li>
-		<li>
 			Firefox version suitable for ANY device with Mozilla Firefox web browser. The link is for Firefox browser only!
 		</li>
+		<li>
+			Apk is the best one for Android devices, supports hardware buttons
+		</li>		
 		<li>
 			Online version for any other devices/browsers. No installation required
 		</li>
@@ -145,37 +153,43 @@ There are 3 version with the same functionality available for different devices<
 
 <table>
 	<tr>
-		<td><i class="fa fa-android fa-2x"></i></td>
-		<td><span>Android 4.0.3+</span></td>
-		<td class="link"><a download="r5m-launcher_1.1.3.apk" href="https://r5m.github.io/download/r5m-launcher_1.1.3.apk"><i class="fa fa-download"></i> Android .apk</a></td>
-		<td class="descr">Best one for Android devices, supports hardware buttons</td>
-	</tr>
-	<tr>
-		<td class="no-border"><i class="fa fa-html5 fa-2x"></i></td><td class="no-border">Firefox OS</td>
+		<td class="no-border"><i class="fa fa-html5 fa-2x"></i></td><td class="no-border">Firefox OS<sup class="beta">*</sup></td>
 		<td class="link" rowspan="3"><a href="#" onClick="installToB2G(); return false;"><i class="fa fa-download"></i> Firefox/B2G Application</a></td>
 		<td class="descr" rowspan="3">ANY device with Mozilla Firefox web browser. The link is for Firefox browser only!</td>
 	</tr>
 	<tr>
-		<td class="no-border"><i class="fa fa-windows fa-2x"></i></td><td class="no-border">Windows XP+</td>
+		<td class="no-border"><i class="fa fa-windows fa-2x"></i></td><td class="no-border">Windows XP+<sup>**</sup></td>
 	</tr>
 	<tr>
-		<td><i class="fa fa-linux fa-2x"></i></td><td>GNU/Linux</td>
+		<td><i class="fa fa-linux fa-2x"></i></td><td>GNU/Linux<sup>**</sup></td>
 	</tr>
+	
+	<tr>
+		<td><i class="fa fa-android fa-2x"></i></td>
+		<td><span>Android 4.0.3+<sup>**</sup></span></td>
+		<td class="link"><a download="r5m-launcher_1.1.3.apk" href="https://r5m.github.io/download/r5m-launcher_1.1.3.apk"><i class="fa fa-download"></i> Android .apk</a></td>
+		<td class="descr">Best one for Android devices, supports hardware buttons</td>
+	</tr>
+	
 				
 	<tr>
 		<td><i class="fa fa-globe fa-2x"></i></td>
-		<td>Others</td>
+		<td>Others<sup>**</sup></td>
 		<td class="link"><a href="https://r5m.github.io/app"><i class="fa fa-cloud-download"></i> Online version</a></td>
 		<td class="descr">For any other devices/browsers. No installation required.</td>
 	</tr>
 </table>
+
+<p>* - Public beta version<br/>
+** - Developer's (alpha) version. Application works, but there are some minor known issues ;-). Apk version doesn't work offline yet</p>
+<hr/>
 	<h3>
 					<a name="donate" class="anchor" href="#donate">
 						<span class="octicon octicon-link"></span>
 					</a>Support R5M Finance
 				</h3>
 				<div style="text-align:center">
-					<p>Together we can make this World a better place ;-)</p>
+					<p>Together we can make this World a better place :-). Your donations help us support R5M finance, add new features and supported platforms</p>
 					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 						<input type="hidden" name="cmd" value="_s-xclick">
 						<input type="hidden" name="hosted_button_id" value="3ZBTSMVVA9JLA">
