@@ -70,16 +70,10 @@
 		<div id="main-progress-bar" class="loader">
 			<div class="loader-text">
 				<p>R5M Finance</p>
-				<p class="state"><span id="app-state">Initializing application</span></p>
+				<p class="state"><span id="app-state">Initializing application...</span></p>
 			</div>
 		</div>
-		<script>
-
-			if(window.AppData.lang)
-				document.getElementById('app-state').innerHTML =
-					( window.AppData.lang.indexOf('ru') > -1 || navigator.language.indexOf('ru')) ? "Загрузка приложения" : "Initializing application"
-
-		</script>
+		
 			
 		<div id="customPicker" class="overlay">
 			<div id="numberPicker"></div>
@@ -95,13 +89,7 @@
 				})
 			}
 			
-			//wait for phonegap if Android/iPhone
-			//...or simply start app if not
-			//if(navigator.userAgent.match(/(iPhone|iPod|iPad|Android)/)) {
-			//	document.addEventListener("deviceready", init, false);
-			//}else {
-				init();
-			//}
+			init();
 		</script>
 		
 	</body>

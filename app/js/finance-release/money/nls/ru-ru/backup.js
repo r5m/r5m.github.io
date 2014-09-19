@@ -9,7 +9,7 @@ define("money/nls/ru-ru/backup", {
 	    
 	backupCreate: 'Синхронизировать данные',
 	restore		: 'Восстановить данные из Dropbox',
-	clearRemote	: 'Удалить данные из Dropbox?',
+	clearRemote	: 'Удалить данные из Dropbox',
 	clearLocal	: 'Удалить данные?',
 	clear		: 'Удалить все данные и настройки',
 	clearTrans	: 'Удалить все транзакции',
