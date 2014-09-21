@@ -32,7 +32,7 @@
     color: #666;
 }
 .mblButton {
-    height: auto;
+    height: auto; font-size: 1rem
 }
 .mblEdgeToEdgeList.empty {
     border: none;
