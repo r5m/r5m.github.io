@@ -20,7 +20,10 @@ define("money/nls/about", {
 	    
 	    helpUs : 'Support R5M Finance project',
 	    helpAbout : 'Together we can make World a better place. Your support to the project is very appreciated.',
-	    donate: 'en'
+	    donate: 'en',
+	    
+	    asIs: "This software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.",
+	    eula: 'EULA'
 	},
 	'ru-ru': true
 });
