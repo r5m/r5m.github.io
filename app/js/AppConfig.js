@@ -508,7 +508,7 @@ function getMoney(amount, currency){
 			break;
 		}
 	
-	var amount = getNumber( amount, ( window.AppData.zeroCounts [currency] ? window.AppData.zeroCounts [currency] : 2);
+	var amount = getNumber( amount, ( window.AppData.zeroCounts [currency] ? window.AppData.zeroCounts [currency] : 2) );
 	if (symbol)
 		return window.AppData.localeCurrency.format(amount, {'currency': currency, 
 			symbol : symbol
