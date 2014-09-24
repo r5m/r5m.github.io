@@ -1,7 +1,7 @@
 define('money/nls/money-app_ru-ru',{
 'money/nls/tagspicker':{"viewHelp":"Выберите одну или несколько меток для транзакции из списка или введите названия меток через запятую","title":"Выберите метки (категории)","_localized":{},"inputHelp":"Метки, через запятую","done":"Готово"}
 ,
-'money/nls/navigation':{"timespan":"Отрезок времени","title":"R5M Finance","settings":"Настройки","about":"О R5M Finance","stats":"Статистика и отчеты","_localized":{},"backup":"Синхронизация данных","transactions":"Транзакции"}
+'money/nls/navigation':{"timespan":"Отрезок времени","title":"R5M Finance","settings":"Настройки","about":"О R5M Finance","stats":"Статистика и отчеты","_localized":{},"backup":"Синхронизация","transactions":"Транзакции"}
 ,
 'money/nls/settings':{"prefs":"Персонализация","tags":"Мои метки (категории)","title":"Настройки","graphics":"Настройки графики","myData":"Мои данные","transition":"Анимация","_localized":{},"theme":"Тема оформления","language":"Язык и региональные стандарты","accounts":"Мои счета","menu":"Меню"}
 ,

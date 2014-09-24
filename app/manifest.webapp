@@ -2,7 +2,7 @@
 	"name": "R5M Finance",
 	"description": "Free HTML5 personal offline finance manager with online sync between devices.",
 
-	"appcache_path": "/app/finance.appcache",
+	"appcache_path": "/app/finance.appcache?dynamic",
 	"launch_path": "/app/index.html?ff",
 	"icons": {
 		"32"	: "/app/icons/ic_launcher_32.png",
@@ -31,6 +31,5 @@
 			}
 		}
 	},
-	"version": "0.7.3"
-	
+	"version": "0.9.3"	
 }

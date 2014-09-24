@@ -454,7 +454,7 @@ function isValidDate(d) {
  * 	Get formatted float number
  */ 
 function getNumber(f, dec){
-	return Number(f).toFixed(dec!=undefined ? dec : 2)
+	return Number(f).toFixed( dec != undefined ? dec : 2 )
 }
 /*
  * Returns formatted machine-readable date as string.
@@ -474,6 +474,9 @@ function getDateString(d, locale){
  */ 
 function getDateStringHr(d, locale){
 	return (isValidDate(d)) ? locale.format(d, { selector:"date", datePattern: window.AppData.displayDateFormat }) : d
+}
+function getDateStringHrWithoutYear(d, locale){
+	return (isValidDate(d)) ? locale.format(d, { selector:"date", datePattern: 'd MMM' }) : d
 }
 
 function getDateStringHrWithYear(d, locale){
@@ -505,6 +508,7 @@ function getMoney(amount, currency){
 			break;
 		}
 	
+	var amount = getNumber( amount, ( window.AppData.zeroCounts [currency] ? window.AppData.zeroCounts [currency] : 2);
 	if (symbol)
 		return window.AppData.localeCurrency.format(amount, {'currency': currency, 
 			symbol : symbol

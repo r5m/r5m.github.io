@@ -84,7 +84,7 @@ body .mblTabBarSegmentedControl .mblTabBarButton {
 }
 .mblFormLayout .mblToolBarButton.mblButton {
     width: auto;
-    padding: 0 0 0 10px;
+    padding: 0 10px 0 10px;
 }
 body {
     overflow: hidden;
@@ -110,6 +110,10 @@ body {
 }
 #descr {
     width: 100%!important;
+}
+.ios7_theme .mblExpandingTextArea {
+	background: white;
+    border: none;
 }
 .mblExpandingTextArea {
     margin: 0;
@@ -147,7 +151,7 @@ body {
 }
 .mblFormLayout .mblButton.two-two {
     float: right;
-    width: 50px;    
+    width: 3rem;    
 }
 li.mblListItem {
     height: auto; white-space: normal;
@@ -176,8 +180,8 @@ li.mblListItem
     color: #eee;
 }
 .summary {
-    width: auto;
-    min-width: 60%;
+    width: 100%;
+    
     text-align: right;
 }
 .fa-money {
@@ -552,6 +556,12 @@ table#legend td{
 }
 .heading-button-wrapper{
 	padding: 10px 20px 5px;
+}
+#dFinance_timespan .mblListItemChecked .mblListItemRightText{
+	color: white;
+}
+#dFinance_timespan .mblListItemRightText{
+	margin-right: 14px;
 }
 .hide {
     display: none !important;

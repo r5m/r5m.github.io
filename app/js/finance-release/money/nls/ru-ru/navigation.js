@@ -4,7 +4,7 @@ define("money/nls/ru-ru/navigation", {
 	stats 			: "Статистика и отчеты",
 	settings 		: "Настройки",
 	timespan 		: "Отрезок времени",
-	backup 			: "Синхронизация данных",
+	backup 			: "Синхронизация",
 	about 			: "О R5M Finance"
 	
 });
