@@ -1,6 +1,6 @@
 {
 	"name": "R5M Finance",
-	"description": "Simple HTML5 personal offline finance manager with online sync between devices.",
+	"description": "Easy-to-use HTML5 personal offline finance manager with online sync between your devices",
 
 	"appcache_path": "https://r5m.github.io/app/finance.appcache?dynamic",
 	"launch_path": "https://r5m.github.io/app/index.html?ff",
@@ -27,14 +27,7 @@
 				"name": "R5M",
 				"url": "http://r5m.me"
 			}
-		},
-		"en": {
-			"description": "HTML5 personal offline finance manager with online sync between your devices",
-			"developer": {
-				"name": "R5M",
-				"url": "http://r5m.me"
-			}
-		}
+		}		
 	},
-	"version": "0.9.9"	
+	"version": "0.10.1"	
 }
