@@ -18,7 +18,7 @@ define("money/nls/ru-ru/app.nls", {
 	transactions: "Транзакции",
 	
 	monthly		: 'Транзакции (период)',
-	daily		: 'Транзакции (день)',
+	daily		: 'Назад',
 	details		: 'Детали транзакции',
 	
 	//months

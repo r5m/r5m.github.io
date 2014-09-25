@@ -16,7 +16,7 @@ define("money/nls/app.nls", {
 	remove		: 'Remove transaction',
 	
 	monthly		: 'Transactions (monthly)',
-	daily		: 'Transactions (daily)',
+	daily		: 'Back',
 	details		: 'Transaction details',
 	
 	type		: 'Type',
