@@ -646,7 +646,16 @@ function errorInitialization() {
 			( window.AppData.lang.indexOf('ru') > -1 || navigator.language.indexOf('ru')) ? "Ошибка инициализации" : "Initialization error"
 }
 
-
+ function openNewWindow(e){
+                e.stopPropagation()
+                if (e.preventDefault) {  // если метод существует
+                    e.preventDefault();
+                } else { // вариант IE<9:
+                    e.returnValue = false;
+                }
+                console.log(e)
+                window.open(e.currentTarget.href, "_blank")
+            }
 
 
 
