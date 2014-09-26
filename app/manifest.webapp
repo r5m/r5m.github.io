@@ -27,7 +27,14 @@
 				"name": "R5M",
 				"url": "http://r5m.me"
 			}
-		}		
+		},
+		"en": {
+			"description": "Easy-to-use HTML5 personal offline finance manager with online sync between your devices",
+			"developer": {
+				"name": "R5M",
+				"url": "http://r5m.me"
+			}
+		}	
 	},
 	"version": "0.10.1"	
 }
