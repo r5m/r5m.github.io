@@ -11,7 +11,7 @@
 		"96"	: "https://r5m.github.io/app/icons/ic_launcher_96.png",
 		"128"	: "https://r5m.github.io/app/icons/ic_launcher_128.png",
 		"144"	: "https://r5m.github.io/app/icons/ic_launcher_144.png",
-		"192"	: "https://r5m.github.io/app/icons/ic_launcher_192.png"
+		"192"	: "https://r5m.github.io/app/icons/ic_launcher_192.png",
 		"512"	: "https://r5m.github.io/app/icons/ic_launcher_512.png"
 	},
 	"developer": {
@@ -23,13 +23,6 @@
 	"locales": {
 		"ru": {
 			"description": "Программа для учета личных финансов с возможностью работы оффлайн и онлайн синхронизацией данных между Вашими устройствами",
-			"developer": {
-				"name": "R5M",
-				"url": "http://r5m.me"
-			}
-		},
-		"en": {
-			"description": "Easy-to-use HTML5 personal offline finance manager with online sync between your devices",
 			"developer": {
 				"name": "R5M",
 				"url": "http://r5m.me"
