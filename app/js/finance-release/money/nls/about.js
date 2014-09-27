@@ -17,10 +17,10 @@ define("money/nls/about", {
 	    
 	    webSiteTitle : 'Project site',
 	    webSite	: 'Visit our project page to find applications for other devices and get latest news',
-	    webSiteUrl : 'https://r5m.github.io',
+	    webSiteUrl : 'http://r5m.me',
 	    
 	    helpUs : 'Support R5M Finance project',
-	    helpAbout : 'Together we can make World a better place. Your support to the project is very appreciated.',
+	    helpAbout : 'Together we can make World a better place. Your support to the project is very appreciated. Please, visit our web page at http://r5m.me tp make a donation or submit bugs',
 	    donate: 'en',
 	    
 	    asIs: "This software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.",
