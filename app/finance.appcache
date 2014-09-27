@@ -1,0 +1,48 @@
+CACHE MANIFEST
+#v0.10.5 1
+#release.version.patch.patch-revision
+
+CACHE:
+#
+# Styles
+#
+js/finance-release/money/css/optimized.css
+icons/icon_transactions_white.png
+icons/icon_transactions.png
+icons/icon_common_white.png
+icons/icon_common.png
+icons/ic_launcher.ico
+icons/ic_launcher_512.png
+
+js/finance-release/money/css/font-awesome-4.1.0/fonts/fontawesome-webfont.eot
+js/finance-release/money/css/font-awesome-4.1.0/fonts/fontawesome-webfont.svg
+js/finance-release/money/css/font-awesome-4.1.0/fonts/fontawesome-webfont.ttf
+js/finance-release/money/css/font-awesome-4.1.0/fonts/fontawesome-webfont.woff
+
+js/finance-release/dojox/mobile/themes/iphone/iphone.css
+js/finance-release/dojox/mobile/themes/ios7/ios7.css
+js/finance-release/dojox/mobile/themes/holodark/holodark.css
+js/finance-release/dojox/mobile/themes/holodark/images/vseparator.png
+js/finance-release/dojox/mobile/themes/common/domButtons.css
+js/finance-release/dojox/mobile/themes/common/domButtons/compat/mblDomButtonBlueCircleMinus.png
+
+https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif
+
+
+#
+# application source
+#
+index.html
+
+js/etc/appcache.js
+js/etc/money.js
+js/etc/IndexedDBShim.min.js
+js/etc/dropbox-datastores-1.1.0.js
+js/finance-release/dojo/dojo.js
+js/finance-release/money/money-app.js
+
+js/finance-release/money/conf.json
+js/AppConfig.js
+
+NETWORK:
+*

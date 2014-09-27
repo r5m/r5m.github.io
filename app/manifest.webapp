@@ -1,0 +1,33 @@
+{
+	"name": "R5M Finance",
+	"description": "Easy-to-use HTML5 personal offline finance manager with online sync between your devices",
+
+	"appcache_path": "/app/finance.appcache?dynamic",
+	"launch_path": "/app/index.html?ff",
+	"icons": {
+		"32"	: "/app/icons/ic_launcher_32.png",
+		"48"	: "/app/icons/ic_launcher_48.png",
+		"72"	: "/app/icons/ic_launcher_72.png",
+		"96"	: "/app/icons/ic_launcher_96.png",
+		"128"	: "/app/icons/ic_launcher_128.png",
+		"144"	: "/app/icons/ic_launcher_144.png",
+		"192"	: "/app/icons/ic_launcher_192.png",
+		"512"	: "/app/icons/ic_launcher_512.png"
+	},
+	"developer": {
+		"name": "R5M",
+		"url": "http://r5m.me"
+	},
+	"default_locale": "en",
+
+	"locales": {
+		"ru": {
+			"description": "Программа для учета личных финансов с возможностью работы оффлайн и онлайн синхронизацией данных между Вашими устройствами",
+			"developer": {
+				"name": "R5M",
+				"url": "http://r5m.me"
+			}
+		}	
+	},
+	"version": "0.10.1"	
+}
