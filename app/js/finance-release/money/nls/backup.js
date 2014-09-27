@@ -3,6 +3,7 @@ define("money/nls/backup", {
 		title	: "Backup & Restore",
 	    dropbox	: 'You can sync data between your devices using dropbox account',
 	    dropboxStart : 'Press button to sync your data',
+	    dropboxRedirect: 'After clicking the button You\'ll be redirected to dropbox web page to authorize and then redirected back to this page:',
 	    menu	: 'Menu',
 	    onlineBackup : 'Dropbox',
 	    factoryReset : 'My device',
