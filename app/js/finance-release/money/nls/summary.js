@@ -5,6 +5,9 @@ define("money/nls/summary", {
 	    menu	: 'Menu',
 		welcome	: 'Welcome to the R5M Finance',
 		welcome2: 'R5M Finance is an easy-to-use finance manager for your smartphone',		
+		
+		versionNote: 'This is BETA version of R5M finance.',
+		
 		welcome3: 'You don\'t have any transactions yet',
 		tapAdd	: 'Tap "Add" button to add your first transaction',
 		

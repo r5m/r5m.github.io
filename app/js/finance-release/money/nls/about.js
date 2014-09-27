@@ -20,11 +20,14 @@ define("money/nls/about", {
 	    webSiteUrl : 'http://r5m.me',
 	    
 	    helpUs : 'Support R5M Finance project',
-	    helpAbout : 'Together we can make World a better place. Your support to the project is very appreciated. Please, visit our web page at http://r5m.me tp make a donation or submit bugs',
+	    helpAbout : 'Together we can make World a better place. Your support to the project is very appreciated. Please, visit our web page at http://r5m.me to make a donation or submit bugs',
 	    donate: 'en',
 	    
 	    asIs: "This software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.",
-	    eula: 'EULA'
+	    eula: 'EULA',
+	    
+	    privacyTitle: "Privacy policy",
+	    privacy: "This application doesn't collect, use, store, and share or disclose any information about the user or any other person. All data is stored on your device. Sync is done using Dropbox datastore API. Information about Dropbox privacy policy can be found at dropbox.com"
 	},
 	'ru-ru': true
 });

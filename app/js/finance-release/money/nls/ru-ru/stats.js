@@ -12,6 +12,7 @@ define("money/nls/ru-ru/stats", {
 	accounts: 'Счета',
 	transactions: 'Транзакции',
 	add: 'Добавить',
+	navMenu: ' в главном меню',
 	addFirst : 'чтобы добавить транзакцию',
 	addFirstAccount : 'чтобы добавить первый счет',
 	tap		: 'Нажмите',
