@@ -1,9 +1,9 @@
 define("money/nls/backup", {
 	root: {
 		title	: "Backup & Restore",
-	    dropbox	: 'You can sync data between your devices using dropbox account',
+	    dropbox	: 'You can sync data between your devices using Dropbox account',
 	    dropboxStart : 'Press button to sync your data',
-	    dropboxRedirect: 'After clicking the button You\'ll be redirected to dropbox web page to authorize and then redirected back to this page:',
+	    dropboxRedirect: 'After clicking the button You\'ll be redirected to Dropbox web page to authorize and then redirected back to this page:',
 	    menu	: 'Menu',
 	    onlineBackup : 'Dropbox',
 	    factoryReset : 'My device',
@@ -16,8 +16,8 @@ define("money/nls/backup", {
 		clear		: 'Delete all data & settings',
 		clearTrans	: 'Delete all transactions',
 		
-		linkDropbox	: 'Link to my dropbox account',
-		unlinkDropbox: 'Unlink my dropbox account',
+		linkDropbox	: 'Link to my Dropbox account',
+		unlinkDropbox: 'Unlink my Dropbox account',
 	    backupRestoreTitle : 'Backup & Restore',
 	    taskCompleted : 'Task completed',
 	    applicationWillBeRestarted : 'Application will be restarted',
