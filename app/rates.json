@@ -1,7 +1,7 @@
 { "rates" : {
   "disclaimer": "Exchange rates are provided for informational purposes only, and do not constitute financial advice of any kind. Although every attempt is made to ensure quality, NO guarantees are given whatsoever of accuracy, validity, availability, or fitness for any purpose - please use at your own risk. All usage is subject to your acceptance of the Terms and Conditions of Service, available at: https://openexchangerates.org/terms/",
   "license": "Data sourced from various providers with public-facing APIs; copyright may apply; resale is prohibited; no warranties given of any kind. Bitcoin data provided by http://coindesk.com. All usage is subject to your acceptance of the License Agreement available at: https://openexchangerates.org/license/",
-  "timestamp": 1411840845,
+  "timestamp": 1411844454,
   "base": "USD",
   "rates": {
     "AED": 3.672825,
@@ -25,7 +25,7 @@
     "BOB": 6.914968,
     "BRL": 2.421313,
     "BSD": 1,
-    "BTC": 0.0025231181,
+    "BTC": 0.0025152329,
     "BTN": 61.222638,
     "BWP": 9.226153,
     "BYR": 10592.083333,
@@ -89,7 +89,7 @@
     "LAK": 8047.828333,
     "LBP": 1512.896667,
     "LKR": 130.321001,
-    "LRD": 91.49085,
+    "LRD": 91.50915,
     "LSL": 11.22817,
     "LTL": 2.719745,
     "LVL": 0.550531,
@@ -169,7 +169,7 @@
     "XPF": 93.744721,
     "YER": 215.071299,
     "ZAR": 11.22279,
-    "ZMK": 5252.024745,
+    "ZMK": 5253.075255,
     "ZMW": 6.234958,
     "ZWL": 322.355006
   }
