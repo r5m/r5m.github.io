@@ -131,11 +131,14 @@ body {
 .mblFormLayoutReadOnly .readOnlyHidden {
     display: none !important;
 }
+.ios7_theme .mblFormLayoutReadOnly
+	.mblTextArea {
+		background-color: rgba(0, 0, 0, 0);
+}
 .mblFormLayoutReadOnly
 	.mblTextArea {
     width: 100%;
     border-width: 0;
-    background-color: rgba(0, 0, 0, 0);
 }
 .android_theme .mblFormLayoutReadOnly
 	.mblTextArea {
@@ -150,7 +153,7 @@ body {
 }
 .ios7_theme .mblFormLayout .mblButton.two-two {
     font-weight: bold;
-    line-height: 31px;
+    line-height: 29px;
     height: 31px;
     margin-top: 0;
 }
@@ -306,7 +309,7 @@ li.mblListItem
     border-radius: 6px;
 }
 .wrapper1 .mblSpinWheelSlot {
-    width: 90px;
+    width: 90px; 
 }
 .wrapper1 .mblSpinWheelDatePicker {
     width: 282px;
