@@ -79,12 +79,19 @@ body .mblTabBarSegmentedControl .mblTabBarButton {
     position: static;
     overflow: hidden; width: auto; margin: 0 5px;text-overflow: ellipsis;
 }
+.mblFormLayout
+	.mblTextArea,
+.mblFormLayout .mblButton {
+    font-weight: bold;
+    width: 100%;
+    padding-left: 10px;
+}
+.mblFormLayout .mblGreyButton {
+	background: none repeat scroll 0 0 white;
+    color: #666;
+}
 .mblFormLayout .mblToolBarButton {
     display: block; margin: 0;text-align: left;
-}
-.mblFormLayout .mblToolBarButton.mblButton {
-    width: auto;
-    padding: 0 10px 0 10px;
 }
 body {
     overflow: hidden;
@@ -131,15 +138,10 @@ body {
 	.mblTextArea {
     background-color: #d3d3d3;
 }
-.mblFormLayout
-	.mblTextArea,
-.mblFormLayout .mblButton {
-    font-weight: bold;
-    width: 100%;
-    padding-left: 10px;
-}
 .mblFormLayout .mblButton.one-two {
     font-weight: bold;
+	display: block;
+	position:relative;
     width: auto;
     margin-right: 10px;
 }
@@ -151,7 +153,7 @@ body {
 }
 .mblFormLayout .mblButton.two-two {
     float: right;
-    width: 3rem;    
+    width: auto;    
 }
 li.mblListItem {
     height: auto; white-space: normal;
