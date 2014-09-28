@@ -14,6 +14,7 @@ define("money/nls/stats", {
 	    add: 'Add',
 	    addFirst : 'to add one',
 	    navMenu: ' in the main menu ',
+	    allTheTime : 'All the time',
 	    addFirstAccount : 'to add your first account',
 	    tap		: 'Tap',
 	    myAchievements: 'My achievements for period',
