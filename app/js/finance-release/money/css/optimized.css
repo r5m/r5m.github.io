@@ -87,7 +87,7 @@ body .mblTabBarSegmentedControl .mblTabBarButton {
     width: 100%;
     padding-left: 10px;
 }
-.mblFormLayout .mblGreyButton {
+.ios7_theme .mblFormLayout .mblGreyButton {
 	background: none repeat scroll 0 0 white;
     color: #666;
 }
