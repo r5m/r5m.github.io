@@ -149,7 +149,7 @@ body {
     font-weight: bold;
     line-height: 31px;
     height: 31px;
-    margin-top: -1px;
+    margin-top: 0;
 }
 .mblFormLayout .mblButton.two-two {
     float: right;
@@ -359,7 +359,7 @@ ul.mblTabBar li .mblTabBarButtonIconArea {
     position: static;
 }
 .mblFormLayout .mblButton {
-    line-height: 29px;
+    line-height: 28px;
     height: 29px;
 }
 .question {
