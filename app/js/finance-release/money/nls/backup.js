@@ -21,7 +21,7 @@ define("money/nls/backup", {
 	    backupRestoreTitle : 'Backup & Restore',
 	    taskCompleted : 'Task completed',
 	    applicationWillBeRestarted : 'Application will be restarted',
-	    errorOpeningDatastore: 'Error opening Dropbox datastore. Please, check your Internet connection or try to unlink your Dropbox account and link it once again',
+	    errorOpeningDatastore: 'Error opening Dropbox datastore. Please, check your Internet connection, try to restart Application or unlink your Dropbox account and link it once again',
 	    errorCreatingDatastore : 'Error creating datastore. Maybe your platform is not supported by Dropbox Datastore API',
 	    errorStrange : 'Sync error. Please, try to reconnect your Dropbox account.',
 	    error : 'ERROR',

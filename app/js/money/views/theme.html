@@ -1,0 +1,27 @@
+<div class="mblBackground">
+	<div 
+		data-dojo-attach-point="heading"
+		data-dojo-type="dojox/mobile/Heading" data-dojo-props="label:'${nls.title}'">
+		<button data-dojo-type="dojox/mobile/ToolBarButton"
+            data-dojo-attach-point="backButton"
+            data-dojo-props="arrow: 'left', target: 'settings', transitionDir: -1"
+            class="left-button">${nls.back}</button>
+	</div>
+	<div 
+		data-dojo-type="money/WheelScrollableView" data-dojo-props="height:'auto'"
+		data-dojo-attach-point="viewContainer">
+		<div data-dojo-type="dojox/mobile/EdgeToEdgeCategory" data-dojo-props="label:'${nls.theme}'"></div>
+		<ul data-dojo-type="dojox/mobile/EdgeToEdgeList" data-dojo-props="select: 'single'">
+			<div 
+				data-dojo-attach-point="ios7" 
+				data-dojo-type="dojox/mobile/ListItem" 
+				data-dojo-props="label: '${nls.light}', checked: true"></div>
+			<div 
+				data-dojo-attach-point="Holodark" 
+				data-dojo-type="dojox/mobile/ListItem" 
+				data-dojo-props="label: '${nls.dark}'"></div>			
+			
+		</ul>
+	
+	</div>			
+</div>

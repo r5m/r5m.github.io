@@ -1,0 +1,172 @@
+<div 
+	data-dojo-type="dojox/app/widgets/Container">    
+ 		<div data-dojo-type="dojox/mobile/Heading" class="title"
+		data-dojo-props="fixed: 'top'">
+		<button data-dojo-type="dojox/mobile/ToolBarButton"
+				data-dojo-attach-point="backButton"
+				data-dojo-props="
+					arrow: 'left', 
+					target: window.AppData.isInitiallySmall ? 'list' : 'navigation+list', 
+					transitionDir: -1, 
+					transitionOptions: { params: { id: window.AppData.currentDate, from: 'details' }}, 
+					onClick: function(){console.log(this)}"
+				class="left-button"
+				>${nls.daily}</button>
+
+		${nls.title}
+
+		<button data-dojo-type="dojox/mobile/ToolBarButton"
+				data-dojo-attach-point="editButton"
+				class="right-button mblRedButton"
+				data-dojo-props="transitionOptions: { params: { id: window.AppData.currentDate, from: 'details' }}"></button>
+				
+	</div>
+	<div data-dojo-type="money/WheelScrollableView" data-dojo-props="threshold:window.AppData.treshold">
+	
+	<div data-dojo-type="dojox/mobile/FormLayout"
+         data-dojo-attach-point="formLayout">
+        <div>
+			<label for="type">${nls.type}</label>
+			<ul data-dojo-type="dojox/mobile/TabBar" data-dojo-props="barType: 'segmentedControl'" class="no-background" id = "type">
+				<li data-dojo-type="dojox/mobile/TabBarButton" id='det-is-e'
+				data-dojo-props="selected:true, onClick:this.setTypeE">${nls.expence}</li>
+				<li data-dojo-type="dojox/mobile/TabBarButton" id='det-is-i'
+				data-dojo-props="onClick:this.setTypeI">${nls.income}</li>
+				<li data-dojo-type="dojox/mobile/TabBarButton" id='det-is-t'
+				data-dojo-props="onClick:this.setTypeT">${nls.transfer}</li>
+			</ul>
+        </div>
+        
+        <div>
+            <label for="amount">${nls.date}</label>
+            <fieldset>
+                <button id="date" name="date"
+                        data-dojo-type="dojox/mobile/Button"
+                        data-dojo-attach-point="date"
+                        data-dojo-props="'class':'mblGreyButton mblButton',onClick: function(){
+								//window.BTN = this
+								dijit.registry.byId('transactionDateOverlay').show()
+							}">
+							
+				</button>
+            </fieldset>
+        </div>
+        
+        <div>
+            <label for="account">${nls.account}</label>
+            <fieldset>
+                <button id="account" name="account"
+                        data-dojo-type="dojox/mobile/Button"
+                        data-dojo-attach-point="account"
+                        data-dojo-props="'class':'mblGreyButton mblButton', onClick: function(){
+							window.dFinance.transitionToView(this.domNode, {
+								target: window.AppData.isInitiallySmall ? 'accountpicker' : 'accountpicker' , transitionDir: 1,
+								params: {'id': window.AppData.details.params.id, doNotReload: true}
+							});
+							//dijit.registry.byId('transactionAccountOverlay').show('account', ['below-centered','above-centered','after','before'])
+						
+						}"></button>
+            </fieldset>
+        </div>
+        
+        <div>
+            <label for="amount">${nls.amount}</label>
+            <fieldset>
+                <button id="currency" name="currency"
+                        data-dojo-type="dojox/mobile/Button"
+                        data-dojo-attach-point="currency"
+                        data-dojo-props="'class':'mblBlueButton mblButton two-two'"></button>                
+                <button id="amount" name="amount"
+                        data-dojo-type="dojox/mobile/ToolBarButton"
+                        data-dojo-attach-point="amount"
+                        data-dojo-props="'class':'mblGreyButton mblButton one-two',onClick: function(){window.AppData.numberPicker.show()}"></button>
+                
+            </fieldset>
+        </div>
+        
+        <div id="accountTo-container">
+            <label for="accountTo">${nls.accountTo}</label>
+            <fieldset>
+                <button id="accountTo" name="accountTo"
+                        data-dojo-type="dojox/mobile/Button"
+                        data-dojo-attach-point="accountTo"
+                        data-dojo-props="'class':'mblGreyButton mblButton',onClick: function(){
+							window.dFinance.transitionToView(this.domNode, {
+								target: window.AppData.isInitiallySmall ? 'accountpicker' : 'accountpicker' , transitionDir: 1,
+								params: {'id': window.AppData.details.params.id, doNotReload: true, mode: 'to'}
+							});
+						}"></button>
+            </fieldset>
+        </div>
+        <div>
+            <label for="tags">${nls.categories}</label>
+            <fieldset>
+                <button id="tags" name="tags"
+                        data-dojo-type="dojox/mobile/Button"
+                        
+                        data-dojo-props="'class':'mblGreyButton mblButton',onClick:function(){
+							window.dFinance.transitionToView(this.domNode, {
+								target: window.AppData.isInitiallySmall ? 'tagspicker' : 'tagspicker' , transitionDir: 1,
+								params: {'id': window.AppData.details.params.id, doNotReload: true}
+							});
+						}"
+                        data-dojo-attach-point="tags"></button>
+            </fieldset>
+        </div>
+        <div>
+            <label for="descr">${nls.description}</label>
+            <fieldset class="text">
+                <textarea id="descr" name="descr"
+                        data-dojo-type="dojox/mobile/ExpandingTextArea"
+                        data-dojo-attach-point="descr"></textarea>
+            </fieldset>
+        </div>
+	</div>
+    
+</div>
+	<div data-dojo-type="dojox/mobile/Heading" class="bottom"
+        data-dojo-props="fixed: 'bottom'">
+        <div data-dojo-type="dojox/mobile/ToolBarButton" data-dojo-props="disabled: true"
+                    data-dojo-attach-point="deleteButton"
+                    data-dojo-attach-event="onClick: deleteContact"
+                    class="left-button">
+                <i class="fa fa-trash-o"></i> ${nls.remove}
+            </div>
+	</div> 
+	<div id="datePicker" 
+				data-dojo-type="dojox/mobile/SpinWheelDatePicker"
+				data-dojo-attach-point="datePicker"></div>
+	<div id="transactionDateOverlay" data-dojo-attach-point="do" data-dojo-type="dojox/mobile/SimpleDialog" class="overlay date-overlay">
+		<div class="wrapper1">
+			<h2 style="margin: 0px; line-height: 45px;">
+				<div data-dojo-type="dojox/mobile/ToolBarButton"
+					label="${nls.done}"
+					class="mblBlueButton"
+					style="width:45px;float:right;" 
+					onClick="window.AppData.objDet.date()"
+					data-dojo-attach-point="okButton"				
+				></div>
+				<div data-dojo-type="dojox/mobile/ToolBarButton"
+					label="${nls.today}"
+					style="width:45px;float:right;" 
+					onClick = "window.AppData.details.datePicker.reset()"
+					data-dojo-attach-point="resetDateButton"				
+				></div> ${nls.pickDate}
+			</h2>
+			<div id="datepickernode">
+				
+			</div>
+			
+		</div>
+	</div>
+	
+	<div id="deleteOverlay" data-dojo-type="dojox/mobile/SimpleDialog" data-dojo-attach-point="deleteOverlay">
+		<h1 data-dojo-type="dojox/mobile/Heading" data-dojo-props="" style="margin-bottom: 8px;">
+			${nls.sure}
+		</h1>
+		<button data-dojo-type="money/TouchableButton" label="${nls.yes}" class="mblRedButton" style="" 
+			data-dojo-attach-event="onClick: _deleteContact"></button>
+		<button data-dojo-type="money/TouchableButton" label="${nls.no}" class="mblBlueButton" style=""
+			data-dojo-attach-event="onClick: _hideDelete"></button>				
+	</div>
+</div>

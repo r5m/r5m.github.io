@@ -1,0 +1,47 @@
+<div class="mblBackground">
+    <div data-dojo-type="dojox/mobile/Heading"
+        data-dojo-props="fixed: 'top'">
+        <button data-dojo-type="dojox/mobile/ToolBarButton"
+            data-dojo-attach-point="backButton"
+            data-dojo-props="arrow: 'left', target: 'charts', transitionDir: -1"
+            class="left-button">${nls.back}</button>
+    </button>
+    ${nls.title}
+    </div>
+    <div data-dojo-type="money/WheelScrollableView">
+		
+		<div id="chart-pie">
+			
+			<div data-dojo-type="dojox/mobile/EdgeToEdgeCategory">
+				${nls.myTransactions}
+			</div>
+			<ul class="no-background" data-dojo-type="dojox/mobile/TabBar" data-dojo-props="barType: 'segmentedControl'" id="pie-chart-type">
+				<li data-dojo-type="dojox/mobile/TabBarButton"
+					data-dojo-attach-point="expChart" data-dojo-props="selected:true"
+					>${nls.expences}</li>
+				<li data-dojo-type="dojox/mobile/TabBarButton"
+					data-dojo-attach-point="incChart"
+					>${nls.incomes}</li>
+				<li data-dojo-type="dojox/mobile/TabBarButton"
+					data-dojo-attach-point="transfChart"
+					>${nls.transfers}</li>
+			</ul>
+			<div>
+				
+			</div>
+			<div data-dojo-type="dojox/mobile/Pane" id="no-transactions-chart">
+				${nls.noTransactions}<br/>${nls.tap} <b>${nls.transactions}</b> -> <b>${nls.add}</b> ${nls.navMenu} ${nls.addFirst}.
+			</div>
+			<!-- create the chart -->
+			<div id="pie-chart">
+				<div id="chartNode" ></div>
+				<div data-dojo-type="dojox/mobile/EdgeToEdgeCategory">
+					<span id="charts-pie-sum-ts"></span><span id="charts-pie-sum-total"></span>
+				</div>
+				<div id="legend"></div>
+			</div>
+			
+				
+		</div>		
+    </div>
+</div>

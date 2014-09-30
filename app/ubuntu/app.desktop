@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=me.r5m.finance
+Comment=R5M Finance webapp
+Type=Application
+Icon=app.png
+Exec=webapp-container https://r5m.github.io/app
+Terminal=false
+X-Ubuntu-Touch=true
+X-Ubuntu-StageHint=SideStage

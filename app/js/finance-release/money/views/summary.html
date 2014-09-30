@@ -1,0 +1,106 @@
+<div 
+	data-dojo-type="dojox/app/widgets/Container">    
+    <div 
+		data-dojo-type="dojox/mobile/Heading" 
+		class="title"
+        data-dojo-props="fixed: 'top'">        
+		
+		<button 
+			data-dojo-type="dojox/mobile/ToolBarButton"
+            data-dojo-attach-point="menuButton"
+            data-dojo-props="target:'navigation',transitionDir:-1"
+            class="left-button"><i class="fa fa-bars"></i> ${nls.menu}</button>
+        
+        ${nls.title}
+        
+        <button
+			data-dojo-type="dojox/mobile/ToolBarButton"
+            class="right-button mblRedButton"
+            data-dojo-props="
+				target: 'details',
+				transitionOptions: { params: { edit: true } }"
+            data-dojo-attach-point="add"><i class="fa fa-plus"></i> ${nls.add}</button>
+    </div>
+    
+    <div id="summary-sum">
+		<span id="summary-sum-ts"></span>
+		<span style="float:right;margin-right:10px">
+			<span id="summary-sum-title">${nls.total}: </span>
+			<span id="summary-sum-total"></span>
+		</span>
+	</div>
+	
+	<div 
+		data-dojo-type="money/WheelScrollableView"
+		data-dojo-attach-point="scrollView" style="transform: translatez(0);"
+		data-dojo-props="threshold:window.AppData.treshold">
+		
+		<div id="welcome-note">
+			<div 
+				data-dojo-type="dojox/mobile/RoundRectCategory">
+					${nls.welcome}
+			</div>
+			<div 
+				data-dojo-type="dojox/mobile/RoundRect" >
+					${nls.welcome2}<br/>${nls.versionNote}
+			</div>
+			<div 
+				data-dojo-type="dojox/mobile/RoundRectCategory" >
+					${nls.aboutR5mTitle}
+			</div>
+			<div 
+				data-dojo-type="dojox/mobile/RoundRect" 
+				>
+					${nls.aboutR5m}
+			</div>
+			<div 
+				data-dojo-type="dojox/mobile/RoundRectCategory">
+					${nls.aboutSyncTitle}
+			</div>
+			<div
+				data-dojo-type="dojox/mobile/RoundRect" 
+				>
+					${nls.aboutSync}
+			</div>
+			<div 
+				data-dojo-type="dojox/mobile/RoundRectCategory">
+					${nls.aboutHelpTitle}
+			</div>
+			<div 
+				data-dojo-type="dojox/mobile/RoundRect">
+					${nls.aboutHelp}
+			</div>
+			<div 
+				data-dojo-type="dojox/mobile/RoundRectCategory">
+					${nls.aboutSettingsTitle}
+			</div>
+			<div 
+				data-dojo-type="dojox/mobile/RoundRect" 
+				>
+					${nls.aboutSettings}
+			</div>
+		</div>
+		<div data-dojo-type="dojox/mobile/EdgeToEdgeStoreList"
+            data-dojo-attach-point="daily" id="summary-list"
+            data-dojo-props="
+				store: this.loadedStores.transactions,
+				query: this.getQuery(), queryOptions:{sort:[{attribute: 'date', descending: false}]},
+				createListItem: this.createListItem,
+				labelProperty: 'dateString',
+                itemRenderer: this.listItem">
+		</div>		
+    </div>    
+    
+    <!-- Bottom tabbar-->
+    <ul data-dojo-type="dojox/mobile/TabBar" data-dojo-attach-point="bottomBar" data-dojo-props="fixed: 'bottom'">
+		<li data-dojo-type="dojox/mobile/TabBarButton" id='sum-is-e'
+			data-dojo-props="selected:true,target: 'summary', icon: 'icons/icon_transactions.png', iconPos1:'0,19,19,17',
+					transitionOptions: { params: { type: 'e', refresh: true } }">${nls.expences}</li>
+		<li data-dojo-type="dojox/mobile/TabBarButton" id='sum-is-i'
+			data-dojo-props="target: 'summary', icon: 'icons/icon_transactions.png', iconPos1:'0,0,19,17',
+                    transitionOptions: { params: { type: 'i', refresh: true } }">${nls.incomes}</li>
+		<li data-dojo-type="dojox/mobile/TabBarButton" id='sum-is-t'
+			data-dojo-props="target: 'summary', icon: 'icons/icon_transactions.png', iconPos1:'0,38,21,17',
+                    transitionOptions: { params: { type: 't', refresh: true } }">${nls.transfers}</li>
+	</ul>
+</div>

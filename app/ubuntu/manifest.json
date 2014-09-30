@@ -1,0 +1,14 @@
+{
+    "description": "Ubuntu app for r5m finance",
+    "framework": "ubuntu-sdk-14.10",
+    "hooks": {
+        "example": {
+			"apparmor": "app.json",
+			"desktop": "app.desktop"
+		}
+	},
+	"maintainer": "Mikhael",
+	"name": "me.r5m.finance",
+	"title": "R5M Finance webapp",
+	"version": "0.1"
+}

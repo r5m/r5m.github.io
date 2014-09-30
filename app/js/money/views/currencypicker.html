@@ -1,0 +1,43 @@
+<div data-dojo-type="dojox/app/widgets/Container" >
+	<h1 data-dojo-type="dojox/mobile/Heading" data-dojo-props="fixed:'top',label:'${nls.title}'">
+			<div data-dojo-type="money/TouchableToolBarButton" label="${nls.done}" class="mblRedButton right-button"
+				data-dojo-attach-point = "done"
+			></div>
+		</h1>
+		<div data-dojo-type="dojox/mobile/Heading" data-dojo-props="fixed:'top'" class="mblSecondHeading" style="height:auto">
+				<div style="padding: 5px 20px;">
+					<div class="view-help">${nls.selectCurrency}</div>
+					<input type="text" data-dojo-type="dojox/mobile/TextBox" id="currencyInput" 
+						data-dojo-props="placeHolder:'Euro (EUR)', readOnly: true"/>
+				</div>
+			</div>
+		<div class="heading-button-wrapper"><button 
+				data-dojo-type="money/TouchableButton" 
+				class="mblBlueButton" 
+				data-dojo-attach-point="more"
+				style="width: 100%;">
+				${nls.more}
+			</button>
+		</div>
+		<div 
+			data-dojo-attach-point="scrollView"
+			data-dojo-type="money/WheelScrollableView" 
+			data-dojo-props="threshold:window.AppData.treshold">
+			
+			<div id="currencyPicker" 
+				data-dojo-type="dojox/mobile/RoundRectStoreList"
+                data-dojo-mixins="dojox/mobile/LongListMixin"
+				data-dojo-attach-point="currencyPicker"
+				data-dojo-props="
+					maxPages:3, 
+					pageSize:10, 
+					query: this.query, 
+					queryOptions: {sort: [{attribute:'label', descending: false}] },
+					stateful:true, 
+					store: window.AppData.currencyStore, 
+					select:'single'">
+			</div>
+			
+		</div>
+		
+</div>	

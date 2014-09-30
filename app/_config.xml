@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "me.r5m.finance"
+        versionCode = "2" 
+        version     = "0.5.9" >
+
+    <!-- versionCode is optional and Android only -->
+	<preference name="phonegap-version" value="2.9.0" />
+    <name>R5M Finance</name>
+
+    <description>
+        Mobile finance manager. 
+    </description>
+
+    <author href="https://build.phonegap.com" email="milikhin@gmail.com">
+        Mikhael
+    </author>
+	<!--
+	<gap:plugin name="nl.x-services.plugins.launchmyapp">
+		<param name="URL_SCHEME" value="r5m" />
+	</gap:plugin>-->
+</widget>

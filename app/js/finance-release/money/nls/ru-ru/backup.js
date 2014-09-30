@@ -20,7 +20,7 @@ define("money/nls/ru-ru/backup", {
 	backupRestoreTitle : 'Синхронизация',
 	taskCompleted : 'Задача успешно выполнена',
 	applicationWillBeRestarted : 'Приложение будет перезапущено',
-	errorOpeningDatastore: 'Ошибка соединения с Dropbox. Пожалуйста, проверьте наличие Интернет-соединения или попробуйте заново подключить Вашу учетную запись Dropbox.',
+	errorOpeningDatastore: 'Ошибка соединения с Dropbox. Пожалуйста, проверьте наличие Интернет-соединения, попробуйте перезапустить приложение или заново подключить Вашу учетную запись Dropbox.',
 	errorCreatingDatastore : 'Ошибка создания хранилища данных для Dropbox. Возможно, Ваша платформа не поддерживается Dropbox Datastore API',
 	errorStrange : 'Ошибка синхронизации. Пожалуйста, попробуйте заново подключить Вашу учетную запись Dropbox.',
 	error : 'ОШИБКА',

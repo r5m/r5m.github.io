@@ -1,0 +1,30 @@
+<div class="mblBackground">
+    <div data-dojo-type="dojox/mobile/Heading"
+        data-dojo-props="fixed: 'top'">
+        <button data-dojo-type="dojox/mobile/ToolBarButton"
+            data-dojo-attach-point="backButton"
+            data-dojo-props="arrow: 'left', target: 'charts', transitionDir: -1, transitionOptions: { params: { id: window.AppData.currentDate }}"
+            class="left-button">${nls.back}</button>
+    </button>
+    ${nls.title}
+    </div>
+    <div data-dojo-type="money/WheelScrollableView">
+		<div id="chart-bar">
+			<div data-dojo-type="dojox/mobile/EdgeToEdgeCategory">
+				${nls.expInc} <span id="bar-chart-ts"></span>
+			</div>
+			
+			<div id="simplechart" ></div>
+			<!--<div id="legend1" ></div>-->
+			<button 
+				data-dojo-type="money/TouchableButton" 
+				data-dojo-attach-point="earlier"
+				class="mblBlueButton"><i class="fa fa-arrow-circle-left"></i> ${nls.earlier}</button>
+			<button 
+				data-dojo-type="money/TouchableButton" 
+				data-dojo-attach-point="later"
+				class="mblBlueButton right-button">${nls.later} <i class="fa fa-arrow-circle-right"></i></button>
+			
+		</div>		
+    </div>
+</div>
