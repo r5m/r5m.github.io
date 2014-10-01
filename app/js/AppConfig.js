@@ -593,8 +593,8 @@ loadExchangeRates = function( json ) {
 						localStorage.setItem( 'currencies', json.stringify(window.AppData.currencies) )
 						localStorage.setItem( 'updated', json.stringify(window.AppData.updated) )
 					}
-					if(!window.ga)
-						loadGa();
+					//if(!window.ga)
+						//loadGa();
 					// do something with handled data
 				}, function(err){
 					
