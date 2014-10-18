@@ -571,6 +571,20 @@ table#legend td{
 #dFinance_timespan .mblListItemRightText{
 	margin-right: 14px;
 }
+.mblToolBarButtonSelected.mblToolBarButton.mblRedButton {
+	color: #cc0000!important;
+	border : solid 2px #cc0000;
+	border-radius: 3px;
+	background: white;
+	height:25px;
+	line-height: 25px;
+	margin-left:2px;
+}
+.holodark_theme .mblToolBarButtonSelected.mblToolBarButton.mblRedButton{
+	height:27px;
+	line-height: 27.5px;
+	margin-left:2px;
+}
 .hide {
     display: none !important;
 }
