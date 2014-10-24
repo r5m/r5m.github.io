@@ -10,7 +10,7 @@ window.AppData = {
 	currentId	: -1,
 	timespan 	: (!!localStorage) ? (localStorage.getItem("timespan") ? localStorage.getItem("timespan") : 'last31') : 'last31',
 	theme		: (!!localStorage) ? (localStorage.getItem("theme") ? localStorage.getItem("theme") : 'ios7') : 'ios7',
-	lang 		: (!!localStorage) ? (localStorage.getItem("app_locale") ? localStorage.getItem("app_locale") : 'no_lang') : 'no_lang',
+	lang 		: (!!localStorage) ? (localStorage.getItem("app_locale") ? localStorage.getItem("app_locale") : 'en_US') : 'en_US',
 	showWeather	: false,
 	_theme		: "a",
 	_themePanel	: "b",
